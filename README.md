@@ -8,6 +8,8 @@
 - [TOEFL备考心得](https://github.com/qyxf/Tutorials/blob/master/Finished/TOEFL_print.pdf)
 
 ## 精品合集 Best
+暂无内容，等待更新🌚
 
 ## 实用指南 Guides
-
+- [Git快速上手教程](https://github.com/qyxf/Tutorials/blob/master/Git%20%E6%95%99%E7%A8%8B.pdf)
+- [钱院学辅LaTeX讲座](https://github.com/qyxf/lec-on-LaTeX)
