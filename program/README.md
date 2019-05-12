@@ -1,5 +1,5 @@
 # 培养方案查询
-这里收录了钱学森书院各专业班级的培养方案，主要包括各专业方向在不同学期所要学习的课程，并与[课程中心](https://qyxf.github.io/course)的相关页面关联。
+这里收录了钱学森书院各专业班级的培养方案，主要包括各专业方向在不同学期所要学习的课程——特别是基础课程与专业课程，并与[课程中心](https://qyxf.github.io/course)的相关页面关联。
 
 各专业的培养方案信息均已在西安交通大学[综合教学服务](http://ehall.xjtu.edu.cn/)平台的“[全校方案查询](http://ehall.xjtu.edu.cn/jwapp/sys/qxfacx/*default/index.do)”模块发布。
 
