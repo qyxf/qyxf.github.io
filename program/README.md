@@ -13,7 +13,7 @@
 - [少年班（预科二年级）](/program/shaonianban-2017)
 - [钱学森班（公选课）](/program/qianxuesen)
     + 钱学森班-电气
-    + 钱学森班-自动化
+    + [钱学森班-自动化](/program/qianshao-zidonghua)
     + ...
 - 越杰班（公选课）
     + 越杰班-电气
