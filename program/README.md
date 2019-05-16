@@ -15,7 +15,7 @@
     + 钱学森班-电气
     + [钱学森班-自动化](/program/qianshao-zidonghua)
     + ...
-- [越杰班（公选课）](/program/yuejie.md)
+- [越杰班（公选课）](/program/yuejie)
     + 越杰班-电气
     + 越杰班-自动化
     + 越杰班-计算机
