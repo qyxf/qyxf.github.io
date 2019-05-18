@@ -6,3 +6,10 @@
 blockquote{
     font-style: normal;
 }
+
+section h1 {
+    text-shadow: 1px 1px 2px #00000040;
+    text-align: center;
+    border-bottom-style: ridge;
+    padding-bottom: 10px;
+}
