@@ -12,11 +12,12 @@
 - 侯宗濂医学试验班
 - [少年班（预科二年级）](/program/shaonianban-2017)
 - [少年班（大二年级）（公选课）](/program/shaonianban-2015)
-    + 少年班-电气
+    + [少年班-电气](/program/qianshao-dianqi)
     + [少年班-自动化](/program/qianshao-zidonghua)
 - [钱学森班（公选课）](/program/qianxuesen)
-    + 钱学森班-电气
+    + [钱学森班-电气](/program/qianshao-dianqi)
     + [钱学森班-自动化](/program/qianshao-zidonghua)
+    + [钱学森班-微电子](/program/qianshao-weidianzi)
     + ...
 - [越杰班（公选课）](/program/yuejie)
     + 越杰班-电气
