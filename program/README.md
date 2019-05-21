@@ -24,7 +24,7 @@
     + 越杰班-计算机
     + 越杰班-材料
     + [越杰班-能动](/program/yuejie-EP)
-    + 越杰班-机械
+    + [越杰班-机械](/program/yuejie-ME)
     + [越杰班-力学](/program/yuejie-EM)
 
 ## 为什么没有我想要的课？
