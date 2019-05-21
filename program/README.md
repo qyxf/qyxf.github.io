@@ -6,15 +6,11 @@
 ## 专业方向列表
 - [数学试验班](/program/shushi)
 - 物理试验班
-- 化生试验班
+- [化生试验班](/program/huasheng.md)
 - [计算机试验班](/program/jishi)
 - 人工智能试验班
 - 侯宗濂医学试验班
 - [少年班（预科二年级）](/program/shaonianban-2017)
-- [少年班（大二年级）（公选课）](/program/shaonianban-2015)
-    + 少年班-电气
-    + [少年班-自动化](/program/qianshao-zidonghua)
-    + ...
 - [钱学森班（公选课）](/program/qianxuesen)
     + 钱学森班-电气
     + [钱学森班-自动化](/program/qianshao-zidonghua)
