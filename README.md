@@ -12,5 +12,6 @@
 - [大物题解](https://github.com/qyxf/BookHub/tree/master/003.%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86)
 
 ## 实用指南 Guides
-- [Git快速上手教程](https://github.com/qyxf/Tutorials/blob/master/Git%20%E6%95%99%E7%A8%8B.pdf)
+- [Git快速上手教程](/tutorials/Git-Tutorial)
+- [OneNote 简介](/tutorials/OneNote-Tutorial)
 - [钱院学辅LaTeX讲座](https://github.com/qyxf/lec-on-LaTeX)
