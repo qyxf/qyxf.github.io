@@ -55,7 +55,7 @@ OneNote 是微软公司开发的免费笔记应用，是Office家族(**Word, Exc
 
 ## 2.获取共享笔记本
 
-1. OneNote 2016 和 Android 版本直接选择打开*其它笔记本*  或者`more notebook `，然后可以找到已共享的笔记本
+1. OneNote 2016 和 Android 版本直接选择打开*其它笔记本*  或者`more notebook`，然后可以找到已共享的笔记本
 2. OneNote UWP版本 
    1. 在微软应用商店下载并打开 OneDrive 的UWP应用
    2. 登录微软账户
