@@ -20,10 +20,10 @@
     + [钱学森班-微电子](/program/qianshao-weidianzi)
     + ...
 - [越杰班（公选课）](/program/yuejie)
-    + 越杰班-电气
-    + 越杰班-自动化
-    + 越杰班-计算机
-    + 越杰班-材料
+    + [越杰班-电气](/program/yuejie-EE)
+    + [越杰班-自动化](/program/yuejie-A)
+    + [越杰班-计算机](/program/yuejie-CS)
+    + [越杰班-材料](/program/yuejie-M)
     + [越杰班-能动](/program/yuejie-EP)
     + [越杰班-机械](/program/yuejie-ME)
     + [越杰班-力学](/program/yuejie-EM)
