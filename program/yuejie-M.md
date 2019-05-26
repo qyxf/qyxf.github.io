@@ -33,6 +33,6 @@
 - 材料性能
 - 材料传热基础
 - Characterization techniques in materials science research
-- 高分子化学与物理实验
-- 金相制备与分析实验
-- 材料性能与测试技术实验
+- 高分子化学与物理实验（选）
+- 金相制备与分析实验（选）
+- 材料性能与测试技术实验（选）
