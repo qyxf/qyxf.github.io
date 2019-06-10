@@ -14,10 +14,14 @@
 - [少年班（大二年级）（公选课）](/program/shaonianban-2015)
     + [少年班-电气](/program/qianshao-dianqi)
     + [少年班-自动化](/program/qianshao-zidonghua)
+    + [少年班-微电子](/program/qianshao-weidianzi)
+    + [少年班-力学](/program/qianshao-lixue)
+    + ...
 - [钱学森班（公选课）](/program/qianxuesen)
     + [钱学森班-电气](/program/qianshao-dianqi)
     + [钱学森班-自动化](/program/qianshao-zidonghua)
     + [钱学森班-微电子](/program/qianshao-weidianzi)
+    + [钱学森班-力学](/program/qianshao-lixue)
     + ...
 - [越杰班（公选课）](/program/yuejie)
     + [越杰班-电气](/program/yuejie-EE)
