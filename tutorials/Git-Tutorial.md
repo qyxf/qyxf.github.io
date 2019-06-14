@@ -1,6 +1,6 @@
 # Git与GitHub快速上手教程
 
-## 1.什么是Git与GitHub？
+## 1 什么是Git与GitHub？
 [Git](https://git-scm.com)是一个版本控制软件，这类软件能够精确的记录制定目录下代码的增删变动，在必要时允许还原到原来的状态。当然，对Git而言，其还有许多特有的功能，在此暂不详述[^0]。Git并非一个在线软件，它自身只能够实现本地的版本控制。
 
 [Github](https://github.com)则是一个基于Git而建立的代码在线托管平台，一般的免费用户可使用公共仓库（代码要公开），付费后可以建立私人仓库。至2019年四月，GitHub上已托管超过一亿个开源代码仓库，有超过3600万名用户活跃其中[^1]。
@@ -9,14 +9,14 @@ GitHub的出现[^2]，使我们不再担心备份与远程协作：一切提交�
 
 > **总结：**这个星球上最流行的开源托管服务。让人不再担心备份与远程协作，一切提交，均有记录。
 
-## 2.如何使用GitHub
+## 2 如何使用GitHub
 
 - 注册GitHub；
 - 下载Git（GitHub依托的版本控制软件），或者是下载GitHub客户端（国内被墙）。
 - 参考下列教程。
 
-## 3.Git 指南
-### 本地创建
+## 3 Git 指南
+### 3.1 本地创建
 在Git页面中，输入命令
 
     git clone /path/to/repository 
@@ -29,7 +29,7 @@ GitHub的出现[^2]，使我们不再担心备份与远程协作：一切提交�
 
 初始化后，会在 newrepo 目录下会出现一个名为 .git 的目录，所有 Git 需要的数据和资源都存放在这个目录中。
 
-### 加入文件
+### 3.2 加入文件
     git add ./Handout3.tex
 
 当然还有其它的选项，比如add文件夹里面所有文件
@@ -37,7 +37,7 @@ GitHub的出现[^2]，使我们不再担心备份与远程协作：一切提交�
     git add --all
 
 
-### 提交
+### 3.3 提交
     git commit -m "Adding files"
 
 将修改提交版本库
@@ -46,7 +46,7 @@ GitHub的出现[^2]，使我们不再担心备份与远程协作：一切提交�
 - 暂存区：英文叫stage, 或index。一般存放在 ".git目录下" 下的index文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。
 - 版本库：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。
 
-### 与远程同步
+### 3.4 与远程同步
 
     git remote add origin git@github.com:edmundwsy/new.git
 
@@ -72,7 +72,7 @@ GitHub的出现[^2]，使我们不再担心备份与远程协作：一切提交�
 
     git push -h
 
-### 设置公钥
+### 3.5 设置公钥
 
     git config --global user.name "My Name" 
     git config --global user.email myEmail@example.com
@@ -98,7 +98,7 @@ git@github.com: Permission denied (publickey).
 
 再解决不了了估计就是没有权限了。。。。。。请联系仓库管理员
 
-### 分支
+### 3.6 分支
 
 
     git checkout -b feature_x
@@ -117,7 +117,7 @@ git@github.com: Permission denied (publickey).
 
 除非你将分支推送到远端仓库，不然该分支就是 *不为他人所见的*
 
-### 合并分支
+### 3.7 合并分支
 
 
 要合并其他分支到你的当前分支（例如 master），执行：
@@ -132,7 +132,7 @@ git@github.com: Permission denied (publickey).
 
     git diff <source_branch> <target_branch>
 
-### 历史记录
+### 3.8 历史记录
 
 如果你想了解本地仓库的历史记录，最简单的命令就是使用: 
 
@@ -158,19 +158,16 @@ git@github.com: Permission denied (publickey).
 
     git log --help
 
-## 一些问题
+## 4.一些问题
 
 冲突怎么办？合并分支，手动修改
 建议先把自己的提交，然后pull，最后commit，最大程度减少冲突的几率
 
-## 其它
+## 5.其它
 
 - [钱院学辅官方站点](https://github.com/qyxf)
-
 - [git 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
-
 - [菜鸟教程 - git教程](http://www.runoob.com/git/git-tutorial.html)
-
 - [廖雪峰Git教程](
 https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
