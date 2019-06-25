@@ -35,3 +35,18 @@ a.button {
     padding: 5pt;
     margin: 10pt;
 }
+
+@media print, screen and (max-width: 480px)
+{
+    #banner{
+        display: unset;
+        position: absolute;
+        top: 55px;
+    }
+    header {
+        margin-bottom: 30pt;
+    }
+    a.button.fork {
+        position: absolute!important;
+    }
+}
