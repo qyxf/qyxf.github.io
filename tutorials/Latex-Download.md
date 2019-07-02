@@ -1,9 +1,5 @@
 # LaTeX 环境配置教程
 
-[TOC]
-
-
-
 ## 环境
 
 由于Microsoft Word 糟糕又麻烦的公式编辑和繁琐的文档排版方式，我们不得不选择更加优雅的环境进行我们的编写。
@@ -12,7 +8,7 @@
 
 LaTeX系统已经广泛应用于国外的科技类文档的写作于排版中，国内的论文写作和slide制作也在使用这个系统进行
 
-*之后大家参加数学建模竞赛、做科研、发paper的时候还要不止一次的用latex*
+*之后大家参加数学建模竞赛、做科研、发paper的时候还要不止一次的用LaTeX*
 
 
 
@@ -27,7 +23,7 @@ LaTeX系统已经广泛应用于国外的科技类文档的写作于排版中，
 
 TeX Live的官方站点是[https://tug.org/texlive/](https://tug.org/texlive/)，
 
-可以从[官方站点](http://mirror.ctan.org/systems/texlive/Images/texlive2018.iso)下载安装包，下载地址为
+可以从[官方站点](http://mirror.ctan.org/systems/texlive/Images/texlive2018.iso)下载安装包
 
 但同时，也可以尝试[清华大学](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2018.iso)和[中国科学技术大学](https://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/texlive2018.iso)的镜像站，点击即可下载iso压缩文件。
 
@@ -39,8 +35,9 @@ TeX Live的官方站点是[https://tug.org/texlive/](https://tug.org/texlive/)�
 
 笔者下载后和接下来要安利的TexStudio一起放到了百度网盘，以下是链接
 
-链接：https://pan.baidu.com/s/1mWyefxDxPKvK4-ECEAgsZw 
-提取码：bsmx 
+`https://pan.baidu.com/s/1mWyefxDxPKvK4-ECEAgsZw `
+
+提取码：[bsmx](https://pan.baidu.com/s/1mWyefxDxPKvK4-ECEAgsZw ) 
 
 
 
@@ -48,7 +45,7 @@ TeX Live的官方站点是[https://tug.org/texlive/](https://tug.org/texlive/)�
 
  可选的文本编辑器为Atom，VSCode，Sublime Text等，Atom和VSCode软件功能较多，但是比较大。
 
-如果只写latex语言，还能使用TexStudio
+如果只写latex语言，还能使用TexStudio，这个编辑器是LaTeX语境下最好的IDE
 
 ### 关于TexStudio
 
@@ -62,7 +59,7 @@ texstudio的配置可能稍微困难一点，请同学们自行百度，我记�
 
 这个软件十分专业，功能比vscode多很多，支持对应文字查看等
 
-书写latex，然后摁F5编译，下面会提示编译情况，错误了也会提示错在哪里
+书写LaTeX，然后摁F5编译，下面会提示编译情况，错误了也会提示错在哪里
 
 ![1552820099818](./fig/1552820099818.png)
 
@@ -124,7 +121,7 @@ texstudio的配置可能稍微困难一点，请同学们自行百度，我记�
 
 ![1552819697296](./fig/1552819697296.png)
 
-然后点击output找语法错误改错误，如果下面出现  √  说明编译成功，而且可以看到编译所用的时间。
+然后点击output找语法错误改错误，如果下面出现  √  说明编译成功，而且可以看到编译所用的时间。乱码显示是因为我在文件目录里面使用了CJK字符，建议不要在文件目录中出现CJK字符和空格，以免带来不必要的麻烦。
 
 ![1552819793379](./fig/1552819793379.png)
 
@@ -324,7 +321,7 @@ test
 
 ## Latex 教程推荐
 
-[从零开始latex快速入门](http://liuchengxu.org/blog-cn/posts/quick-latex/)   http://liuchengxu.org/blog-cn/posts/quick-latex/  *需要梯子*
+[从零开始latex快速入门](http://liuchengxu.org/blog-cn/posts/quick-latex/)   http://liuchengxu.org/blog-cn/posts/quick-latex/  *外网，需要梯子*
 
 [常用符号的latex表示方法](http://mohu.org/info/symbols/symbols.htm)  http://mohu.org/info/symbols/symbols.htm 
 
