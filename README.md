@@ -31,6 +31,7 @@
 - [Git快速上手教程](/tutorials/Git-Tutorial) 
 - [OneNote 简介](/tutorials/OneNote-Tutorial)
 - [钱院学辅LaTeX讲座](https://github.com/qyxf/lec-on-LaTeX) 
+- [钱院学辅LaTeX安装指导](/tutorials/Latex-Download)
 
 ## 关于我们 About
 钱院学辅的全称为“西安交通大学钱学森书院辅导中心”，是校级学业辅导中心在钱学森书院设立的分支机构。
