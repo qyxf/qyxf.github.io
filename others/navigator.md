@@ -1,6 +1,6 @@
 # 西安交通大学站点导航
 
-校内在线资源这么丰富，你知道吗？<a href="javascript:void(0);" onClick="window.external.AddFavorite(document.location.href,document.title)">收藏</a>本页面，即可免去“搜索不至”之苦！
+校内在线资源这么丰富，你知道吗？收藏本页面，再也不用问百度！
 
 ## 主站
 
@@ -19,7 +19,7 @@
 
 ## 在线信息服务
 
-- 师生综合服务大厅：[eip.xjtu.edu.cn](https://eip.xjtu.edu.cn)
+- 师生综合服务大厅：[**eip**.xjtu.edu.cn](https://eip.xjtu.edu.cn)
 - 综合信息站：[**info**.xjtu.edu.cn](http://info.xjtu.edu.cn)
 - 校内信息门户：[**my**.xjtu.edu.cn](http://my.xjtu.edu.cn)
 - 网信中心：[**nic**.xjtu.edu.cn](http://nic.xjtu.edu.cn)
@@ -28,7 +28,7 @@
 
 ## 学术资源平台
 
-- 钱学森图书馆：[lib.xjtu.edu.cn](https://lib.xjtu.edu.cn)
+- 钱学森图书馆：[**lib**.xjtu.edu.cn](https://lib.xjtu.edu.cn)
 - 图书馆-网络数据库与期刊导航：[rm.lib.xjtu.edu.cn/navn/database](http://rm.lib.xjtu.edu.cn/navn/database)
 - 学术资源平台（会议信息）：[**meeting**.xjtu.edu.cn](http://meeting.xjtu.edu.cn)
 - 教师个人主页：[**gr**.xjtu.edu.cn](http://gr.xjtu.edu.cn)
@@ -36,9 +36,9 @@
 ## 校内在线学习平台
 
 - 党建学习平台：[**xjtudj**.edu.cn](http://xjtudj.edu.cn)
-- 西安交大学堂在线：[nxjtu.xuetangx.com](http://nxjtu.xuetangx.com)
+- 西安交大学堂在线：[nxjtu.**xuetangx**.com](http://nxjtu.xuetangx.com)
 - 西安交大网络公开课：[**oc**.xjtu.edu.cn](http://oc.xjtu.edu.cn)
-- Blackboard：[bb.xjtu.edu.cn](http://bb.xjtu.edu.cn)
+- Blackboard：[**bb**.xjtu.edu.cn](http://bb.xjtu.edu.cn)
 - 思源学堂：[**syxt**.xjtu.edu.cn](http://syxt.xjtu.edu.cn)
 - 陕西MOOC平台（西交主办）：[www.**sxmooc**.cn](http://www.sxmooc.cn)
 
