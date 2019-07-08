@@ -3,7 +3,7 @@
 
 各专业的培养方案信息均已在西安交通大学[综合教学服务](http://ehall.xjtu.edu.cn/)平台的“[全校方案查询](http://ehall.xjtu.edu.cn/jwapp/sys/qxfacx/*default/index.do)”模块发布。
 
-## 专业方向列表
+## 培养方案列表
 - [数学试验班](/program/shushi)
 - [物理试验班](/program/wushi)
 - [化生试验班](/program/huasheng)
@@ -17,7 +17,7 @@
     + [少年班-微电子](/program/qianshao-weidianzi)
     + [少年班-力学](/program/qianshao-lixue)
     + ...
-- [钱学森班（公选课）](/program/qianxuesen)
+- [钱学森班（公选课）](/program/qianxuesen)  
     + [钱学森班-电气](/program/qianshao-dianqi)
     + [钱学森班-自动化](/program/qianshao-zidonghua)
     + [钱学森班-微电子](/program/qianshao-weidianzi)
