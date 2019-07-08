@@ -8,11 +8,33 @@
 
 在钱院学辅的课程中心，这些问题都能轻松解决。课程信息完全收录，相关内容持续更新！
 
+## 各试验班大一课程介绍
+
+[越杰班](/course/Yuejie)
+
+[数学试验班](/course/Shushi)
+
+[物理试验班](/course/Wushi)
+
+[化生试验班](/course/Huasheng)
+
+[计算机试验班](/course/Jishi)
+
+[侯宗濂医学试验班](/course/Zonglian)
+
+[人工智能试验班](/course/Renshi)
+
+[工科试验班（钱学森班）](/course/Qianban)
+
+
+
+
+
 ## 课程列表
 
 #### 数理基础课程
 
-- 高等数学
+- [高等数学](/course/Gaoshu)
 - 线性代数
 - 离散数学
 - 复变函数
