@@ -49,7 +49,7 @@ TeX Live的官方站点是[https://tug.org/texlive/](https://tug.org/texlive/)�
 
 ### 关于TexStudio
 
-![1552817408941](././fig/1552817408941.png)
+![1552817408941](./fig/1552817408941.png)
 
 
 

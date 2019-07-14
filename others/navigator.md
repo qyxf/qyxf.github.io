@@ -4,6 +4,7 @@
 
 ## 主站
 
+
 - 首页：[www.xjtu.edu.cn](http://www.xjtu.edu.cn)
 - 英文版首页：[**en**.xjtu.edu.cn](http://en.xjtu.edu.cn)
 - 交大新闻网：[**news**.xjtu.edu.cn](http://news.xjtu.edu.cn)
@@ -72,6 +73,9 @@
 - 兵马俑BBS：[**bbs**.xjtu.edu.cn](http://bbs.xjtu.edu.cn)
 - e瞳网：[www.**eeyes**.net](https://www.eeyes.net)
   - e快下：[**down**.eeyes.net](https://down.eeyes.net)
+
+    [^Download]: 这个网站中收录了你可能会用到的所有软件，某些软件还是学生版本。亲测校园网使用本链接下载网速可达 10 M/s。i此网站由e瞳维护，持续更新
+
   - e学堂：[**course**.eeyes.net](https://course.eeyes.net)
 - 挑战网：[www.**tiaozhan**.com](https://www.tiaozhan.com)
 - 学长享答：[www.**xzxda**.com](http://www.xzxda.com)
@@ -79,9 +83,15 @@
 ## 其他
 
 - 本科招生网：[**zs**.xjtu.edu.cn](http://zs.xjtu.edu.cn)
+
 - 信息公开网：[**xxgk**.xjtu.edu.cn](http://xxgk.xjtu.edu.cn)
+
 - 学生处知心网：[**xsc**.xjtu.edu.cn](http://xsc.xjtu.edu.cn)
+
 - 视觉影像识别系统：[**vi**.xjtu.edu.cn](http://vi.xjtu.edu.cn)
+
+  [^PPT]: 想要交大校徽、校训、官方信纸、PPT可以从这里下载哦
+
 
 ## 考古现场
 > 以下所列网站，仍可正常访问，但内容已经过时。
