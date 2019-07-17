@@ -1,7 +1,13 @@
 # 钱院学辅·Qyxf
 ![本图片来自于西安交通大学官方网站，版权归其所有。](http://www.xjtu.edu.cn/images/jdgk.jpg)
 
-欢迎来到钱院学辅信息发布站！
+<p style="text-align=center;">精勤求学 敦笃励志 果毅力行 忠恕任事</p>
+
+[**新生必读**](/intro/life-in-xjtu)|[培养方案](/program/)|[站点导航](/others/navigator)
+:-:|:-:|:-:
+<i class="fab fa-github"></i>[Star me!](https://github.com/qyxf/)|<i class="fab fa-github"></i>[学辅书库](https://github.com/qyxf/BookHub)|[钱院首页](http://bjb.xjtu.edu.cn/)
+
+---
 
 
 
