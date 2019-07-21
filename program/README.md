@@ -32,7 +32,7 @@
 - [钱学森班（公选课）](/program/qianxuesen)  
     + [钱学森班-电气](/program/qianshao-dianqi)
     + 钱学森班-能动
-    + 钱学森班-机械
+    + [钱学森班-机械](/program/qianshao-jixie)
     + [钱学森班-自动化](/program/qianshao-zidonghua)
     + [钱学森班-微电子](/program/qianshao-weidianzi)
     + [钱学森班-力学](/program/qianshao-lixue)
