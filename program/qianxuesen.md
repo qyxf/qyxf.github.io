@@ -178,3 +178,21 @@
 | 离散数学A                                                    | 计算机类必选                                         |
 | 出国交流学习、外文学术论文发表、出国访学准备、国外MOOC平台在线课程学习 | 必选2学分                                            |
 
+
+
+
+
+---
+
+## 各专业培养方案
+
+- [钱学森班-电气](/program/qianshao-dianqi)
+- 钱学森班-能动
+- [钱学森班-机械](/program/qianshao-jixie)
+- [钱学森班-计算机](/program/qianshao-jisuanji)
+- [钱学森班-自动化](/program/qianshao-zidonghua)
+- [钱学森班-微电子](/program/qianshao-weidianzi)
+- [钱学森班-力学](/program/qianshao-lixue)
+- 钱学森班-核工
+- 钱学森班-材料
+
