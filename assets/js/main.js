@@ -13,8 +13,17 @@ var sectionHeight = function() {
 $(window).resize(sectionHeight);
 
 $(function() {
-  $("section h1, section h2").each(function(){
-    $("nav ul").append("<li class='tag-" + this.nodeName + "'><a href='#" + $(this).text().replace(/ /g, '-') + "'>" + $(this).text() + "</a></li>");
+
+  $("section h1, section h2, section h3").each(function(){
+    if ($(this).prop("tagName") == "H1"){
+      $("nav ul").append("<li class='tag-" + this.nodeName + "'><a href='#" + $(this).text().replace(/ /g, '-') + "'><strong>" + $(this).text() + "</strong></a></li>");
+    }
+    else if ($(this).prop("tagName") == "H2"){
+      $("nav ul").append("<li class='tag-" + this.nodeName + "'><a href='#" + $(this).text().replace(/ /g, '-') + "'>" + $(this).text() + "</a></li>");      
+    }
+    else{
+      $("nav ul").append("<li class='tag-" + this.nodeName + "'><a href='#" + $(this).text().replace(/ /g, '-') + "'>　" + $(this).text() + "</a></li>");
+    }
     $(this).attr("id",$(this).text().replace(/ /g, '-'));
     $("nav ul li:first-child a").parent().addClass("active");
   });
