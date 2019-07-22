@@ -43,8 +43,6 @@
 - [钱院学辅LaTeX讲座](https://github.com/qyxf/lec-on-LaTeX) 
 - [钱院学辅LaTeX安装指导](/tutorials/Latex-Download)
 
----
-
 ## <i class="fas fa-address-card"></i> 关于我们
 
 钱院学辅的全称为“西安交通大学钱学森书院辅导中心”，是校级学业辅导中心在钱学森书院设立的分支学生组织，挂靠于钱学森书院。[**加入我们！**](/others/about)
