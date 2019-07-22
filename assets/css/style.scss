@@ -97,18 +97,49 @@ a.button {
     }
 }
 
+
+/* 链接内粗体块：保留链接色彩（原更换为黑色） */
 a strong
 {
     color: inherit;
 }
 
+/* 多级列表：取消底部间距 */
 ul ul, ul ul ul, ul ul ul ul {
     margin-bottom: 0px;
 }
 
+/* 标题头部：消除特殊性 */
 th {
     border: 1px solid #e5e5e5;
     color: inherit!important;
     border-left: 1px solid #ffcc00;
     border-right: 1px solid #ffcc00;
+}
+
+/* 导航菜单：清除原有样式，交由外部容器决定 */
+nav {
+    position: relative;
+    left: unset;
+    top: unset;
+    margin-left: unset;
+    text-align: left;
+}
+
+/* 导航菜单外部容器：定义位置，遮盖滚动条 */
+#nav-wrapper {
+    position: fixed;
+    height: 60%;
+    z-index: 1;
+    top: 35%;
+    right: 0;
+    overflow: hidden;
+}
+
+/* 导航菜单内容器：设置滚动条 */
+#nav-bar {
+    height: 100%;
+    width: 120%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
