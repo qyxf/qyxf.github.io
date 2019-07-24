@@ -152,7 +152,7 @@ nav {
 
 /* 导航菜单内容器：设置滚动条 */
 #nav-bar {
-    height: 90%;
+    height: 100%;
     width: 120%;
     overflow-y: auto;
     overflow-x: hidden;
@@ -182,5 +182,4 @@ a img{
     padding: 5px;
     font-weight: bold;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-    height: 10%;
 }
