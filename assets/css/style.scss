@@ -69,7 +69,7 @@ a.button {
 /* 宽度小于1060px：隐藏导航菜单 */
 @media print, screen and (max-width: 1060px)
 {
-    #nav-bar {
+    #nav-wrapper {
         display: none;
     }
 }
