@@ -10,7 +10,13 @@ var sectionHeight = function() {
   }
 }
 
+var computeNavigationBar = function() {
+  var navBarHeight = $("#nav-wrapper").height() - $("#toc").height() - 10;
+  $("#nav-bar").height(navBarHeight);
+}
+
 $(window).resize(sectionHeight);
+$(window).resize(computeNavigationBar);
 
 $(function() {
 
@@ -47,6 +53,7 @@ $(function() {
   });
 
   sectionHeight();
+  computeNavigationBar();
 
   if($("nav").css("height")<$("#nav-wrapper").css("height"))
   {
