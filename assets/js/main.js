@@ -48,5 +48,11 @@ $(function() {
 
   sectionHeight();
 
+  if($("nav").css("height")<$("#nav-wrapper").css("height"))
+  {
+    $("#nav-wrapper").css("height", "auto");
+    $("#nav-bar").css("overflow: x", "hidden");
+  }
+
   $('img').on('load', sectionHeight);
 });
