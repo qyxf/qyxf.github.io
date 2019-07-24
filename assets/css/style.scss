@@ -157,3 +157,16 @@ nav {
     overflow-y: scroll;
     overflow-x: hidden;
 }
+
+/* 导航栏列表：清除底部margin，并扩展左侧padding */
+nav ul {
+    margin-bottom: unset;
+    padding: 0 0 0 10px;
+}
+
+/* 图片：利用block对象自动边距居中 */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
