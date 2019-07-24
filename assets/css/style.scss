@@ -154,7 +154,7 @@ nav {
 #nav-bar {
     height: 100%;
     width: 120%;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 
@@ -173,4 +173,13 @@ section img {
 
 a img{
     display: unset;
+}
+
+#toc {
+    background: lightblue;
+    border-bottom: 1px solid #79a9fa;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
 }
