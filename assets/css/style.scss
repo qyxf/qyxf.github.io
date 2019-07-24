@@ -143,7 +143,8 @@ nav {
 #nav-wrapper {
     position: fixed;
     width: 18%;
-    height: 60%;
+    height: auto;
+    max-height: 60%;
     z-index: 1;
     top: 35%;
     left: 0;
@@ -154,7 +155,7 @@ nav {
 #nav-bar {
     height: 100%;
     width: 120%;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 
