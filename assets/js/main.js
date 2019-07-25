@@ -61,5 +61,10 @@ $(function() {
     $("#nav-bar").css("overflow: x", "hidden");
   }
 
+    $("[src*='img\.shields\.io']").css({
+      "display": "unset",
+      "vertical-align": "text-bottom"
+    });
+
   $('img').on('load', sectionHeight);
 });
