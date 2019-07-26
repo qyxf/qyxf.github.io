@@ -5,7 +5,7 @@
 
 [**新生必读**](/intro/life-in-xjtu)|[**培养方案**](/program/)|[**交大站点导航**](/others/navigator)
 :-:|:-:|:-:
-<i class="fab fa-github"></i> [**Star us!**](https://github.com/qyxf/)|<i class="fab fa-book"></i> [**学辅书库**](/BookHub)|<i class="fas fa-university"></i> [**钱院首页**](http://bjb.xjtu.edu.cn/)
+<i class="fab fa-github"></i> [**Star us!**](https://github.com/qyxf/)|<i class="fas fa-book"></i> [**学辅书库**](/BookHub)|<i class="fas fa-university"></i> [**钱院首页**](http://bjb.xjtu.edu.cn/)
 
 ---
 
