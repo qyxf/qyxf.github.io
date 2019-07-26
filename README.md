@@ -30,7 +30,6 @@
 ## <i class="fas fa-book"></i> 最新资料
 > 我们不做内容的搬运工，只做精品资料的**原创者**！[**查看全部书目**](/BookHub)
 
-- [<i class="fas fa-question-circle"></i> **本站内容下载方法**](/others/Guidance)
 - [![005-钱院新生手册-blue](shield)](/BookHub/005.freshman-manual)
 - [![004-数试学习生活指南-blue](shield)](/BookHub/004.guidance-for-study)
 - [![003-大学物理题解-blue](shield)](/BookHub/003.key-to-university-physics)
