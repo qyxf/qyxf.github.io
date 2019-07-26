@@ -5,7 +5,7 @@
 
 [**新生必读**](/intro/life-in-xjtu)|[**培养方案**](/program/)|[**交大站点导航**](/others/navigator)
 :-:|:-:|:-:
-<i class="fab fa-github"></i> [**Star us!**](https://github.com/qyxf/)|<i class="fab fa-github"></i> [**学辅书库**](https://github.com/qyxf/BookHub)|<i class="fas fa-university"></i> [**钱院首页**](http://bjb.xjtu.edu.cn/)
+<i class="fab fa-github"></i> [**Star us!**](https://github.com/qyxf/)|<i class="fab fa-book"></i> [**学辅书库**](/BookHub)|<i class="fas fa-university"></i> [**钱院首页**](http://bjb.xjtu.edu.cn/)
 
 ---
 
@@ -28,12 +28,14 @@
 
 
 ## <i class="fas fa-book"></i> 最新资料
-> 我们不做内容的搬运工，只做精品资料的**原创者**！
+> 我们不做内容的搬运工，只做精品资料的**原创者**！![**查看全部书目**](/BookHub)
 
-- [<i class="fas fa-question-circle"></i>**本站内容下载方法**](/others/Guidance)
-- <a href="/bookhub/003"><img src="https://img.shields.io/badge/003-大学物理-blue.svg?style=popout" alt="大学物理"/></a>
-- <a href="/bookhub/002"><img src="https://img.shields.io/badge/002-GRE指南-green.svg?style=popout" alt="GRE指南"/></a>
-- <a href="/bookhub/001"><img src="https://img.shields.io/badge/001-TOEFL备考心得-green.svg?style=popout" alt="GRE指南"/></a>
+- [<i class="fas fa-question-circle"></i> **本站内容下载方法**](/others/Guidance)
+- [![005-钱院新生手册-blue](shield)](/BookHub/005.freshman-manual)
+- [![004-数试学习生活指南-blue](shield)](/BookHub/004.guidance-for-study)
+- [![003-大学物理题解-blue](shield)](/BookHub/003.key-to-university-physics)
+- [![002-GRE指南-blue](shield)](/BookHub/002.gre-guide)
+- [![001-TOEFL备考心得-blue](shield)](/BookHub/001.toefl-tips)
 
 ## <i class="fas fa-compass"></i> 实用指南
 > 我们不止提供资料，我们更提供**自主学习**的工具与方法！
