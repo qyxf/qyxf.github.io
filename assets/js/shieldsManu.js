@@ -22,4 +22,10 @@ $(function() {
         else { labelColor = "grey"; }
         $(this).attr("src", "https://img.shields.io/badge/" + label + "-" + message + "-grey?labelColor=" + labelColor);
     });
+
+    $("[src*='img\.shields\.io']").css({
+      "display": "unset",
+      "vertical-align": "text-bottom",
+      "padding": "0 2px 0 2px"
+    });
 });
