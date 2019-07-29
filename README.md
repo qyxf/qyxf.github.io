@@ -1,17 +1,15 @@
 # 钱院学辅·Qyxf
 ![本图片来自于西安交通大学官方网站，版权归其所有。](http://www.xjtu.edu.cn/images/jdgk.jpg)
 
-<p style="text-align:center;">精勤求学 敦笃励志 果毅力行 忠恕任事</p>
+<p style="text-align:center;text-shadow: 2px 2px 1px lightgrey;">“精勤求学，敦笃励志；果毅力行，忠恕任事。”</p>
 
-[**新生必读**](/intro/life-in-xjtu)|[**培养方案**](/program/)|[**站点导航**](/others/navigator)
+<i class="fas fa-star"></i> [**新生必读**](/intro/life-in-xjtu)|<i class="fas fa-file"></i> [**培养方案**](/program/)|<i class="fas fa-map"></i> [**交大站点导航**](/others/navigator)
 :-:|:-:|:-:
-<i class="fab fa-github"></i>[**Star us!**](https://github.com/qyxf/)|<i class="fab fa-github"></i>[**学辅书库**](https://github.com/qyxf/BookHub)|[**钱院首页**](http://bjb.xjtu.edu.cn/)
+<i class="fab fa-github"></i> [**Star us!**](https://github.com/qyxf/)|<i class="fas fa-book"></i> [**学辅书库**](/BookHub)|<i class="fas fa-university"></i> [**钱院首页**](http://bjb.xjtu.edu.cn/)
 
 ---
 
-
-
-## 学辅发布 Xuefu
+## <i class="fas fa-question-circle"></i> 学辅发布
 
 > 与学辅线下辅导活动配合使（shí）用，效果更佳！
 
@@ -20,7 +18,7 @@
 - 线下活动1
 - 线下活动2
 
-## 精品功能 Best
+## <i class="fas fa-medal"></i> 精品功能
 > 别人不知道的信息，我们知道！
 
 - [**新生必读**](/intro/life-in-xjtu):萌新戳这里！！
@@ -29,15 +27,16 @@
 - [校园站点导航](/others/navigator):近在咫尺却远在天边的本校资源，**全部集齐**！
 
 
-## 最新资料 Newest
-> 我们不做内容的搬运工，只做精品资料的**原创者**！钱院学辅，专注原创精品三个月（~~如发现此时间已过期，请及时提醒本站维护人员~~）！
+## <i class="fas fa-book"></i> 最新资料
+> 我们不做内容的搬运工，只做精品资料的**原创者**！[**查看全部书目**](/BookHub)
 
-- [**本站内容下载方法**](/others/Guidance)
-- [GRE指南](/bookhub/002) 
-- [TOEFL备考心得](/bookhub/001)
-- [大物题解](/bookhub/003) 
+- [![005-钱院新生手册-blue](shield)](/BookHub/005.freshman-manual)
+- [![004-数试学习生活指南-blue](shield)](/BookHub/004.guidance-for-study)
+- [![003-大学物理题解-blue](shield)](/BookHub/003.key-to-university-physics)
+- [![002-GRE指南-blue](shield)](/BookHub/002.gre-guide)
+- [![001-TOEFL备考心得-blue](shield)](/BookHub/001.toefl-tips)
 
-## 实用指南 Guides
+## <i class="fas fa-compass"></i> 实用指南
 > 我们不止提供资料，我们更提供**自主学习**的工具与方法！
 
 - [Git快速上手教程](/tutorials/Git-Tutorial) 
@@ -45,35 +44,7 @@
 - [钱院学辅LaTeX讲座](https://github.com/qyxf/lec-on-LaTeX) 
 - [钱院学辅LaTeX安装指导](/tutorials/Latex-Download)
 
+## <i class="fas fa-address-card"></i> 关于我们
 
-
-
----
-
-# 关于我们 About
-
-钱院学辅的全称为“西安交通大学钱学森书院辅导中心”，是挂靠于钱学森书院、校级学业辅导中心在钱学森书院设立的分支学生组织。
-
-`>>>加入我们<<<`
-
-### 部门设置
-
-#### 学研部
-
-> 编写资料，总结经验
-> 
-> 既是帮助别人，也是提升自己！！
-
-
-#### 宣传部
-
-> 制作海报，发布信息
-> 
-> 让我们的辛苦为更多人带来方便！！
-
-#### 办公室
-
-> 管理空间，组织活动
->
-> 拉近大家的距离，让钱院变得更好！！
+钱院学辅的全称为“西安交通大学钱学森书院辅导中心”，是校级学业辅导中心在钱学森书院设立的分支学生组织，挂靠于钱学森书院。[**加入我们！**](/others/about)
 
