@@ -21,6 +21,10 @@ $(function() {
         else if(/人\S*试/.test(label)){ labelColor = "silver"; }
         else { labelColor = "grey"; }
         $(this).attr("src", "https://img.shields.io/badge/" + label + "-" + message + "-grey?labelColor=" + labelColor);
+        var name_ref = /@\S*/.exec($(this).parent().attr("href"));
+        if(name_ref != null && name_ref != "@"){
+            $(this).parent().attr("href", "https://github.com/" + name_ref.toString().replace(/@/, ''));
+        }
     });
 
     $("[src*='img\.shields\.io']").css({
