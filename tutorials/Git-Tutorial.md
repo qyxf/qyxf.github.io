@@ -56,7 +56,7 @@ GitHub是基于Git的代码托管平台，所以我们首先需要了解Git的�
 
 ![三区示意图](https://zhouhao.me/img/git_reset_20170826.png)
 
-<p style="text-align: center"><small>(图片来源：[Git 学习笔记 - git reset 详解](https://zhouhao.me/2017/08/27/detailed-explanation-of-git-reset/)，作者：@howzy)</small></p>
+<p style="text-align: center"><small>(图片来源：<a href="https://zhouhao.me/2017/08/27/detailed-explanation-of-git-reset/">Git 学习笔记 - git reset 详解</a>，作者：<a href="https://github.com/howzy">howzy</a>)</small></p>
 
 ### 2.2 玩转自己的仓库
 ### 2.3 参与协作
