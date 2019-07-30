@@ -5,7 +5,7 @@
 
 /*
 引用块：
-- 字体：修正为正常字体（原为斜体）
+- 字体：修正为正常字体（原为斜体），并调小字体
 - 样式：美化为带阴影、圆角的发光块
 */
 blockquote{
@@ -15,12 +15,12 @@ blockquote{
     border-radius: 5px;
     border: 1px solid lightblue;
     box-shadow: inset 1px 1px 2px 1px lightgray;
+    font-size: smaller;
 }
 
-/* 引用块内p标签：去除底部边距，并调小字体 */
+/* 引用块内p标签：去除底部边距 */
 blockquote p{
     margin-bottom: 0px;
-    font-size: smaller;
 }
 
 /* 一级标题：居中并加阴影 */
