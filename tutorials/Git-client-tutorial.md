@@ -28,9 +28,44 @@
 
 - 进入此界面左边的 `Git -> 设置` 中 ，选择本地已经安装的其它合并比较工具
 
-![git_client_1](assets/git_client_1.png)
+![git_client_1](assets/git_client_1.jpg)
+
+> **合并比较工具**：**拉取**或**推送**远程文件时，若本地的文件和远程文件有所不同，此时会通过合并比较工具逐行比较本地文件和远程文件，然后让用户取舍。
+
+### 使用
+
+#### 将远程仓库克隆到本地
+
+打开GitHub网站的某个仓库，点击绿色按钮，复制仓库地址
 
 
 
-## 
+![git_client_2](assets/git_client_2.jpg)
 
+在你想放的位置（我知道肯定是桌面）点击右键，`右键菜单 -> GitExt Clone`  粘贴上仓库的地址，然后点击克隆
+
+![git_client_3](assets/git_client_3.jpg)
+
+
+
+然后克隆好了之后会提示你按`Esc`或者`Enter`退出的
+
+
+
+#### 将本地更改上传
+
+
+
+改完了总要传吧？先对本地仓库文件夹点击右键`右键菜单 -> GitExt Commit` 
+
+![git_client_4](assets/git_client_4.jpg)
+
+如果你真的点了提交而不是提交并推送，需要再右键点击文件夹 `右键菜单 -> Git Extension -> Push` 
+
+
+
+#### 拉取远程更改
+
+ `右键菜单 -> Git Extension -> Pull` 
+
+然后直接点击右下角拉取，合并选项不需要动
