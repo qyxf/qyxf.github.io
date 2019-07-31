@@ -2,7 +2,6 @@
 ![本图片来自于西安交通大学官方网站，版权归其所有。](http://www.xjtu.edu.cn/images/jdgk.jpg)
 
 <p style="text-align:center;text-shadow: 2px 2px 1px lightgrey;">“精勤求学，敦笃励志；果毅力行，忠恕任事。”</p>
-
 <i class="fas fa-star"></i> [**新生必读**](/intro/life-in-xjtu)|<i class="fas fa-file"></i> [**培养方案**](/program/)|<i class="fas fa-map"></i> [**交大站点导航**](/others/navigator)
 :-:|:-:|:-:
 <i class="fab fa-github"></i> [**Star us!**](https://github.com/qyxf/)|<i class="fas fa-book"></i> [**学辅书库**](/BookHub)|<i class="fas fa-university"></i> [**钱院首页**](http://bjb.xjtu.edu.cn/)
@@ -46,5 +45,5 @@
 
 ## <i class="fas fa-address-card"></i> 关于我们
 
-钱院学辅的全称为“西安交通大学钱学森书院辅导中心”，是校级学业辅导中心在钱学森书院设立的分支学生组织，挂靠于钱学森书院。[**加入我们！**](/others/about)
+钱院学辅的全称为“西安交通大学钱学森书院辅导中心”，是校级学业辅导中心在钱学森书院设立的分支学生组织，挂靠于钱学森书院。[**了解我们！**](/others/about)
 
