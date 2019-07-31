@@ -2,6 +2,7 @@
 ![本图片来自于西安交通大学官方网站，版权归其所有。](http://www.xjtu.edu.cn/images/jdgk.jpg)
 
 <p style="text-align:center;text-shadow: 2px 2px 1px lightgrey;">“精勤求学，敦笃励志；果毅力行，忠恕任事。”</p>
+
 <i class="fas fa-star"></i> [**新生必读**](/intro/life-in-xjtu)|<i class="fas fa-file"></i> [**培养方案**](/program/)|<i class="fas fa-map"></i> [**交大站点导航**](/others/navigator)
 :-:|:-:|:-:
 <i class="fab fa-github"></i> [**Star us!**](https://github.com/qyxf/)|<i class="fas fa-book"></i> [**学辅书库**](/BookHub)|<i class="fas fa-university"></i> [**钱院首页**](http://bjb.xjtu.edu.cn/)
