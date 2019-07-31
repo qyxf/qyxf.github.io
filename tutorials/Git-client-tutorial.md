@@ -8,7 +8,7 @@
 
 ### 安装
 
-点击[链接]()处，下载 Git Extensions
+点击[链接](https://sourceforge.net/projects/gitextensions/)处，下载 Git Extensions
 
 双击下载好的msi文件安装
 
@@ -24,7 +24,7 @@
 
 如果缺少软件配置合并比较工具kdiff3，说明未安装此工具，有两个解决办法：
 
-- 点击[这里]()安装合并比较工具
+- 点击[这里](https://sourceforge.net/projects/kdiff3/files/)安装合并比较工具
 
 - 进入此界面左边的 `Git -> 设置` 中 ，选择本地已经安装的其它合并比较工具
 
@@ -69,3 +69,15 @@
  `右键菜单 -> Git Extension -> Pull` 
 
 然后直接点击右下角拉取，合并选项不需要动
+
+
+
+有时候当远程仓库此文件已经修改，会出现**冲突**（CONFLICT）
+
+拉取时对话框出现CONFLICT 表示出现冲突
+
+点击`解决冲突` ，然后`合并更改` 此时会使用你选择的合并工具进行合并
+
+解决冲突之后会弹窗询问是否解决，是否可以提交，点击提交即可
+
+![git_client_5](assets/git_client_5.jpg)
