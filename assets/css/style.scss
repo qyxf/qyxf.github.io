@@ -32,10 +32,11 @@ section h1 {
     padding-top: 10px;
 }
 
-/* 二级标题：附加底线 */
+/* 二级标题：附加底线与顶部间距 */
 section h2 {
     border-bottom: 1px solid lightgray;
     padding-bottom: 5px;
+    margin-top: 30px;
 }
 
 /* 导航栏logo：设置为校徽 */
