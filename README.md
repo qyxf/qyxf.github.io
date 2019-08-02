@@ -39,10 +39,11 @@
 ## <i class="fas fa-compass"></i> 实用指南
 > 我们不止提供资料，我们更提供**自主学习**的工具与方法！
 
-- [Git快速上手教程](/tutorials/Git-Tutorial) 
-- [OneNote 简介](/tutorials/OneNote-Tutorial)
+- [Git与GitHub快速上手教程](/tutorials/git-github) 
+- [Git客户端使用指南](/tutorials/git-client)
+- [OneNote 简介](/tutorials/onenote)
 - [钱院学辅LaTeX讲座](https://github.com/qyxf/lec-on-LaTeX) 
-- [钱院学辅LaTeX安装指导](/tutorials/Latex-Download)
+- [钱院学辅LaTeX安装指导](/tutorials/latex-download)
 
 ## <i class="fas fa-address-card"></i> 关于我们
 
