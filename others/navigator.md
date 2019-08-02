@@ -80,7 +80,7 @@
 - 挑战网：[www.**tiaozhan**.com](https://www.tiaozhan.com)
 - 学长享答：[www.**xzxda**.com](http://www.xzxda.com)
 
-[^Download]: 这个网站中收录了你可能会用到的所有软件，某些软件还是学生版本。亲测校园网使用本链接下载网速可达`10 M/s`。此网站由e瞳网维护，持续更新。
+[^Download]: 这个网站中收录了你可能会用到的所有软件，某些软件还是学生版本。校园网使用本链接下载网速可达`10 M/s`。
 
 
 ## <i class="fas fa-folder-open"></i> 其他
@@ -90,7 +90,7 @@
 - 学生处知心网：[**xsc**.xjtu.edu.cn](http://xsc.xjtu.edu.cn)
 - 视觉影像识别系统[^PPT]：[**vi**.xjtu.edu.cn](http://vi.xjtu.edu.cn)
 
-[^PPT]: 想要交大校徽、校训标准样式 以及 官方信纸、交大PPT模板可以从这里下载哦！
+[^PPT]: 想要交大校徽、校训标准样式及官方信纸、交大PPT模板可以从这里下载哦！
 
 
 ## <i class="fas fa-history"></i> 考古现场
