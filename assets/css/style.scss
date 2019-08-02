@@ -18,8 +18,8 @@ blockquote{
     font-size: smaller;
 }
 
-/* 引用块内p标签：去除底部边距 */
-blockquote p{
+/* 引用块内子元素：去除底部边距 */
+blockquote *{
     margin-bottom: 0px;
 }
 
