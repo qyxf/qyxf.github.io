@@ -18,9 +18,10 @@ blockquote{
     font-size: smaller;
 }
 
-/* 引用块内子元素：去除底部边距 */
+/* 引用块内子元素：去除底部边距，并调小字体 */
 blockquote *{
     margin-bottom: 0px;
+    font-size: smaller;
 }
 
 /* 一级标题：居中并加阴影 */
