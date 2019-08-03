@@ -39,13 +39,13 @@
 ## <i class="fas fa-compass"></i> 实用指南
 > 我们不止提供资料，我们更提供**自主学习**的工具与方法！
 
-- [Git与GitHub快速上手教程](/tutorials/git-github) 
-- [Git客户端使用指南](/tutorials/git-client)
+- [Git 与 GitHub 快速上手教程](/tutorials/git-github) 
+- [Git 客户端使用指南](/tutorials/git-client)
 - [OneNote 简介](/tutorials/onenote)
-- [钱院学辅LaTeX讲座](https://github.com/qyxf/lec-on-LaTeX) 
-- [钱院学辅LaTeX安装指导](/tutorials/latex-download)
+- [钱院学辅 LaTeX 讲座](https://github.com/qyxf/lec-on-LaTeX) 
+- [钱院学辅 LaTeX 安装指导](/tutorials/latex-download)
 
 ## <i class="fas fa-address-card"></i> 关于我们
 
-钱院学辅的全称为“西安交通大学钱学森书院学生会学业辅导中心”，是钱学森书院学生会下属的学业辅导中心。[**了解我们！**](/others/about)
+钱院学辅的全称为“西安交通大学钱学森书院学生会学业辅导中心”，是钱学森书院学生会下属的学业辅导组织。[**了解我们！**](/others/about)
 
