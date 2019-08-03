@@ -1,5 +1,5 @@
 # Git 与 GitHub 快速上手教程
-> <i class="fas fa-exclamation-triangle"></i> 本文档还在编辑之中。![progress-40%25-yellow](shield)
+> <i class="fas fa-exclamation-triangle"></i> 本文档还在编辑之中。![progress-50%25-yellow](shield)
 > 
 > 最后修改时间： 2019年7月29日
 > 
@@ -13,6 +13,17 @@ GitHub 名声在外，已经不是一两年了；但是，许多人并不清楚�
 [GitHub](https://github.com) 则正是一个基于 Git 而建立的**在线代码托管平台**，用户可以在其上建立属于自己或与他人共享的**代码仓库**，并在此基础上实现版本控制、团队协作，甚至开源软件发布、网站建设、文档维护等诸多超出 Git 固有功能以外的事情。至 2019 年四月，GitHub 上已托管超过一亿个开源代码仓库，有超过 3600 万名用户活跃其中[^1]。
 
 GitHub 的出现[^2]，使我们不再担心备份与远程协作：一切提交，均有记录。
+
+> 更现实的一个需求是：通过 GitHub，你就再也不用和这样的东西打交道了：
+> 
+> - `网页设计初稿.html`
+> - `网页设计初稿-某某批注.html`
+> - `网页设计初稿-某某批注-二改.html`
+> - `网页设计终稿.html`
+> - `网页设计终极稿.html`
+> - ……
+> 
+> 存一个文件就够了：`网页设计.html`。GitHub 会帮你记录所有的版本，你还可以轻松的比对各版本之间的差异。
 
 ## 2 Git 是怎么运作的
 GitHub 是基于 Git 的代码托管平台，所以我们仍然需要了解 Git 的运作机制。以下内容并不涉及复杂的工作原理，仅是对 Git 运行机制的大致描摹。
@@ -105,18 +116,55 @@ Git 是一个**版本控制系统**，即可以记录一个目录（文件夹）
 开始之前，需要先完成下面的两项工作：
 
 - [注册 GitHub](https://github.com/join)；
-- 如果你希望以**小白**的身份获得 GitHub 的最佳体验，可以尝试[下载 GitHub 客户端](https://desktop.github.com)。当然，这一步可以略去不做，这样的后果是：你只能在网页上创建或上传文件，而不能建立起远程仓库与本地仓库的联系。
+- 如果你希望以**小白**的身份获得 GitHub 的最佳体验，可以尝试[下载 GitHub 客户端](https://desktop.github.com)（正式名称为 GitHub Desktop）。当然，这一步可以略去不做，这样的后果是：你只能在网页上创建或上传文件，而不能建立起远程仓库与本地仓库的联系。
 
 由于一些原因，GitHub 在国内访问时速度并不很快，常常掉线或中断连接。针对这种情况，你有两种选择：
 
 1. 访问 GitHub 网页、上传文件时，学会更加耐心~~或者充分利用加载的时间完成泡茶、点外卖、洗衣服、写作业等闲杂事项~~；
-2. 自备梯子。（[梯子是什么？](https://hanyu.baidu.com/zici/s?wd=梯子) [怎样做梯子？](https://jingyan.baidu.com/article/b87fe19e5c125d5218356836.html) [有哪些好的梯子？](https://list.tmall.com/search_product.htm?q=%CC%DD%D7%D3)）
+2. 自备梯子。（[梯子是什么？](https://hanyu.baidu.com/zici/s?wd=梯子) [怎样做梯子？](https://jingyan.baidu.com/article/b87fe19e5c125d5218356836.html) [有哪些好的梯子？](https://list.tmall.com/search_product.htm?q=梯子)）
 
-### 3.1 玩转自己的仓库
+### 3.1 创建新的仓库
+在注册 GitHub 之后，网站通常会建议你阅读一份名为 [Hello World](https://guides.github.com/activities/hello-world/) 的指南（以下简称“指南”），帮助你建立一个名为 `hello-world` 的仓库。这是一个很好的练习，此处将给予一些额外的说明。
 
-### 3.2 参与协作
+创建仓库时，指南要求你按以下的配置创建仓库：
 
-### 3.3 体验GitHub客户端
+![init settings](https://guides.github.com/activities/hello-world/create-new-repo.png)
+
+<p style="text-align: center"><small>(图片来源：<a href="https://guides.github.com/activities/hello-world/">Hello World · GitHub Guides</a>)</small></p>
+
+这里的几个选项值得说明：
+
+- Owner 即仓库所有者的名字——一般情况下，所有者是你自己，但也可以是你管理的组织（如`qyxf`）。
+- Repository name 是仓库的名字。按照目前惯例，一般采用连接线命名方法（如`hello-world`），但也可以使用驼峰命名法或 Pascal 命名法（如`BookHub`）。风格统一即可。
+- 以上的 Owner 及 Repository name，决定了代码仓库的地址。例如，`qyxf`的`BookHub`仓库，网页地址便是 [https://github.com/qyxf/BookHub](https://github.com/qyxf/BookHub)。
+- Description 是 GitHub 页面上显示的仓库描述，与代码无关。尽管是 optional 的，还是建议用户认真填写。
+- Public （公开）与 private （私有）决定了仓库的可见性。公开仓库可以为所有人看到，无论他们是否登录了 GitHub；而私有仓库只能为仓库所有者和其所许可的其他 GitHub 用户访问、克隆、修改。过去，GitHub 的私有仓库是收费项；在微软收购 GitHub 之后不久，三人以下协作的私有仓库可以免费使用。此外，仓库的可见性可以在创建之后修改，所以不用担心最开始的选择。
+- 指南中要求你“Initialize with a README”，即在你新建的仓库中自动生成一份名为`README`的 Markdown 文档（这是什么？）。`README`相当于这个仓库的说明，会由 GitHub 自动展示在仓库的首页，当然有必要创建；不过，这里创建这份文件还有另一个作用——由此创建的仓库，不是空的，便于你通过 `clone` 命令直接复制到本地，也便于 GitHub 配置相关的属性。
+
+> 如果你不打算使用 Git 客户端，请**务必**在创建仓库时初始化 `README`。（~~跳过这一步的人都后悔了。~~）
+
+之后，指南按照 GitHub 所推荐的分支管理模式来，指导你如何在独立于 `master` 分支的侧分支上修改文件，并通过名为 Pull request 的操作（这并不是 Git 中的固有机制）将其合并到 `master` 内。在一般的代码协作中，仓库内的分支管理机制不常被使用，读者可以在自己的仓库中稍作尝试；而 Pull request 则尤为重要，是代码协作的关键，在 3.4 节中将详细介绍。
+
+### 3.2 玩转自己的仓库
+创建新的仓库之后，你就可以在 GitHub 网页端开始编辑。开始之前，有件事值得注意：
+
+> 与 Git 客户端不同，GitHub 的网页端与客户端都没有暂存区的概念。其中，网页端上只能同时编辑一个文件，且每次改动后都必须为之提交一个单独的 `commit`（不能分批或扎堆）将改动直接记录到版本库中；客户端则只能直接将工作区中的所有改动一次性 `commit` 至版本库，或丢弃工作区的改动。
+
+这一特性，在某种意义上来说是 GitHub 为 Git 门外汉们搭设的“终南捷径”；尽管暂存区的缺失使精细管理变得困难，但却同时降低了 GitHub 的使用门槛。理解这种差异，对于 GitHub 的用户来说是十分重要的；一般来说，即使是 Git 高手也偶尔会直接在 GitHub 网页端直接操作，因此理解两者的差异是必要的。
+
+在网页端，可通过三种方式对仓库作出改动：
+
+- 通过仓库页面上的“Create new files”按钮创建新的代码文件，GitHub 将根据你所给定的后缀名自动确定代码所用的语言。
+- 通过仓库页面上的“Upload files”按钮上传本地文件。根据本节开头所说的原因，不推荐这种做法——超过 1M 的文件难以在国内成功上传。
+- 通过仓库内各文档页面上的 <i class="fas fa-pencil-alt"></i> 按钮编辑文档。
+
+无论是用哪种方式，都必须在保存改动前填写 commit message。网页端的功能较为有限，故其一般只用于创建与修改 Markdown 文档这样的简单内容。
+
+使用 GitHub 客户端是一个更好的选择。
+
+### 3.3 参与协作
+
+### 3.4 体验 GitHub 客户端
 
 ## 4 Git 指南：进入深水区
 在开始下面的内容之前，首先需要[下载 Git](https://git-scm.com/downloads) 并安装之（或许你还需要一份[安装教程](https://git-scm.com/book/zh/v2/起步-安装-Git)）。
