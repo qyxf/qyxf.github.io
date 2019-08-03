@@ -61,11 +61,15 @@ a.button {
 
 /* 脚注块：美化为带内阴影、圆角的发光块 */
 .footnotes {
-    box-shadow: inset 1px 1px 2px 2px gray;
-    border: 1px solid orange;
+    background: linear-gradient(to top left, rgba(255, 140, 0, .4), rgba(144, 238, 144, .4));
+    border: 1px solid #c7c7c7;
     border-radius: inherit;
     padding: 5pt;
     margin: 10pt;
+}
+
+.footnotes ol {
+    padding-left: 20px;
 }
 
 /* 宽度小于1060px：隐藏导航菜单 */
