@@ -8,20 +8,19 @@
 - 字体：修正为正常字体（原为斜体），并调小字体
 - 样式：美化为带阴影、圆角的发光块
 */
-blockquote{
+blockquote {
     font-style: normal;
-    padding: 10px;
+    padding: 12px 10px 10px;
     margin: 10px;
     border-radius: 5px;
     border: 1px solid lightblue;
     box-shadow: inset 1px 1px 2px 1px lightgray;
-    font-size: smaller;
+    font-size: small;
 }
 
-/* 引用块内子元素：去除底部边距，并调小字体 */
+/* 引用块内子元素：去除底部边距 */
 blockquote *{
     margin-bottom: 0px;
-    font-size: smaller;
 }
 
 /* 一级标题：居中并加阴影 */
