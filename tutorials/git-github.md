@@ -5,12 +5,12 @@
 > 
 > 参与编辑：[![自动化钱71吴思源](person)](@edmundwsy)，[![能动少C71尤佳睿](person)](@xjtu-blacksmith)
 
-## 1 什么是 Git 与 GitHub？
+## 1 什么是 GitHub？
 GitHub 名声在外，已经不是一两年了；但是，许多人并不清楚这是怎样的一个“网站”。那么，GitHub 是做什么的呢？
 
-说到 GitHub，很显然不能不讨论 Git。[Git](https://git-scm.com) 是一个**版本控制软件**，这类软件能够精确的记录制定目录下代码的增删变动，在必要时允许还原到原来的状态。当然，对 Git 而言，其还有许多特有的功能，在此暂不详述[^0]。Git 并不仅仅只是一个在本地运行的软件，它能够实现分布式的版本控制——也就是说，通过一个远程的**代码托管平台**，Git 可以帮助程序员实现多个分立终端上的共同开发、信息交互与同步，从而可以实现多人协作。
+说到 GitHub，就不能不介绍 Git。[Git](https://git-scm.com) 是一个**版本控制软件**，这类软件能够精确的记录制定目录下代码的增删变动，在必要时允许还原到原来的状态。当然，对 Git 而言，其还有许多特有的功能，在此暂不详述[^0]。Git 并不仅仅只是一个在本地运行的软件，它能够实现分布式的版本控制——也就是说，通过一个远程的**代码托管平台**，Git 可以帮助程序员实现多个分立终端上的共同开发、信息交互与同步，从而可以实现多人协作。
 
-[GitHub](https://github.com) 则正是一个基于 Git 而建立的**在线代码托管平台**，用户可以在其上建立属于自己或与他人共享的**代码仓库**，并在此基础上实现版本控制、团队协作，甚至开源软件发布、网站建设、文档维护等诸多超出 Git 固有功能以外的事情。至 2019 年四月，GitHub 上已托管超过一亿个开源代码仓库，有超过 3600 万名用户活跃其中[^1]。
+而[GitHub](https://github.com) 则正是一个基于 Git 而建立的**在线代码托管平台**，用户可以在其上建立属于自己或与他人共享的**代码仓库**，并在此基础上实现版本控制、团队协作，甚至开源软件发布、网站建设、文档维护等诸多超出 Git 固有功能以外的事情。至 2019 年四月，GitHub 上已托管超过一亿个开源代码仓库，有超过 3600 万名用户活跃其中[^1]。
 
 GitHub 的出现[^2]，使我们不再担心备份与远程协作：一切提交，均有记录。
 
@@ -98,9 +98,9 @@ Git 是一个**版本控制系统**，即可以记录一个目录（文件夹）
 代码版本控制就这样几步，并不需要很多的技巧。对于大多数人来说，控制版本不算难题，难题在于不会写代码，没东西发、不敢发。（~~我不是在针对你，我是说在座的各位，都是……~~）
 
 ### 2.4 Git 特色：分支管理
-与 Git 相仿的版本控制软件，不在少数。与其他工具相较，Git 却具有一个特殊的机制：分支管理；这项功能，可以说是对过去许多年来软件开发流程之经验的总结，对程序的开发是非常有帮助的。
+与 Git 相仿的版本控制软件，不在少数。不过，Git 却具有一个特殊的机制：分支管理；这项功能，可以说是对过去许多年来软件开发流程之经验的总结，对程序的开发是非常有帮助的。
 
-> 如果读者想初步了解一下分支管理的价值，可读阮一峰的一篇博客：[Git分支管理策略](http://www.ruanyifeng.com/blog/2012/07/git.html)。
+> 如果读者想初步了解一下分支管理的价值，可读阮一峰的一篇博客：[Git 分支管理策略](http://www.ruanyifeng.com/blog/2012/07/git.html)。
 
 在学辅，并没有程序开发的需要，通常所做的是文档和简单代码的协作；尽管如此，由于分支机制是 Git 的一项基础，这里仍需要做一些简单的说明。
 
@@ -141,7 +141,7 @@ Git 是一个**版本控制系统**，即可以记录一个目录（文件夹）
 - Public （公开）与 private （私有）决定了仓库的可见性。公开仓库可以为所有人看到，无论他们是否登录了 GitHub；而私有仓库只能为仓库所有者和其所许可的其他 GitHub 用户访问、克隆、修改。过去，GitHub 的私有仓库是收费项；在微软收购 GitHub 之后不久，三人以下协作的私有仓库可以免费使用。此外，仓库的可见性可以在创建之后修改，所以不用担心最开始的选择。
 - 指南中要求你“Initialize with a README”，即在你新建的仓库中自动生成一份名为`README`的 Markdown 文档（这是什么？）。`README`相当于这个仓库的说明，会由 GitHub 自动展示在仓库的首页，当然有必要创建；不过，这里创建这份文件还有另一个作用——由此创建的仓库，不是空的，便于你通过 `clone` 命令直接复制到本地，也便于 GitHub 配置相关的属性。
 
-> 如果你不打算使用 Git 客户端，请**务必**在创建仓库时初始化 `README`。（~~跳过这一步的人都后悔了。~~）
+> 如果你不打算使用 Git 或 GitHub 客户端，只想在网页上操作，请**务必**在创建仓库时初始化 `README`。（~~跳过这一步的人都后悔了。~~）
 
 之后，指南按照 GitHub 所推荐的分支管理模式来，指导你如何在独立于 `master` 分支的侧分支上修改文件，并通过名为 Pull request 的操作（这并不是 Git 中的固有机制）将其合并到 `master` 内。在一般的代码协作中，仓库内的分支管理机制不常被使用，读者可以在自己的仓库中稍作尝试；而 Pull request 则尤为重要，是代码协作的关键，在 3.4 节中将详细介绍。
 
@@ -176,172 +176,73 @@ Git 是一个**版本控制系统**，即可以记录一个目录（文件夹）
 8. Fetch Origin：执行 `fetch`（取回）操作——这个操作与 `pull` 类似，但它不会覆盖你已在工作区作出的改动，是一个安全的操作。如果你的计算机已经联网，则每次打开 GitHub Desktop 时其都会自动同步；当然，你也需要像经常保存文件一样，有事没事 `fetch` 一下，以免冲突。
 9. 左栏 Changes 选项卡：切换左栏的内容为“当前工作区相对于版本库的改动”。改动信息会分别显示在中栏（文件变动状况）和右栏（文件内容具体改动）内。
 10. 左栏 History 选项卡：切换左栏的内容为“本地版本库储存的各版本历史”，以及每个版本中发生的改动。中栏与右栏仍显示文件的总体变化与具体内容改动，只不过这些改动是过去所做的，已经记录在案了。
-11. 中栏：显示文件的整体变化情况。被改动的文件以条目显示，右侧的图标表示文件的改动类型：<i class="fas fas-plus-circle" style="color: #28a745"></i> 表示添加了新文件；<i class="fas fas-minus-circle" style="color: #d73a49"></i> 表示删除了一个文件；<i class="fas fas-arrow-alt-circle-right" style="color: #0366d6"></i> 表示文件更名（但未修改内容）；最常见的则是 <i class="fas fas-dot-circle" style="color: #dbab09"></i>，表示对一个文件的内容作了修改。
-12. 右栏：显示在中栏中所选的某一文件之具体变动情况，以红色（删除）与绿色（增加）的形式表现出来。在 Git 中，比较文件差异的操作被称作 `diff`，GitHub 所做的事不过是让 `diff` 的结果更直观了。
+11. 中栏：显示文件的整体变化情况。被改动的文件以条目显示，右侧的彩色图标表示文件的改动类型：<i class="fas fa-plus-circle" style="color: #28a745"></i> 表示此文件是新加进来的；<i class="fas fa-minus-circle" style="color: #d73a49"></i> 表示文件被删除；<i class="fas fa-arrow-alt-circle-right" style="color: #0366d6"></i> 表示文件被更名（但未修改内容）；最常见的则是 <i class="fas fa-dot-circle" style="color: #dbab09"></i>，表示文件内容有改动。
+12. 右栏：显示在中栏中所选的某一文件之具体变动情况，以红色（删除）与绿色（增加）的形式表现出来。在 Git 中，比较文件差异的操作被称作 `diff`，而 GitHub 多做的事不过是让 `diff` 的结果更直观了。
 
-> 绝大多数 `diff` 工具都只能显示文本格式文件（例如最常见的 `.txt` 文件，以及源代码文件）的变动，而不能显示二进制文件（例如 `.exe` 程序、PDF 文件，以及~~很多人以为是文本格式的~~ Word 文档[^4]）。因此，如果希望用 Git 记录文件变动，务必采用纯文本格式文件。
+> 绝大多数文件比较工具都只能显示文本格式文件（例如最常见的 `.txt` 文件，以及源代码文件）的变动，而不能显示二进制文件（例如 `.exe` 程序、PDF 文件，以及~~很多人以为是文本格式的~~ Word 文档[^4]）的变动。因此，如果希望用 Git 记录文件变动，务必采用纯文本格式文件。
 
 与 GitHub 网页端相较，GitHub 客户端并不具有编辑器的功能，因此你需要先用自己最喜爱的编辑器（~~如系统记事本~~）完成所有改动之后，再用 GitHub 的客户端审阅、提交。
 
 ### 3.3 参与协作
-GitHub 号称“世界最大同性交友网站”（当然妹子也还是不少的），由此一点即知：GitHub 的功能绝对不限于个人仓库的管理。参与协作是 GitHub 上最有趣的一件事，而且它比你想象得更加轻松。
+GitHub 号称“世界最大同性交友网站”（当然妹子也不少），由此一点即知：GitHub 的功能绝对不限于个人仓库的管理。参与协作是 GitHub 上最有趣的一件事，而且它比你想象得更加轻松。以下三种协作方式是最为常见的。
 
-**成为 collaborator**. 个体之间的相互协作，可以通过 collarorator 机制
+**成为协作者.** 个体之间的相互协作，常常通过协作者（collaborators）机制完成。在你的仓库中，可通过“Settings”选项卡下“Collaborators & Team”条目找到“Collaborators”的设置面板，进而通过用户名搜索并邀请其他用户与你一同协作。除了删除仓库等特殊操作之外，协作者拥有其他所有操作的权限。
 
-### 3.4 体验 GitHub 客户端
+**加入组织.** GitHub 上的一大亮点就是组织（organization）功能，每个人都可以创建一个组织，并邀请其他人加入其中。一个组织的性质类似于一个普通的 GitHub 用户。组织的管理者能以组织的名义新建、克隆仓库，组织的一般成员则可在组织所有的仓库中获取对应的权限、参与协作。与协作者机制相较，组织机制具有更灵活的权限机制，而且还有小组（teams）功能、团队信息公示等额外的工具。
+
+> `qyxf` 即是钱院学辅在 GitHub 上的组织。
+
+**Issue, Fork & Pull request.** 如果仅仅只是允许有权限的人参与协作，未免太过约束了——这样的协作，和封闭的开发模式差别不大。事实上，使 GitHub 社区始终活跃的，是更为灵活、自由的三项机制：问题区（Issues）、远程克隆（Fork，可译为“分叉”）与拉取请求（Pull requests，可简记为 PR）。
+
+- Issues：简单来说，Issues 是每个公开的 GitHub 仓库（或谓“项目”）附属的论坛，自动生成。Issues 主要是向项目的使用者——如热心的技术 Geek，也包括一般的软件用户——开放的，他们在使用、测试程序与代码时，可以随时将自己所发现的问题、想到的改进方案挂在 issues 页面，再由仓库的管理者处理、反馈这些请求。Issues 的亮点在于：每一个问题（“帖子”）都可以与这个仓库的具体版本、改动等关联起来。一方面，在 issue 中，用户可以引用仓库的某个版本加以说明；另一方面，开发者在处理这些问题之后，可以在 commit message 中标注对应的 issue 代号，引用这些问题，表示这次改动解决了对应的问题。（例如，读者可以浏览开源文档转换软件 pandoc 的[新版本发布页面](https://github.com/jgm/pandoc/releases)，其中以 `#XXXX` 代号标明的链接正对应着用户所提出的 issues。）
+- Fork：GitHub 允许你在没有权限的情况下参与协作，只要你将他人的仓库“fork”到自己这里。Fork 与 `clone` 的区别在于：后者只是将版本库的数据下载到你的电脑上，而前者则完全发生在 GitHub 平台以内。例如，用户 `hello-kitty` 将 `microsoft` 组织在 GitHub 上发布的 `vscode` 仓库 fork 一下，她的 GitHub 界面上就会出现一个名为 `hello-kitty/vscode` 的仓库。这份仓库的内容与 `microsoft` 的那份将没有任何差异（不过之后的更新并不会自动同步），且她将拥有对这个复制品的一切权限。
+- Pull requests：单纯把别人的仓库 fork 过来可没有什么用，你的改动并不会反映到原本的项目之上。Fork 功能必须配合着 pull requests 才能发挥作用。当在自己的那份复制品中作出相应的改动之后，你就可以向原本的那一个项目发起 pull request，要求项目的管理者将你的改动“拉取”[^5]到他们的项目中去。这就好比老师将你的作业批改之后，要求你订正自己的答案。在公开的仓库中，所有用户都有权 fork 和提交 pull requests，但是否接收这些 pull requests 则完全在于项目的管理者本身。他可以对这些 pull request 稍加评论，要求贡献者进一步改良；也可以假装度假，拖几天再回复；更可以毫不留情的驳回用户的请求。这样，就能够避免无聊之辈的恶意改动，更能够使开发与改进过程变得有序、可控。
+
+> 在 GitHub 中，issues 与 pull requests 使用同一个计数器（counter）。例如，某个仓库中提出的第一个 issue 被记为 `#1`，则随后发起的第一个 pull request 将被标记为 `#2`。这两者虽然机制有所差异，但都是对于项目的改进建议。项目管理者在填写 commit message 时，可以用这些带 `#` 的标号来引用项目中的 issue 或 pull request。
+
+采用哪种方式协作，主要取决于你的身份和需求。如果只是你和几个好朋友开发小型项目，在其中一人的旗下开辟仓库、再加 collaborators 功能即可；如果你是长期发展的团队之一员，加入对应的组织是更好的选择；如果你只是某个大型项目的“过路人”，但很想贡献自己的一点力量，提交 issue 或 pull request 自然是再好不过。
+
+> GitHub 所提供的入门教程中，[精通 issues](https://github.highlight.ink/mastering-issues/) 讲解了 issues 的参与及管理方针，[理解 GitHub 工作流](https://github.highlight.ink/github-flow/)讨论了在分支机制下协作的推荐方式，[分叉他人项目](https://github.highlight.ink/forking-projects/intro)则对 fork 与 pull requests 的流程进行了简明的介绍。可以一读。（此处提供的链接指向 Campfire 项目所贡献的中文翻译版本。）
+
 
 ## 4 Git 指南：进入深水区
-在开始下面的内容之前，首先需要[下载 Git](https://git-scm.com/downloads) 并安装之（或许你还需要一份[安装教程](https://git-scm.com/book/zh/v2/起步-安装-Git)）。
+如果你希望更加专业的组织和管理开源协作进程，GitHub 的网页端或客户端将不能满足你的需求。在此情况下，进一步学习 Git 本身的应用是非常必要的。
 
-### 4.1 本地创建
-在Git页面中，输入命令
+> <i class="fas fa-exclamation-triangle"></i> 学习 Git，或学习其他任何的技术，都是需要花费时间成本的。如果你打算从事计算机方面的工作或研究，这些成本一般不会白费，总会有丰厚的收获；如果并非如此，则应该在开始学习之前谨慎考虑：学习这些技术对我将来的发展帮助多大？要花费多大的时间成本？是否值得？
+> 
+> 如果你还没有打算学习 Git，[点此跳到下一节](#chapter-5)。
 
-    git clone /path/to/repository
+与界面精美的 GitHub 客户端不同，Git 本身并没有什么图形界面[^6]，主要在命令行上操作。好在这些命令并不复杂，只需要尝试几次就能够基本掌握。当然，如果你希望成为一个 Git 高手，则需要相当长时间的实践与学习提升。
 
+### 4.1 下载与安装 Git
 
-即可创建一个本地仓库的克隆版本（从现有的仓库中拷贝）。而
+在开始下面的内容之前，首先需要[下载](https://git-scm.com/downloads)并安装最新版本的 Git。你可能需要一份[安装教程](https://git-scm.com/book/zh/v2/起步-安装-Git)）。
 
-    git init
+> 在 GitHub 客户端的目录中，事实上已经内置了 Git 程序（否则你也没法在客户端中提交更改），但不建议读者配置实用这里的 Git。不用担心你自己安装的 Git 会与客户端内置的 Git 冲突，他们通常是“不相往来”的。可参考 Stack Overflow 上一篇略有些过时的问答：[What is the difference between Git for Windows and Github Desktop?](https://stackoverflow.com/questions/33428099/what-is-the-difference-between-git-for-windows-and-github-desktop)
 
-可从本地创建新目录。
+### 4.2 熟悉命令行：Git Bash
 
-初始化后，会在 newrepo 目录下会出现一个名为 .git 的目录，所有 Git 需要的数据和资源都存放在这个目录中。
+<span id="chapter-5"></span>
 
-### 4.2 加入文件
-    git add ./Handout3.tex
+### 4.3 使用 GUI
+如果你接触 Git 命令行已有一段时间了，就可以考虑安装一个图形用户界面（GUI）来提高自己的效率，并优化视觉体验。常见的 GUI 中，[Sourcetree](https://www.sourcetreeapp.com)、[TortoiseGit](https://tortoisegit.org) 与 [Fork](https://git-fork.com) 都是热门选项，读者可以任意选择一个；除此以外，在 [Visual Studio Code](https://code.visualstudio.com)、[Sublime Text](http://www.sublimetext.com) 等新生代编辑器中都有对 Git 的内置支持或可选插件，也可以作为 Git Bash 的辅助工具。
 
-当然还有其它的选项，比如add文件夹里面所有文件
+> 除非你对 Git 命令行或你所使用的 GUI 之一非常熟练，否则你不太可能用其中的一个替代另一个的功能。初学之时，可以针对的两者各自的优势，在
 
-    git add --all
+## 5 GitHub 的其他功能
+如果仅仅把 GitHub 当成一个代码托管平台，那可就是大大低估了这个网站了。GitHub 之所以能从程序员的小圈子里跳出来、成为门外汉都有所耳闻的新鲜名词，正是因为其有许多超出代码托管的新功能。这里仅对比较热门的几个应用简单介绍，读者可以对感兴趣的内容做些尝试。
 
+### 5.1 GitHub Flavored Markdown
 
-### 4.3 提交
-    git commit -m "Adding files"
+### 5.2 GitHub Pages
 
-将修改提交版本库
+### 5.3 Wiki 页面
 
-- 工作区：就是你在电脑里能看到的目录。
-- 暂存区：英文叫stage, 或index。一般存放在 ".git目录下" 下的index文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。
-- 版本库：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。
+### 5.4 发行版
 
-### 4.4 与远程同步
+### 5.5 探索 GitHub
 
-    git remote add origin git@github.com:edmundwsy/new.git
-
-将本地库与远程关联
-
-    git remote remove origin
-
-取消关联
-
-    git clone https://github.com/qyxf/Tutorials.git
-
-将我们远程的repo克隆至本地
-
-    git pull
-
-拉取远程更新，以在你的工作目录中 *获取（fetch）* 并 *合并（merge）* 远端的改动。
-
-    git push origin master
-
-    git push <远程主机名> <本地分支名>  <远程分支名>
-
-即是将本地的master分支推送到远程主机origin上的对应master分支， origin 是远程主机名，
-
-    git push -h
-
-### 4.5 设置公钥
-
-    git config --global user.name "My Name" 
-    git config --global user.email myEmail@example.com
-
-如果报错
-
-```powershell
-$ git push origin master                                 
-git@github.com: Permission denied (publickey).
-```
-
-在GitHub设置远程公钥就可以解决这个问题
-
-在GitHub网页端：Setting -> SSH Keys->New SSH key
-
-- title处填写：`id_rsa.pub`
-- `cat ~/.ssh/id_rsa.pub`
-  - 若没有，则`ssh-keygen -t rsa`
-  - 一路回车......
-  - 最后，输入`ssh -T git@github.com`确认OK即可。
-- 然后把这个复制到GitHub中，保存
-- 再尝试就ok了
-
-再解决不了了估计就是没有权限了。。。。。。请联系仓库管理员
-
-### 4.6 分支
-
-
-    git checkout -b feature_x
-
-创建一个叫做“feature_x”的分支，并切换过去：
-
-    git checkout master
-
-切换回主分支：
-
-    git branch -d feature_x
-
-再把新建的分支删掉：
-
-    git push origin <branch>
-
-除非你将分支推送到远端仓库，不然该分支就是 *不为他人所见的*
-
-### 4.7 合并分支
-
-
-要合并其他分支到你的当前分支（例如 master），执行：
-
-    git merge <branch>
-
-在这两种情况下，git 都会尝试去自动合并改动。遗憾的是，这可能并非每次都成功，并可能出现*冲突（conflicts）*。 这时候就需要你修改这些文件来手动合并这些*冲突（conflicts）*。改完之后，你需要执行如下命令以将它们标记为合并成功：
-
-    git add <filename>
-
-在合并改动之前，你可以使用如下命令预览差异：
-
-    git diff <source_branch> <target_branch>
-
-### 4.8 历史记录
-
-如果你想了解本地仓库的历史记录，最简单的命令就是使用: 
-
-    git log
-
-你可以添加一些参数来修改他的输出，从而得到自己想要的结果。 只看某一个人的提交记录:
-
-    git log --author=bob
-
-一个压缩后的每一条提交记录只占一行的输出:
-
-    git log --pretty=oneline
-
-或者你想通过 ASCII 艺术的树形结构来展示所有的分支, 每个分支都标示了他的名字和标签: 
-
-    git log --graph --oneline --decorate --all
-
-看看哪些文件改变了: 
-
-    git log --name-status
-
-这些只是你可以使用的参数中很小的一部分。更多的信息，参考：
-
-    git log --help
-
-## 5 一些问题
-> 冲突怎么办？
-
-合并分支，手动修改。建议先把自己的提交，然后`pull`，最后`commit`，可最大程度减少冲突的几率。
-
-## 6 其它教程
+## 6 拓展阅读
 以下这些教程较这里的更为详细，值得进一步阅读。
 
 - [git 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
@@ -360,3 +261,5 @@ https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b
 [^2]: 准确地说，Git并非较早诞生的版本控制软件，GitHub也远非最早的远程开源仓库（更早者有[SourceForge](https://sourceforge.net)、[Launchpad](https://launchpad.net/)等），但GitHub可以说是首次让**开源仓库**这个概念冲出了程序员的小圈子。
 [^3]: `clone`操作对本地的版本库同样有效——例如，你可以用此命令将一个在此目录下的版本库拷贝到彼目录。当然，一般并没有人做这样的事情。
 [^4]: Word 文档可以说是用 ZIP 方式压缩的 XML 文档（外加其所引用的一些多媒体对象）。如果你想理解前面这句话，不妨在自己的计算机上任找一个 `.docx` 文件，将其后缀名改成 `.zip`，解压缩后看看里面有些什么。
+[^5]: 注意，“拉取请求”是对项目管理者（而非贡献者）而言的；你所提交的更改，对你而言当然是 `push`，对于项目管理者而言则是 `pull`。
+[^6]: Git 自带两款分图形用户界面，分别用于查看版本历史（gitk）与提交改动（git-gui）。不过，它们的功能比较有限，界面也很不美观。可参考[Pro Git - 附录 A： 其它环境中的 Git - 图形界面](https://git-scm.com/book/zh/v2/附录-A%3A-其它环境中的-Git-图形界面)。
