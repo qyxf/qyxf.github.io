@@ -54,10 +54,11 @@
 
         <hr>
         
-        <blockquote>
-          {% if page.editor %} <p><i class="fas fa-pen-nib"></i> {{ page.editor | markdownify }}</p> {% endif %}
-          <p>{{ site.license_info }}</p>
-        </blockquote>
+        <blockquote><ul class="fa-ul">
+          {% if page.editor %} <li><span class="fa-li"><i class="fas fa-pen-nib"></i></span>{{ page.editor | markdownify }}{% endif %}
+          {% if page.date %} <li><span class="fa-li"><i class="fas fa-clock"></i></span> 本页面最后修改于 {{ page.date | date:'%Y 年 %m 月 %d 日' }}。</li> {% endif %}
+          <li><span class="fa-li"><i class="fas fa-exclamation-triangle"></i></span>{{ site.license_info }}</li>
+        </ul></blockquote>
       </section>
       <footer>
         <p><small>{{ site.organization_full }}出品<br>托管于 <a href="https://pages.github.com"><i class="fab fa-github-alt"></i> GitHub Pages</a>
