@@ -53,7 +53,12 @@
         {{ content }}
 
         <hr>
-        <blockquote><p>{{ site.license_info }}</p></blockquote>
+        
+        <blockquote>
+          {% if page.editor %} <p><i class="fas fa-pen-nib"></i> {{ page.editor | markdownify }}</p> {% endif %}
+          <p><i class="fas fa-clock"></i> 本页面最后修改于 {{ page.last_modified_at | date:'%Y 年 %m 月 %d 日 %H:%M' }}。</p>
+          <p>{{ site.license_info }}</p>
+        </blockquote>
       </section>
       <footer>
         <p><small>{{ site.organization_full }}出品<br>托管于 <a href="https://pages.github.com"><i class="fab fa-github-alt"></i> GitHub Pages</a>

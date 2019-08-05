@@ -10,3 +10,5 @@ license_info: >
   本站发布内容均采用<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享 BY-NC-ND 4.0
   协议</a>进行许可。使用者可在给出来源之前提下转载本站作品，但不得对本作品进行修改、二次创作或用于商业用途。
 
+gem:
+  - jekyll-last-modified-at
