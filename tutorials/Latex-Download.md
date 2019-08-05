@@ -1,3 +1,8 @@
+---
+date: 2019-7-14
+author: '[![自动化钱71吴思源](person)](@edmundwsy)，[![能动少C71尤佳睿](person)](@xjtu-blacksmith)'
+---
+
 # LaTeX 环境配置教程
 
 ## 环境

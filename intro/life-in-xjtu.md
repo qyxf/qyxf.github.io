@@ -1,3 +1,9 @@
+---
+date: 2019-7-21
+author: '[钱学森书院新手手册编写组](/BookHub/005.freshman-manual)'
+editor: '[![物试81华润森](person)](@HuaRensen)'
+---
+
 # 钱学森书院新生指南
 
 > 本页面是“新生指南”的在线版本，内容实时更新。如果您希望下载经过精心排版的**电子版本**，请点[这里](https://github.com/qyxf/freshman-manual)访问代码仓库。

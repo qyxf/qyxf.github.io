@@ -1,3 +1,8 @@
+---
+date: 2019-5-22
+author: '[![自动化钱71吴思源](person)](@edmundwsy)，[![能动少C71尤佳睿](person)](@xjtu-blacksmith)'
+---
+
 # OneNote 入门
 
 ## 0. 什么是OneNote

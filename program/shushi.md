@@ -1,6 +1,9 @@
-# 数学试验班培养方案
+---
+date: 2019-8-6
+author: '[![能动少C71尤佳睿](person)](@xjtu-blacksmith)'
+---
 
-> 参与编辑：[![能动少C71尤佳睿](person)](@xjtu-blacksmith)。
+# 数学试验班培养方案
 
 ## 大一上（第1学期）
 - 数学分析1

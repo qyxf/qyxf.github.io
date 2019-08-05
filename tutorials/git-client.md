@@ -1,8 +1,9 @@
-# 关于 Git 客户端的一篇不太正经的介绍
-> 最后更新：2019年8月5日
->
-> 参与编辑：[![自动化钱71吴思源](person)](@edmundwsy)
+---
+date: 2019-8-6
+author: '[![自动化钱71吴思源](person)](@edmundwsy)'
+---
 
+# 关于 Git 客户端的一篇不太正经的介绍
 
 ## Git Extensions 简述
 

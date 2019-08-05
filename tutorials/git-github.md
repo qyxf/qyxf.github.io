@@ -1,7 +1,9 @@
+---
+date: 2019-8-6
+author: '[![自动化钱71吴思源](person)](@edmundwsy)，[![能动少C71尤佳睿](person)](@xjtu-blacksmith)'
+---
+
 # Git 与 GitHub 快速上手教程
-> 最后修改时间： 2019年8月5日
-> 
-> 参与编辑：[![自动化钱71吴思源](person)](@edmundwsy)，[![能动少C71尤佳睿](person)](@xjtu-blacksmith)
 
 ## 1 什么是 GitHub？
 GitHub 名声在外，已经不是一两年了；但是，许多人并不清楚这是怎样的一个“网站”。那么，GitHub 是做什么的呢？
