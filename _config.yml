@@ -1,4 +1,4 @@
-title: 钱院学辅信息站
+﻿title: 钱院学辅信息站
 slogan: 钱院学辅 - Qian Yuan Xue Fu
 organization_full: 西安交通大学钱学森书院学业辅导中心
 theme: jekyll-theme-leap-day
@@ -6,7 +6,6 @@ plugins:
   - jekyll-mentions
 
 license_info: >
-  <i class="fas fa-exclamation-triangle"></i>
   本站发布内容均采用<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享 BY-NC-ND 4.0
   协议</a>进行许可。使用者可在给出来源之前提下转载本站作品，但不得对本作品进行修改、二次创作或用于商业用途。
 
