@@ -1,6 +1,9 @@
-# 计算机试验班培养方案
+---
+date: 2019-8-6
+author: '[![计试71韩意](person)](@ApproachingScience)，[![计试71朱泽荧](person)](@zzylol)'
+---
 
-> 参与编辑：[![计试71韩意](person)](@ApproachingScience)、[![计试71朱泽荧](person)](@zzylol)。
+# 计算机试验班培养方案
 
 ## 大一上（第1学期）
 - 高等数学1
