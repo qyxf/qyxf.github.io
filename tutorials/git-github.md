@@ -1,7 +1,5 @@
 # Git 与 GitHub 快速上手教程
-> <i class="fas fa-exclamation-triangle"></i> 本文档还在编辑之中。![progress-50%25-yellow](shield)
-> 
-> 最后修改时间： 2019年7月29日
+> 最后修改时间： 2019年8月5日
 > 
 > 参与编辑：[![自动化钱71吴思源](person)](@edmundwsy)，[![能动少C71尤佳睿](person)](@xjtu-blacksmith)
 
@@ -10,7 +8,9 @@ GitHub 名声在外，已经不是一两年了；但是，许多人并不清楚�
 
 说到 GitHub，就不能不介绍 Git。[Git](https://git-scm.com) 是一个**版本控制软件**，这类软件能够精确的记录制定目录下代码的增删变动，在必要时允许还原到原来的状态。当然，对 Git 而言，其还有许多特有的功能，在此暂不详述[^0]。Git 并不仅仅只是一个在本地运行的软件，它能够实现分布式的版本控制——也就是说，通过一个远程的**代码托管平台**，Git 可以帮助程序员实现多个分立终端上的共同开发、信息交互与同步，从而可以实现多人协作。
 
-而[GitHub](https://github.com) 则正是一个基于 Git 而建立的**在线代码托管平台**，用户可以在其上建立属于自己或与他人共享的**代码仓库**，并在此基础上实现版本控制、团队协作，甚至开源软件发布、网站建设、文档维护等诸多超出 Git 固有功能以外的事情。至 2019 年四月，GitHub 上已托管超过一亿个开源代码仓库，有超过 3600 万名用户活跃其中[^1]。
+> 一个需要记住的事实：Git 的最初作者是 Linux 之父 Linus Torvalds，因此这个程序有一些特性与 UNIX/Linux 系统相关（不过一般影响不大），需要 Windows 用户逐渐熟悉。
+
+而[GitHub](https://github.com) 则正是一个基于 Git 而建立的**在线代码托管平台**，用户可以在其上建立属于自己或与他人共享的**代码仓库**，并在此基础上实现版本控制、团队协作，甚至开源软件发布、网站建设、文档维护等诸多超出 Git 固有功能以外的事情。至2019年四月，GitHub 上已托管超过一亿个开源代码仓库，有超过3600万名用户活跃其中[^1]。
 
 GitHub 的出现[^2]，使我们不再担心备份与远程协作：一切提交，均有记录。
 
@@ -50,6 +50,8 @@ Git 是一个**版本控制系统**，即可以记录一个目录（文件夹）
 > 
 > 很显然，在以上三个储存区中，只有工作区储存着真正的美食，而暂存区和版本库记录的不过是照片——在代码管理过程中，相应的事物则叫做“快照”。至于为什么要在工作区与版本库之间多加上暂存区这一环节，打一个比方便是：如果你用手机拍的每一张照片都会自动发布在微博上，你还敢轻易的拍照片吗？还能“仔细筛选”吗？
 
+<span id="git-steps"></span>
+
 当然，以上的这个例子，与 Git 的实际运作方式仍有很大不同。最大的不同在于：在现实世界中，你不能通过手机或微博上的照片把真实的菜品还原出来；而在 Git 中，代码版本管理的最大意义，恰在于你总是可以由**版本库**（有时也可以是**暂存区**）还原、覆盖你的**工作区**。这样，在代码的编写过程中若出现问题，随时可以还原回之前的状态；同时，你也可以调出一段时间以前的老版本，执行对比、检查、多分支开发（从一个相同的版本结点上分道扬镳，开发出不同的软件，这是开源社区常常出现的事情）等诸多功能。
 
 为了理清这三者的关系，读者不妨先从下面这几条原则开始：
@@ -65,7 +67,7 @@ Git 是一个**版本控制系统**，即可以记录一个目录（文件夹）
 
 ![三区示意图](https://zhouhao.me/img/git_reset_20170826.png)
 
-<p style="text-align: center"><small>(图片来源：<a href="https://zhouhao.me/2017/08/27/detailed-explanation-of-git-reset/">Git 学习笔记 - git reset 详解</a>，作者：<a href="https://github.com/howzy">howzy</a>)</small></p>
+<p style="text-align: center" id="git-command">><small>(图片来源：<a href="https://zhouhao.me/2017/08/27/detailed-explanation-of-git-reset/">Git 学习笔记 - git reset 详解</a>，作者：<a href="https://github.com/howzy">howzy</a>)</small></p>
 
 ### 2.2 版本管理命令
 观察上面所给出的示意图，读者可以发现其中用若干箭头标明了文件流转的方向，并注有对应的英文说法。例如，文件从工作区记录到暂存区的操作，被称作`add`；而将暂存区中的记录正式提交到版本库内，则被称作`commit`。这些英文词汇，就是在 Git 客户端中需要调用的**命令名称**。对于初级用户而言，以下几个操作是需要牢记在心的：
@@ -192,7 +194,7 @@ GitHub 号称“世界最大同性交友网站”（当然妹子也不少），�
 
 > `qyxf` 即是钱院学辅在 GitHub 上的组织。
 
-**Issue, Fork & Pull request.** 如果仅仅只是允许有权限的人参与协作，未免太过约束了——这样的协作，和封闭的开发模式差别不大。事实上，使 GitHub 社区始终活跃的，是更为灵活、自由的三项机制：问题区（Issues）、远程克隆（Fork，可译为“分叉”）与拉取请求（Pull requests，可简记为 PR）。
+**Issue, Fork & Pull request.** 如果仅仅只是允许有权限的人参与协作，未免太过约束了——这样的协作，和封闭的开发模式差别不大。事实上，使 GitHub 社区始终活跃的，是更为灵活、自由的三项机制：问题区（Issues）、远程克隆（Fork，可译为“分叉”或“派生”）与拉取请求（Pull requests，也可译为“合并请求”）。
 
 - Issues：简单来说，Issues 是每个公开的 GitHub 仓库（或谓“项目”）附属的论坛，自动生成。Issues 主要是向项目的使用者——如热心的技术 Geek，也包括一般的软件用户——开放的，他们在使用、测试程序与代码时，可以随时将自己所发现的问题、想到的改进方案挂在 issues 页面，再由仓库的管理者处理、反馈这些请求。Issues 的亮点在于：每一个问题（“帖子”）都可以与这个仓库的具体版本、改动等关联起来。一方面，在 issue 中，用户可以引用仓库的某个版本加以说明；另一方面，开发者在处理这些问题之后，可以在 commit message 中标注对应的 issue 代号，引用这些问题，表示这次改动解决了对应的问题。（例如，读者可以浏览开源文档转换软件 pandoc 的[新版本发布页面](https://github.com/jgm/pandoc/releases)，其中以 `#XXXX` 代号标明的链接正对应着用户所提出的 issues。）
 - Fork：GitHub 允许你在没有权限的情况下参与协作，只要你将他人的仓库“fork”到自己这里。Fork 与 `clone` 的区别在于：后者只是将版本库的数据下载到你的电脑上，而前者则完全发生在 GitHub 平台以内。例如，用户 `hello-kitty` 将 `microsoft` 组织在 GitHub 上发布的 `vscode` 仓库 fork 一下，她的 GitHub 界面上就会出现一个名为 `hello-kitty/vscode` 的仓库。这份仓库的内容与 `microsoft` 的那份将没有任何差异（不过之后的更新并不会自动同步），且她将拥有对这个复制品的一切权限。
@@ -221,10 +223,94 @@ GitHub 号称“世界最大同性交友网站”（当然妹子也不少），�
 > 在 GitHub 客户端的目录中，事实上已经内置了 Git 程序（否则你也没法在客户端中提交更改），但不建议读者配置实用这里的 Git。不用担心你自己安装的 Git 会与客户端内置的 Git 冲突，他们通常是“不相往来”的。可参考 Stack Overflow 上一篇略有些过时的问答：[What is the difference between Git for Windows and Github Desktop?](https://stackoverflow.com/questions/33428099/what-is-the-difference-between-git-for-windows-and-github-desktop)
 
 ### 4.2 熟悉命令行：Git Bash
+如果你已经使用过 Windows 系统的“命令提示符”（CMD）、Powershell，或者已经在 OS X 与 Linux 系统上使用过 bash，则以下的内容并不难理解。
 
-<span id="chapter-5"></span>
+> 以下仅以 Windows 系统为例介绍 Git 命令行的使用方法，其他系统上的内容将待日后更新。
+
+安装 Git 之后，你可以在计算机的 D 盘或 E 盘中新建一个名为 Git 或 GitHub 的文件夹，专门用来存放代码仓库。在资源管理器中切换进这个文件夹内，打开右键菜单，选中其中一个名为“Git Bash Here”的条目，你就可以在这个目录下唤出 Git 命令行界面。这个命令行的界面与你安装时所做的选择有关；通常情况下，你将安装一个在 Windows 上实现的所谓 `bash` 的程序，以及一个显示它的终端 `mintty`。
+
+> `bash` 是 Linux 与 OS X 系统上默认的命令行程序[^7]（shell），其作用类似于 Windows 系统下的命令提示符（CMD）。采用这个程序（而非 Windows 系统），主要是基于 Git 所要求的跨平台性质——以及它来源于 Linux。`mintty` 则可以理解为容纳 `bash` 程序的平台。
+
+Git 的命令行界面与 Windows 的命令行差不多，不过前置的提示符号变成了一个美元号 `$`。在这个符号以后，你可以输入一些常用的命令，如
+
+    $ ls
+
+可以列出当前目录下的所有文件与子目录（在 CMD 中，这命令是 `dir`），而命令
+
+    $ cd docs
+
+可以将当前所在的位置切换到当前目录下名为 `docs` 的子目录内。这些文件级别的操作，通常可以在 Windows 系统的程序管理器中实现，所以可以不必关心。
+
+这些命令都与 Git 没有关系，只是 `bash` 中已经集成的基本命令。那么，怎么调用 Git 的命令呢？只需要按这样的形式输入命令即可：
+
+    $ git <COMMAND>
+
+其中 `<COMMAND>` 的位置上填上之前所提到的那些命令——如 `pull`、`push` 即可。在这里，命令 `git` 指明要命令行程序打开 Git 程序，而 `<COMMAND>` 乃至其后可能需要的参数（如文件名、附加选项等）则是赋给 Git 执行的参数。例如，如果你在命令行中输入
+
+    $ git add README.md
+
+就意味着你要求将当前目录下名为 `README.md` 的文件存入暂存区。
+
+> 如果你忘记 Git 的命令了，不用担心；你可以[点这里](#git-command)回到之前的位置，也可以[从这里](https://git-scm.com/book/zh/v2/附录-C%3A-Git-命令-设置与配置)开始阅读、浏览《Pro Git》一书中的“常用 Git 命令大全”。
+> 
+> 不必因为记不住命令而愧疚、担忧；你随时可以查阅参考资料（这不是考试），也可以通过一段时间的实践轻松记住所有的常用命令。
+
+使用 Git 之前，需要先配置一些基本信息。不可或缺的是这两项：
+
+```sh
+$ git config --global user.name "Zhang San"
+$ git config --global user.email zhangsan@example.com
+```
+
+即你需要配置自己的名称与邮箱。这两条信息在之后的操作中是必要的标识符。除此以外，由于需要与 GitHub 交互，你自然应该在 Git 中“登录”到 GitHub 上。最好的方式，是通过名为 SSH 公匙的机制。但对初学者而言，这个问题也可放在一边：第一次执行 `push` 操作时，Git 将会自动弹出询问你 GitHub 账号、密码的界面，并由此帮你配置公匙，整个流程与网页登陆几乎没有差别。
+
+与用鼠标操作的图形化程序相较，命令行的一大妙处在于：你可以像默写作文一样轻松地完成你所需要的事情。我们不妨想象这样一个工作情景：你作为 `qyxf` 组织的一名成员，需要在一台刚刚安装了 Git 的电脑上开始工作，为组织旗下的 `qyxf-sets` 仓库提交一些改动。那么，你的整个工作流程大致是这个样子（每一个命令的反馈消息都已略去）：
+
+```sh
+# 第一步：克隆 GitHub 上的远程仓库（网址外的引号是可选的）
+$ git clone "https://github.com/qyxf/qyxf-sets"
+
+# 从你的当前目录切换到仓库目录中
+$ cd qyxf-sets
+
+# 第二步：把命令行撂在一边，在外部程序中对 qyxf-sets 的文件做些修改
+# 如果你熟悉在命令行中使用像 Vim 一样的编辑器，也可以直接这样
+# （否则，不要这样做）
+$ vim README.md
+
+# 完成一切修改之后，先检查一下工作区中发生了哪些改动
+# 此步命令将会列出你所作出的改动
+$ git status
+
+# 第三步：将你想要的改动记录到暂存区中
+# 下面这条是记录所有改动
+$ git add .
+# 或者，你可以只加入某一个文件，例如只加入根目录下的 README.md 文件
+$ git add README.md
+
+# 你可以再一次使用 status 命令，确认改动都已被记录
+$ git status
+
+# 第四步：将暂存区中的改动提交到版本库
+# 这里的 -m 参数表明：提交只有一行的 commit message，后面紧跟信息
+# （建议这样去做，否则你将会与你所不熟悉的 Vim 相遇）
+$ git commit -m "修改一些文件"
+
+# 第五步：在提交到 GitHub 之前，再次同步，避免冲突
+$ git pull
+
+# 第六步：将改动发布到 GitHub 上
+# 如果你是第一次这样做，可能需要按提示输入账号密码
+$ git push
+```
+
+> 读者可以[点此](#git-steps)回看之前所提到的 Git 工作流程，与这里的具体代码、步骤一一对应。除此以外，在 GitHub Guides 中，[Git 手册](https://github.highlight.ink/git-handbook/github)也给出了一些有参考价值的命令实例。
+
+Git 的中的命令可远不止这些，进一步的讲解已经超出“上手教程”的范畴。读者可以在[《Pro Git》](https://git-scm.com/book/zh/v2/)中找到更多的知识，自己钻研。（不过，与啃书相较，在实践中进步也许是更好的选择！）
 
 ### 4.3 使用 GUI
+<span id="chapter-5"></span>
+
 如果你接触 Git 命令行已有一段时间了，就可以考虑安装一个图形用户界面（GUI）来提高自己的效率，并优化视觉体验。常见的 GUI 中，[Sourcetree](https://www.sourcetreeapp.com)、[TortoiseGit](https://tortoisegit.org) 与 [Fork](https://git-fork.com) 都是热门选项，读者可以任意选择一个；除此以外，在 [Visual Studio Code](https://code.visualstudio.com)、[Sublime Text](http://www.sublimetext.com) 等新生代编辑器中都有对 Git 的内置支持或可选插件，也可以作为 Git Bash 的辅助工具。
 
 > 除非你对 Git 命令行或你所使用的 GUI 之一非常熟练，否则你不太可能用其中的一个替代另一个的功能。初学之时，可以针对的两者各自的优势，在
@@ -233,27 +319,43 @@ GitHub 号称“世界最大同性交友网站”（当然妹子也不少），�
 如果仅仅把 GitHub 当成一个代码托管平台，那可就是大大低估了这个网站了。GitHub 之所以能从程序员的小圈子里跳出来、成为门外汉都有所耳闻的新鲜名词，正是因为其有许多超出代码托管的新功能。这里仅对比较热门的几个应用简单介绍，读者可以对感兴趣的内容做些尝试。
 
 ### 5.1 GitHub Flavored Markdown
+> 此处并不介绍 Markdown 的概念，或 GitHub Flavored Markdown (GFM) 的语法。
+
+可以毫不夸张的说，GitHub 对 Markdown 的支持是 Markdown 得以推广的主要原因之一。在 GitHub 上，几乎所有的多行文本框都用 Markdown 渲染，以至于 GitHub 上的首要生存技能是 Markdown 而非 Git！也正因为如此，很多人以为 Markdown 就是 GFM，所以当他们到其他版本的 Markdown 中发现一些功能（例如表格、自动链接）不能实现时，甚至会认为这些 Markdown 引擎“不标准”。
+
+Markdown 在以下几个场合是尤为重要的：
+
+- 文档撰写：读者最先能想到的 Markdown 文档，可能就是各个开源仓库首页上展示的 `README` 了。反过来，如果你发现自己电脑中某个软件里有 `README.md` 这样的 Markdown 文档，则它很有可能是发布在 GitHub 上的开源软件。
+- Issues：问题区当然支持 Markdown，因此你可以在帖子里轻松地插图、列表，甚至排版源代码。
+- 看板（Project）：通过 GFM 拓展的复选框功能，你可以在 Project 面板中新建任务卡片，促进项目进程。
+
+Markdown 的应用范围当然远不止这些，你可以自己发现更多的应用。
 
 ### 5.2 GitHub Pages
+GitHub Pages 是由 GitHub 提供的一项静态网站托管服务，它可以将一个代码仓库由 Jekyll、Hexo 或 Hugo 等流行的网站/博客生成程序解析成一个网站，并发布在互联网上。与传统的网站或 Wordpress 等专业博客程序相较，GitHub Pages 的最大优势就是**简单**：你不需要任何网页制作、网站建设的技术，更不需要维护服务器，只要熟悉 Markdown 就能搭起一整个博客。
 
-### 5.3 Wiki 页面
+> 钱院学辅信息站正是由 GitHub Pages 托管的，由 Jekyll 生成。
 
-### 5.4 发行版
+借助于 GitHub 本身的强大特性与 Markdown 的诸多功能，GitHub Pages 具有诸多几乎无可替代的优点。例如，GitHub Pages 可以直接在代码仓库的文档分支下生成，由此即可一键生成项目的网站，免去了程序开发者建设、维护、美化网站的额外成本；页面全部由 Markdown 代码生成[^8]，结构简单、改动方便，也易于同步、迁移到其他平台上；周边生态丰富，你可以很容易到找到美观的页面主题、插件，应用到你的网站中。
 
-### 5.5 探索 GitHub
+> GitHub Guides 中的 [GitHub Pages 入门](https://github.highlight.ink/github-pages/making-changes)是一篇很好的教程。
 
 ## 6 拓展阅读
-以下这些教程较这里的更为详细，值得进一步阅读。
+如果想要系统地学习 Git，在线发布的[《Pro Git》](https://git-scm.com/book/zh/v2)无疑是第一选择。对于初学者，此书的[第一章：起步](https://git-scm.com/book/zh/v2/起步-关于版本控制)、[第二章：Git 基础](https://git-scm.com/book/zh/v2/Git-基础-获取-Git-仓库)、[第六章：GitHub](https://git-scm.com/book/zh/v2/GitHub-账户的创建和配置)与[附录 C：Git 命令](https://git-scm.com/book/zh/v2/附录-C%3A-Git-命令-设置与配置)是应当仔细阅读的；之后，可以再选读其他章节。
 
-- [git 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
-- [菜鸟教程 - git教程](http://www.runoob.com/git/git-tutorial.html)
-- [廖雪峰Git教程](
-https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+关于 GitHub，以上所提到的《Pro Git》第六章就是一份非常有水准的教程（只有页面截图版本较老）。GitHub 所提供的 [GitHub Guides](https://guides.github.com)（你可以读[中文版](https://github.highlight.ink)）则是非常适于新手入门的“食谱”（cookbook），在前面的正文中已经反复提到。除此以外，以下的这些在线教程也可供参考：
 
-最后，在熟悉了GitHub的基本使用方法后，别忘了关注我们的作品！
+- [Git 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)：只需要 10 分钟就能读完的精美“绘本”。
+- [Git 教程 | 菜鸟教程](http://www.runoob.com/git/git-tutorial.html)：章节精简，方便查阅。
+- [廖雪峰 Git 教程](
+https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)：内容详细，附有视频演示。
 
-- [钱院学辅的GitHub主页](https://github.com/qyxf)
-- [钱院学辅书库（BookHub）](https://github.com/qyxf/BookHub)
+最后，在熟悉了 GitHub 的使用方法后，别忘了关注我们的作品！
+
+- [钱院学辅的 GitHub 主页](https://github.com/qyxf)
+- [钱院学辅·书库](https://github.com/qyxf/BookHub)
+
+> 对于本文档有任何意见、疑惑、改进建议，请到信息站的[问题区](https://github.com/qyxf/qyxf.github.io/issues)及时反馈，我们深表感激！
 
 <!--- 引用 --->
 [^0]: 想要详细的学习Git的使用，可参考Git的官方在线教程：[Pro Git](https://gitee.com/progit/index.html)——这里提供的是[码云](https://gitee.com/)上的中文翻译。
@@ -263,3 +365,5 @@ https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b
 [^4]: Word 文档可以说是用 ZIP 方式压缩的 XML 文档（外加其所引用的一些多媒体对象）。如果你想理解前面这句话，不妨在自己的计算机上任找一个 `.docx` 文件，将其后缀名改成 `.zip`，解压缩后看看里面有些什么。
 [^5]: 注意，“拉取请求”是对项目管理者（而非贡献者）而言的；你所提交的更改，对你而言当然是 `push`，对于项目管理者而言则是 `pull`。
 [^6]: Git 自带两款分图形用户界面，分别用于查看版本历史（gitk）与提交改动（git-gui）。不过，它们的功能比较有限，界面也很不美观。可参考[Pro Git - 附录 A： 其它环境中的 Git - 图形界面](https://git-scm.com/book/zh/v2/附录-A%3A-其它环境中的-Git-图形界面)。
+[^7]: “命令行程序”究竟是什么，这里无法解释清楚了，也没有太大的必要。
+[^8]: 当然，纯粹的 HTML 代码也是支持的，不过一般而言没有必要（除非是在个别页面上有特殊的样式、脚本需求）。
