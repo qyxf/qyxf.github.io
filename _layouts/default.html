@@ -56,7 +56,6 @@
         
         <blockquote>
           {% if page.editor %} <p><i class="fas fa-pen-nib"></i> {{ page.editor | markdownify }}</p> {% endif %}
-          <p><i class="fas fa-clock"></i> 本页面最后修改于 {{ page.last_modified_at | date:'%Y 年 %m 月 %d 日 %H:%M' }}。</p>
           <p>{{ site.license_info }}</p>
         </blockquote>
       </section>
