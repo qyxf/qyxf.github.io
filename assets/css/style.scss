@@ -196,3 +196,11 @@ kbd {
     border-radius: 2px;
     background: #eee;
 }
+
+header, #banner, #banner .fork {
+    position: absolute;
+}
+
+header {
+    background: linear-gradient(to right, #000080 0%, #801080 60%);
+}
