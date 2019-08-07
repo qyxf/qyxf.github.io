@@ -117,6 +117,10 @@ a.button {
     }
     a.button.fork {
         display: none!important;
+@media print, screen and (max-width: 400px)
+{
+    #banner li#log {
+        display: none;
     }
 }
 
