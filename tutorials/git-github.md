@@ -41,11 +41,11 @@ Git 是一个**版本控制系统**，即可以记录一个目录（文件夹）
 > 
 > 很显然，在以上三个储存区中，只有工作区储存着真正的美食，而暂存区和版本库记录的不过是照片——在代码管理过程中，相应的事物则叫做“快照”。至于为什么要在工作区与版本库之间多加上暂存区这一环节，打一个比方便是：如果你用手机拍的每一张照片都会自动发布在微博上，你还敢轻易的拍照片吗？还能“仔细筛选”吗？
 
-<span id="git-steps"></span>
-
 当然，以上的这个例子，与 Git 的实际运作方式仍有很大不同。最大的不同在于：在现实世界中，你不能通过手机或微博上的照片把真实的菜品还原出来；而在 Git 中，代码版本管理的最大意义，恰在于你总是可以由**版本库**（有时也可以是**暂存区**）还原、覆盖你的**工作区**。
 
 为了理清这三者的关系，读者不妨先从下面这几条原则开始：
+
+<span id="git-steps"></span>
 
 1. 工作区就是电脑窗口上看到的东西，存在硬盘里。
 2. 暂存区和版本库都是“看不见”的，它们以特殊文件的形式存在于工作区中一个名为 `.git` 的神秘文件夹之下。
@@ -58,7 +58,7 @@ Git 是一个**版本控制系统**，即可以记录一个目录（文件夹）
 
 ![三区示意图](https://zhouhao.me/img/git_reset_20170826.png)
 
-<p style="text-align: center" id="git-command">><small>(图片来源：<a href="https://zhouhao.me/2017/08/27/detailed-explanation-of-git-reset/">Git 学习笔记 - git reset 详解</a>，作者：<a href="https://github.com/howzy">howzy</a>)</small></p>
+<p style="text-align: center" id="git-command"><small>(图片来源：<a href="https://zhouhao.me/2017/08/27/detailed-explanation-of-git-reset/">Git 学习笔记 - git reset 详解</a>，作者：<a href="https://github.com/howzy">howzy</a>)</small></p>
 
 ### 2.2 版本管理命令
 观察上面所给出的示意图，读者可以发现其中用若干箭头标明了文件流转的方向，并注有英文描述。例如，文件从工作区记录到暂存区的操作，被称作 `add` ；而将暂存区中的记录正式提交到版本库内，则被称作 `commit` 。这些英文词汇，就是在 Git 客户端中需要调用的**命令名称**。对于初级用户而言，以下几个操作是需要牢记在心的：
@@ -197,7 +197,7 @@ GitHub 号称“世界最大同性交友网站”（当然妹子也不少），�
 
 > <i class="fas fa-exclamation-triangle"></i> 学习 Git，或学习其他任何的技术，都是需要花费时间成本的。如果你打算从事计算机方面的工作或研究，这些成本一般不会白费，总会有丰厚的收获；如果并非如此，则应该在开始学习之前谨慎考虑：学习这些技术对我将来的发展帮助多大？要花费多大的时间成本？是否值得？
 > 
-> 如果你还没有打算学习 Git，[点此跳到下一节](#chapter-5)。
+> 如果你还没有打算学习 Git，[点此跳到下一节](#5-GitHub-的其他功能)。
 
 与界面精美的 GitHub 客户端不同，Git 本身并没有什么图形界面[^6]，主要在命令行上操作。好在这些命令并不复杂，只需要尝试几次就能够基本掌握。当然，如果你希望成为一个 Git 高手，则需要相当长时间的实践与学习提升。
 
@@ -236,7 +236,7 @@ Git 的命令行界面与 Windows 的命令行差不多，不过前置的提示�
 
 就意味着你要求将当前目录下名为 `README.md` 的文件存入暂存区。
 
-> 如果你忘记 Git 的命令了，不用担心；你可以[点这里](#git-command)回到之前的位置，也可以[从这里](https://git-scm.com/book/zh/v2/附录-C%3A-Git-命令-设置与配置)开始阅读、浏览《Pro Git》一书中的“常用 Git 命令大全”。
+> 如果你忘记 Git 的命令了，不用担心；你可以[点这里](#2-2-版本管理命令)回到之前的位置，也可以[从这里](https://git-scm.com/book/zh/v2/附录-C%3A-Git-命令-设置与配置)开始阅读、浏览《Pro Git》一书中的“常用 Git 命令大全”。
 > 
 > 不必因为记不住命令而愧疚、担忧；你随时可以查阅参考资料（这不是考试），也可以通过一段时间的实践轻松记住所有的常用命令。
 
@@ -331,7 +331,7 @@ GitHub Pages 是由 GitHub 提供的一项静态网站托管服务，它可以�
 关于 GitHub，以上所提到的《Pro Git》第六章就是一份非常有水准的教程（只有页面截图版本较老）。GitHub 所提供的 [GitHub Guides](https://guides.github.com)（你可以读[中文版](https://github.highlight.ink)）则是非常适于新手入门的“食谱”（cookbook），在前面的正文中已经反复提到。除此以外，以下的这些在线教程也可供参考：
 
 - [Git 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)：只需要 10 分钟就能读完的精美“绘本”。
-- [Git 教程 | 菜鸟教程](http://www.runoob.com/git/git-tutorial.html)：章节精简，方便查阅。
+- [菜鸟教程：Git 教程](http://www.runoob.com/git/git-tutorial.html)：章节精简，方便查阅。
 - [廖雪峰 Git 教程](
 https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)：内容详细，附有视频演示。
 
