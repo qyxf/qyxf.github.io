@@ -151,7 +151,6 @@ nav {
     top: unset;
     width: unset;
     margin-left: unset;
-    margin-right: 20%;
     text-align: left; 
 }
 
@@ -180,9 +179,9 @@ nav {
 /* 导航菜单内容器：设置滚动条 */
 #nav-bar {
     height: auto;
-    width: 120%;
-    overflow-y: auto;
+    width: 100%;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* 导航栏列表：清除底部margin，并扩展左侧padding */
