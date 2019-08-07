@@ -109,14 +109,21 @@ a.button {
         display: unset;
         position: absolute;
         top: 55px;
-        padding-right: 0pt;
+        padding-right: 0;
         width: 99.5%;
     }
-    header {
-        margin-bottom: 30pt;
+    #banner #logo {
+        display: none;
     }
-    a.button.fork {
-        display: none!important;
+    #banner .downloads {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    section {
+        margin-top: 100px;
+    }
+}
+
 @media print, screen and (max-width: 400px)
 {
     #banner li#log {
