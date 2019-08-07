@@ -77,6 +77,17 @@ a.button {
     #nav-wrapper {
         display: none;
     }
+    #banner {
+        width: auto;
+        max-width: 99.5%;
+    }
+    header {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    nav {
+        display: unset;
+    }
 }
 
 /*
@@ -85,6 +96,13 @@ a.button {
 - 修改标题间距
 - 隐藏项目按钮
 */
+@media print, screen and (max-width: 530px)
+{
+    #banner li#project-page {
+        display: none;
+    }
+}
+
 @media print, screen and (max-width: 480px)
 {
     #banner{
