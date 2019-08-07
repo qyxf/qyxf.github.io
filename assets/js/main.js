@@ -35,21 +35,11 @@ $(function() {
   });
 
   $("nav ul li").on("click", "a", function(event) {
-    var position = $($(this).attr("href")).offset().top - 190;
+    var position = $($(this).attr("href")).offset().top;
     $("html, body").animate({scrollTop: position}, 400);
     $("nav ul li a").parent().removeClass("active");
     $(this).parent().addClass("active");
     event.preventDefault();
-  });
-
-  $("#nav-wrapper").mouseover(function(){
-    $("#nav-bar").css("width", "100%");
-    $("nav").css("margin-right", "unset");
-  });
-
-  $("#nav-wrapper").mouseout(function(){
-    $("#nav-bar").css("width", "120%");
-    $("nav").css("margin-right", "20%");
   });
 
   sectionHeight();
