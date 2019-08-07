@@ -2,5 +2,5 @@ language: ruby
 cache: bundler
 rvm: 2.6
 
-install: true
-script: true
+install: gem install jekyll
+script: bundle exec jekyll build
