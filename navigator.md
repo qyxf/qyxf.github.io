@@ -103,4 +103,4 @@
 - 硕博之窗：[**grad**.xjtu.edu.cn](http://grad.xjtu.edu.cn)【停更于2014年11月】
 - 博客交大：[**blog**.xjtu.edu.cn](http://blog.xjtu.edu.cn)【停更于2010年3月】
 
-> 如有**遗漏**或**错误**，欢迎大家提交补充、更正的请求！（查看[提交方法](/others/contribution)）
+> 如有**遗漏**或**错误**，欢迎大家提交补充、更正的请求！（查看[提交方法](/contribution)）
