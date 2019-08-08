@@ -4,4 +4,4 @@
 [![Build Status](https://travis-ci.org/qyxf/qyxf.github.io.svg?branch=master)](https://travis-ci.org/qyxf/qyxf.github.io)
 
 - 网址：[qyxf.github.io](https://qyxf.github.io)
-- 主题：[leap-day](https://github.com/pages-themes/leap-day)
+- 主题：[Leap Day](https://github.com/pages-themes/leap-day)
