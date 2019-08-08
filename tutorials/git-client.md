@@ -3,7 +3,7 @@ date: 2019-8-6
 author: '[![自动化钱71吴思源](person)](@edmundwsy)'
 ---
 
-# 关于 Git 客户端的一篇不太正经的介绍
+# 关于 Git 客户端介绍
 
 ## Git Extensions 简述
 
