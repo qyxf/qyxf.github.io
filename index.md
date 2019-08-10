@@ -3,7 +3,7 @@
 
 <p style="text-align:center;text-shadow: 2px 2px 1px lightgrey;">“精勤求学，敦笃励志；果毅力行，忠恕任事。”</p>
 
-<i class="fas fa-star"></i> [**新生必读**](/intro/life-in-xjtu)|<i class="fas fa-file"></i> [**培养方案**](/program/)|<i class="fas fa-map"></i> [**交大站点导航**](/others/navigator)
+<i class="fas fa-star"></i> [**新生必读**](/intro/life-in-xjtu)|<i class="fas fa-file"></i> [**培养方案**](/program/)|<i class="fas fa-map"></i> [**交大站点导航**](/navigator)
 :-:|:-:|:-:
 <i class="fab fa-github"></i> [**Star us!**](https://github.com/qyxf/)|<i class="fas fa-book"></i> [**学辅书库**](/BookHub)|<i class="fas fa-university"></i> [**钱院首页**](http://bjb.xjtu.edu.cn/)
 
@@ -24,7 +24,7 @@
 - [**新生必读**](/intro/life-in-xjtu):萌新戳这里！！
 - [培养方案查询](/program/):课程清单早知道，提前预习好帮手！
 - [课程中心](/course/):课程信息、辅导资料、前人经验一站式收录！
-- [校园站点导航](/others/navigator):近在咫尺却远在天边的本校资源，**全部集齐**！
+- [校园站点导航](/navigator):近在咫尺却远在天边的本校资源，**全部集齐**！
 
 
 ## <i class="fas fa-book"></i> 最新资料
@@ -47,5 +47,5 @@
 
 ## <i class="fas fa-address-card"></i> 关于我们
 
-钱院学辅的全称为“西安交通大学钱学森书院学生会学业辅导中心”，是钱学森书院学生会下属的学业辅导组织。[**了解我们！**](/others/about)
+钱院学辅的全称为“西安交通大学钱学森书院学生会学业辅导中心”，是钱学森书院学生会下属的学业辅导组织。[**了解我们！**](/about)
 
