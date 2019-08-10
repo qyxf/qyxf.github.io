@@ -3,70 +3,22 @@
 
 <!doctype html>
 <html lang="{{ site.lang | default: "zh-CN" }}">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-{% seo %}
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
-    <script src="/assets/js/shieldsManu.js"></script>
-    <script src="/assets/js/main.js"></script>
-    <script src="https://kit.fontawesome.com/2e78acf8d3.js"></script>
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-  </head>
+  {% include head.html %}
   <body>
-
-      <header>
-        <h1><a href="https://qyxf.github.io/" style="color: #f3f3f3!important">{{ site.slogan }}</a></h1>
-        <p>{{ site.title }}</p>
-      </header>
-
-      <div id="banner">
-        <span id="logo"></span>
-        <div class="downloads">
-          <ul>
-            <li><a href="/" class="button"><i class="fas fa-home"></i> 学辅首页</a></li>
-            <li id="log"><a href="/others/log" class="button"><i class="fas fa-file-medical-alt"></i> 维护日志</a></li>
-            <li><a href="/others/contribution" class="button"><i class="fas fa-users"></i> 我要贡献</a></li>
-            <li id="project-page"><a href="{{ site.github.repository_url }}" class="button"><i class="fab fa-github"></i> 项目页面</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
+      {% include header.html %}
+      {% include banner.html %}
 
     <div class="wrapper">
-      <div id="nav-wrapper">
-        <div id="toc"><span><i class="fas fa-bookmark" style="color: darkred;"></i> 目录</span></div>
-        <div id="nav-bar">
-        <nav>
-          <ul></ul>
-        </nav>
-        </div>
-      </div>
+      {% include nav-menu.html %}
+
       <section>
         {{ content }}
-        <hr>
-        <blockquote><ul class="fa-ul">
-          {% if page.author %} <li><span class="fa-li"><i class="fas fa-pen-nib"></i></span>{{ page.author | markdownify }}{% endif %}
-          {% if page.editor %} <li><span class="fa-li"><i class="fas fa-keyboard"></i></span>{{ page.editor | markdownify }}{% endif %}
-          {% if page.date %} <li><span class="fa-li"><i class="fas fa-clock"></i></span>本页面最后修改于 {{ page.date | date:'%Y 年 %m 月 %d 日' }}。</li> {% endif %}
-          <li><span class="fa-li"><i class="fas fa-exclamation-triangle"></i></span>{{ site.license_info }}</li>
-        </ul></blockquote>
+        
+        {% include extra-info.html %}
       </section>
 
-      <footer>
-        <p><small>{{ site.organization_full }}出品<br>托管于 <a href="https://pages.github.com"><i class="fab fa-github-alt"></i> GitHub Pages</a>
-        由 <a href="http://jekyllcn.com"><i class="fas fa-vial"></i> Jekyll</a> 强力驱动<br>
-        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-        <span id="busuanzi_container_site_pv"><small><i class="fas fa-tag"></i> 青云·新风(V2.0)　<i class="fas fa-eye"></i> <span id="busuanzi_value_site_pv"></span></small></span>
-        </small></p>
-      </footer>
+      {% include footer.html %}
     </div>
+
   </body>
 </html>
