@@ -10,29 +10,18 @@
 
 ## 各试验班大一课程介绍
 
-[越杰班](/course/Yuejie)
-
-[数学试验班](/course/Shushi)
-
-[物理试验班](/course/Wushi)
-
-[化生试验班](/course/Huasheng)
-
-[计算机试验班](/course/Jishi)
-
-[侯宗濂医学试验班](/course/Zonglian)
-
-[人工智能试验班](/course/Renshi)
-
-[工科试验班（钱学森班）](/course/Qianban)
-
-
-
-
+- [越杰班](/course/Yuejie)
+- [数学试验班](/course/Shushi)
+- [物理试验班](/course/Wushi)
+- [化生试验班](/course/Huasheng)
+- [计算机试验班](/course/Jishi)
+- [侯宗濂医学试验班](/course/Zonglian)
+- [人工智能试验班](/course/Renshi)
+- [工科试验班（钱学森班）](/course/Qianban)
 
 ## 课程列表
 
-#### 数理基础课程
+### 数理基础课程
 
 - [高等数学](/course/Gaoshu)
 - 线性代数
@@ -42,23 +31,24 @@
 - [计算方法（数值分析）](/course/Numerical-analysis)
 - 大学物理
 
-#### 工程类基础课程
+### 工程类基础课程
 
 - 工程制图
 - 机械制图
+- [机械设计基础](mech-design)
 
-#### 通识基础课
+### 通识基础课
 
 - 大学化学
 
-#### 钱院特色课程
+### 钱院特色课程
 
 - 出国访学准备
 
 
-—- 
+---
 
-### 为什么没有我想要的课？
+## 为什么没有我想要的课？
 
-### 如何参与贡献？
+## 如何参与贡献？
 请点击 [我要贡献](/contribution)
