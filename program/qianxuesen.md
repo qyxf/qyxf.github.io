@@ -1,6 +1,6 @@
 ---
 date: 2019-8-13
-author: '[![钱84费立涵](person)](@a05323749033)、[![自动化钱71吴思源](person)](@edmundwsy)'、[![能动少C71尤佳睿](person)](@xjtu-blacksmith)
+author: '[![钱84费立涵](person)](@a05323749033)、[![自动化钱71吴思源](person)](@edmundwsy)、[![能动少C71尤佳睿](person)](@xjtu-blacksmith)'
 ---
 
 # 钱学森班培养方案（公选课）
