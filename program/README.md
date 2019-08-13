@@ -7,7 +7,7 @@
 
 - [数学试验班](/program/shushi)
 - [物理试验班](/program/wushi)
-- [化生试验班](https://github.com/qyxf/qyxf.github.io/blob/master/program/huasheng.md)
+- [化生试验班](/program/huasheng)
 - [计算机试验班](/program/jishi)
 - 人工智能试验班
 - 侯宗濂医学试验班
@@ -31,7 +31,7 @@
 
 - [钱学森班（公选课）](/program/qianxuesen)  
     + [钱学森班-电气](/program/qianshao-dianqi)
-    + 钱学森班-能动
+    + [钱学森班-能动](/program/qianshao-nengdong)
     + [钱学森班-机械](/program/qianshao-jixie)
     + [钱学森班-计算机](/program/qianshao-jisuanji)
     + [钱学森班-自动化](/program/qianshao-zidonghua)
@@ -51,4 +51,4 @@
 
 ## 纠错与更新
 
-培养方案时有调整和更新，我们会及时跟进。若您发现本站发布的内容与实际不符，请[联系我们](/others/about)或[提交更改请求](/others/contribution)！
+培养方案时有调整和更新，我们会及时跟进。若您发现本站发布的内容与实际不符，请[联系我们](/about)或[提交更改请求](/contribution)！

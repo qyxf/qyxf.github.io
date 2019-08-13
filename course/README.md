@@ -61,4 +61,4 @@
 ### 为什么没有我想要的课？
 
 ### 如何参与贡献？
-请点击 [我要贡献](/others/contribution)
+请点击 [我要贡献](/contribution)
