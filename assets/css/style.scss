@@ -5,22 +5,22 @@
 
 /*
 引用块：
-- 字体：修正为正常字体（原为斜体）
+- 字体：修正为正常字体（原为斜体），并调小字体
 - 样式：美化为带阴影、圆角的发光块
 */
-blockquote{
+blockquote {
     font-style: normal;
-    padding: 10px;
+    padding: 12px 10px 10px;
     margin: 10px;
     border-radius: 5px;
     border: 1px solid lightblue;
     box-shadow: inset 1px 1px 2px 1px lightgray;
+    font-size: small;
 }
 
-/* 引用块内p标签：去除底部边距，并调小字体 */
-blockquote p{
+/* 引用块内子元素：去除底部边距 */
+blockquote *{
     margin-bottom: 0px;
-    font-size: smaller;
 }
 
 /* 一级标题：居中并加阴影 */
@@ -32,10 +32,11 @@ section h1 {
     padding-top: 10px;
 }
 
-/* 二级标题：附加底线 */
+/* 二级标题：附加底线与顶部间距 */
 section h2 {
     border-bottom: 1px solid lightgray;
     padding-bottom: 5px;
+    margin-top: 30px;
 }
 
 /* 导航栏logo：设置为校徽 */
@@ -59,11 +60,15 @@ a.button {
 
 /* 脚注块：美化为带内阴影、圆角的发光块 */
 .footnotes {
-    box-shadow: inset 1px 1px 2px 2px gray;
-    border: 1px solid orange;
+    background: linear-gradient(to top left, rgba(255, 140, 0, .4), rgba(144, 238, 144, .4));
+    border: 1px solid #c7c7c7;
     border-radius: inherit;
     padding: 5pt;
     margin: 10pt;
+}
+
+.footnotes ol {
+    padding-left: 20px;
 }
 
 /* 宽度小于1060px：隐藏导航菜单 */
@@ -71,6 +76,17 @@ a.button {
 {
     #nav-wrapper {
         display: none;
+    }
+    #banner {
+        width: auto;
+        max-width: 99.5%;
+    }
+    header {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    nav {
+        display: unset;
     }
 }
 
@@ -80,20 +96,38 @@ a.button {
 - 修改标题间距
 - 隐藏项目按钮
 */
+@media print, screen and (max-width: 530px)
+{
+    #banner li#project-page {
+        display: none;
+    }
+}
+
 @media print, screen and (max-width: 480px)
 {
     #banner{
         display: unset;
         position: absolute;
         top: 55px;
-        padding-right: 0pt;
+        padding-right: 0;
         width: 99.5%;
     }
-    header {
-        margin-bottom: 30pt;
+    #banner #logo {
+        display: none;
     }
-    a.button.fork {
-        display: none!important;
+    #banner .downloads {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    section {
+        margin-top: 100px;
+    }
+}
+
+@media print, screen and (max-width: 400px)
+{
+    #banner li#log {
+        display: none;
     }
 }
 
@@ -124,7 +158,6 @@ nav {
     top: unset;
     width: unset;
     margin-left: unset;
-    margin-right: 20%;
     text-align: left; 
 }
 
@@ -153,9 +186,9 @@ nav {
 /* 导航菜单内容器：设置滚动条 */
 #nav-bar {
     height: auto;
-    width: 120%;
-    overflow-y: auto;
+    width: 100%;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* 导航栏列表：清除底部margin，并扩展左侧padding */
@@ -178,4 +211,24 @@ section img {
     padding: 5px;
     font-weight: bold;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+code {
+    padding: 1px 4px;
+    margin: 0 2px;
+}
+
+kbd {
+    border: 1px solid lightgray;
+    padding: 0px 3px;
+    border-radius: 2px;
+    background: #eee;
+}
+
+header, #banner, #banner .fork {
+    position: absolute;
+}
+
+header {
+    background: linear-gradient(to right, #000080 0%, #801080 60%);
 }

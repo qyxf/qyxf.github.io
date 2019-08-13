@@ -1,6 +1,11 @@
+---
+date: 2019-8-8
+author: '[![能动少C71尤佳睿](person)](@xjtu-blacksmith)、[![自动化钱71吴思源](person)](@edmundwsy)'
+---
+
 # 西安交通大学站点导航
 
-校内在线资源这么丰富，你知道吗？收藏本页面，再也不用问百度！
+> 校内在线资源这么丰富，你知道吗？收藏本页面，再也不用问百度！
 
 ## <i class="fab fa-internet-explorer"></i> 主站
 
@@ -44,6 +49,7 @@
 - Blackboard：[**bb**.xjtu.edu.cn](http://bb.xjtu.edu.cn)
 - 思源学堂：[**syxt**.xjtu.edu.cn](http://syxt.xjtu.edu.cn)
 - 陕西MOOC平台（西交主办）：[www.**sxmooc**.cn](http://www.sxmooc.cn)
+- 新东方外语学习库（图书馆已购资源）：[library.**koolearn**.com](http://library.koolearn.com/index)
 
 ## <i class="fas fa-university"></i> 机构网站
 
@@ -79,7 +85,8 @@
 - 挑战网：[www.**tiaozhan**.com](https://www.tiaozhan.com)
 - 学长享答：[www.**xzxda**.com](http://www.xzxda.com)
 
-[^Download]: 这个网站中收录了你可能会用到的所有软件，某些软件还是学生版本。亲测校园网使用本链接下载网速可达`10 M/s`。此网站由e瞳网维护，持续更新。
+[^Download]: 这个网站中收录了你可能会用到的所有软件，某些软件还是学生版本。校园网使用本链接下载网速可达`10 M/s`。
+
 
 ## <i class="fas fa-folder-open"></i> 其他
 
@@ -88,7 +95,7 @@
 - 学生处知心网：[**xsc**.xjtu.edu.cn](http://xsc.xjtu.edu.cn)
 - 视觉影像识别系统[^PPT]：[**vi**.xjtu.edu.cn](http://vi.xjtu.edu.cn)
 
-[^PPT]: 想要交大校徽、校训、官方信纸、PPT可以从这里下载哦！
+[^PPT]: 想要交大校徽、校训标准样式及官方信纸、交大PPT模板可以从这里下载哦！
 
 
 ## <i class="fas fa-history"></i> 考古现场
@@ -101,4 +108,4 @@
 - 硕博之窗：[**grad**.xjtu.edu.cn](http://grad.xjtu.edu.cn)【停更于2014年11月】
 - 博客交大：[**blog**.xjtu.edu.cn](http://blog.xjtu.edu.cn)【停更于2010年3月】
 
-> 如有**遗漏**或**错误**，欢迎大家提交补充、更正的请求！（查看[提交方法](/others/contribution)）
+> 如有**遗漏**或**错误**，欢迎大家提交补充、更正的请求！（查看[提交方法](/contribution)）
