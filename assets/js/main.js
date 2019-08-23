@@ -14,6 +14,15 @@ var computeNavigationBar = function() {
   var navBarHeight = $("#nav-wrapper").height() - $("#toc").height() - 10;
   return navBarHeight;
 }
+
+var navHide = function() {
+  $("#nav-bar").css("overflow-y", "hidden");
+  $("#nav-bar").css("height", "0");
+  $("#nav-bar ul a").css("color", "#555");
+  $("#nav-wrapper").css("width", "25px");
+  $("#nav-wrapper").css("height", "auto");
+  $("#toc").css("padding", "1px");
+  $("#toc").css("border-bottom", "0px")
 }
 
 $(window).resize(sectionHeight);
@@ -36,6 +45,18 @@ $(function() {
     $("nav ul li:first-child a").parent().addClass("active");
   });
 
+  $("#nav-wrapper").mouseleave(navHide);
+
+  $("#nav-wrapper").mouseover(function(event) {
+    $("#nav-bar").css("overflow-y", "auto");
+    $("#nav-bar").css("height", navHeight);
+    $("#nav-bar ul a").css("color", "#ccc");
+    $("#nav-wrapper").css("width", "200px");
+    $("#nav-wrapper").css("height", "50%");
+    $("#toc").css("padding", "5px");
+    $("#toc").css("border-bottom", "1px solid #999");
+  });
+
   $("nav ul li").on("click", "a", function(event) {
     var position = $($(this).attr("href")).offset().top;
     $("html, body").animate({scrollTop: position}, 400);
@@ -45,13 +66,7 @@ $(function() {
   });
   
   sectionHeight();
-
-  if($("nav").css("height")<$("#nav-wrapper").css("height"))
-  {
-    $("#nav-wrapper").css("height", "auto");
-    $("#nav-bar").css("overflow: x", "hidden");
-  }
-
+  navHide();
 
   $('img').on('load', sectionHeight);
 });
