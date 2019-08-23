@@ -1,10 +1,12 @@
 ---
-date: 2019-8-5
+date: 2019-8-24
 author: '[![能动少C71尤佳睿](person)](@xjtu-blacksmith)、[![自动化钱71吴思源](person)](@edmundwsy)'
 ---
 
 # 站点更新日志
-> 这里记录本站的更新状况。目前本站的版本为`V2.0`，代号为**青云·新风**。
+> 这里记录本站的更新状况。目前本站的版本为`V2.1`，代号为**青云·雪峰**。
+
+## 青云·雪峰（V2.1）
 
 ## 青云·新风（V2.0）
 - **2019.07.26**：考虑到在两处同时更新仓库的麻烦，[![能动少C71尤佳睿](person)](@xjtu-blacksmith)将 `bookhub` 页面模块从本站架构中移除，直接在其[仓库](https://github.com/qyxf/BookHub/)中开启了 GitHub Pages 服务，现已独立为[钱院学辅·书库](/BookHub/)站点。同时，引入了自动生成 [Shields](https://shields.io) 标牌的 [`shieldsManu.js`](https://github.com/qyxf/qyxf.github.io/blob/master/assets/js/shieldsManu.js) 模块（通过 jQuery 实现）与本地生成、填充目录树的 [`buildTree.js`](https://github.com/qyxf/BookHub/blob/master/buildTree.js) 模块（通过 Node.js 实现）。
