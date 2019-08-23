@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+body {
+    background: url(../prism.png);
+}
+
 /*
 引用块：
 - 字体：修正为正常字体（原为斜体），并调小字体
@@ -40,22 +44,35 @@ section h2 {
     margin-top: 30px;
 }
 
-/* 导航栏logo：设置为校徽 */
-span#logo{
-    background: url(/assets/logo.png)!important;
-}
-
 /* 导航栏：颜色替换为蓝色（原为黄色） */
-#banner{
-    background: #adc3ff!important;
-    border: 1px solid #79a9fa!important;
+#banner {
+    right: 0!important;
+    margin-right: 0!important;
+    padding-right: 0!important;
+    background: #333!important;
+    border: 1px solid #111!important;
+    border-left: 0!important;
+    .downloads {
+        float: unset;
+        display: flex;
+        margin: 0;
+        ul {
+            display: block;
+            margin: 0 auto;
+        }
+    }
 }
 
 
 /* 导航栏按钮：颜色替换为灰色（原为蓝色） */
 a.button {
-    background: #f3f3f3!important;
-    border: 1px solid #bbbbbb!important;
+    background: none!important;
+    border: 1px solid #ccc!important;
+    color: #ccc!important;
+    box-shadow: none!important;
+}
+a:hover.button {
+    color: white!important;
 }
 
 
@@ -80,7 +97,7 @@ a.button {
     }
     #banner {
         width: auto;
-        max-width: 99.5%;
+        max-width: 100%;
     }
     header {
         padding-left: 0!important;
@@ -111,7 +128,8 @@ a.button {
         position: absolute;
         top: 55px;
         padding-right: 0;
-        width: 99.5%;
+        width: 100%;
+        border-right: 0;    
     }
     #banner #logo {
         display: none;
@@ -165,7 +183,7 @@ nav {
 /* 导航栏：外观设置，照搬自section的默认值 */
 #nav-wrapper {
     background: #fbfbfb;
-    border: 1px solid #cbcbcb;
+    border: 1px solid #111;
     border-bottom: unset;
     border-radius: 3px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09),
@@ -206,12 +224,13 @@ section img {
 }
 
 #toc {
-    background: #adc3ff;
-    border-bottom: 1px solid #79a9fa;
+    background: #333;
+    border-bottom: 1px solid #111;
     text-align: center;
     padding: 5px;
     font-weight: bold;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+    color: #999;
 }
 
 code {
@@ -231,5 +250,9 @@ header, #banner, #banner .fork {
 }
 
 header {
-    background: linear-gradient(to right, #000080 0%, #801080 60%);
+    background: linear-gradient(to top, #30cfd0 0%, #330867 100%);;
+}
+
+footer {
+    color: #999;
 }
