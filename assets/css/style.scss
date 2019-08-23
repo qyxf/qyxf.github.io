@@ -46,12 +46,6 @@ section h3 {
 
 /* 导航栏：颜色替换为蓝色（原为黄色） */
 #banner {
-    right: 0!important;
-    margin-right: 0!important;
-    padding-right: 0!important;
-    background: #333!important;
-    border: 1px solid #111!important;
-    border-left: 0!important;
     .downloads {
         float: unset;
         display: flex;
@@ -92,9 +86,6 @@ a:hover.button {
 /* 宽度小于1060px：隐藏导航菜单 */
 @media print, screen and (max-width: 1060px)
 {
-    #nav-wrapper {
-        display: none;
-    }
     #banner {
         width: auto;
         max-width: 100%;
@@ -102,9 +93,6 @@ a:hover.button {
     header {
         padding-left: 0!important;
         padding-right: 0!important;
-    }
-    nav {
-        display: unset;
     }
 }
 
@@ -180,24 +168,23 @@ nav {
 
 /* 导航栏：外观设置，照搬自section的默认值 */
 #nav-wrapper {
-    background: #fbfbfb;
+    background: #555;
+    color: #ccc;
     border: 1px solid #111;
-    border-bottom: unset;
-    border-radius: 3px;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09),
-    inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5),
-    inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
+    border-left: 0;
+    border-radius: 0 3px 3px 0;
 }
 
 /* 导航菜单外部容器：定义位置，遮盖滚动条 */
 #nav-wrapper {
     position: fixed;
-    width: 18%;
-    height: 60%;
+    width: 200px;
+    height: 50%;
     z-index: 1;
     top: 35%;
     left: 0;
     overflow: hidden;
+    transition: 0.3s width;
 }
 
 /* 导航菜单内容器：设置滚动条 */
@@ -206,6 +193,10 @@ nav {
     width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+    transition: 0.3s height;
+    ul a {
+        transition: 1s color;
+    }
 }
 
 /* 导航栏列表：清除底部margin，并扩展左侧padding */
@@ -228,7 +219,6 @@ section img {
     padding: 5px;
     font-weight: bold;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-    color: #999;
 }
 
 code {
