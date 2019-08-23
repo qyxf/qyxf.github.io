@@ -36,8 +36,12 @@ section h1 {
 /* 二级标题：附加底线与顶部间距 */
 section h2 {
     border-bottom: 1px solid lightgray;
-    padding-bottom: 5px;
-    margin-top: 30px;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+section h3 {
+    padding: 2px 0;
 }
 
 /* 导航栏：颜色替换为蓝色（原为黄色） */
@@ -160,10 +164,8 @@ ul ul, ul ul ul, ul ul ul ul {
 
 /* 标题头部：消除特殊性 */
 th {
-    border: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
     color: inherit!important;
-    border-left: 1px solid #ffcc00;
-    border-right: 1px solid #ffcc00;
 }
 
 /* 导航菜单：清除原有样式，交由外部容器决定 */
