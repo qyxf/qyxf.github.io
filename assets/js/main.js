@@ -17,9 +17,10 @@ var computeNavigationBar = function() {
 }
 
 $(window).resize(sectionHeight);
-$(window).resize(computeNavigationBar);
 
 $(function() {
+
+  var navHeight = computeNavigationBar();
 
   $("section h1, section h2, section h3").each(function(){
     if ($(this).prop("tagName") == "H1"){
@@ -42,9 +43,8 @@ $(function() {
     $(this).parent().addClass("active");
     event.preventDefault();
   });
-
+  
   sectionHeight();
-  computeNavigationBar();
 
   if($("nav").css("height")<$("#nav-wrapper").css("height"))
   {
