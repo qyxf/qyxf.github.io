@@ -16,24 +16,27 @@ var computeNavigationBar = function() {
 }
 
 var navHide = function() {
+  $("nav").css("display", "none");
   $("#nav-bar").css("overflow-y", "hidden");
   $("#nav-bar").css("height", "0");
-  $("#nav-bar ul a").css("color", "#555");
   $("#nav-wrapper").css("width", "25px");
   $("#nav-wrapper").css("height", "auto");
   $("#toc").css("padding", "1px");
-  $("#toc").css("border-bottom", "0px")
+  $("#toc").css("border-bottom", "0px");
+  $("#toc").css("animation", "blink 0.5s");
 }
+
 
 $(window).resize(sectionHeight);
 
 $(function() {
 
   var navHeight = computeNavigationBar();
+  navHide();
 
   $("section h1, section h2, section h3").each(function(){
     if ($(this).prop("tagName") == "H1"){
-      $("nav ul").append("<li class='tag-" + this.nodeName + "'><a href='#" + $(this).text().replace(/[\s\.\(\):&+]/g, '-').replace(/-+/g, '-') + "'><strong>" + $(this).text() + "</strong></a></li>");
+      $("nav ul").append("<li class='tag-" + this.nodeName + "'><a href='#" + $(this).text().replace(/[\s\.\(\):&+]/g, '-').replace(/-+/g, '-') + "'>" + $(this).text() + "</a></li>");
     }
     else if ($(this).prop("tagName") == "H2"){
       $("nav ul").append("<li class='tag-" + this.nodeName + "'>　<a href='#" + $(this).text().replace(/[\s\.\(\):&+]/g, '-').replace(/-+/g, '-') + "'>" + $(this).text() + "</a></li>");      
@@ -47,14 +50,17 @@ $(function() {
 
   $("#nav-wrapper").mouseleave(navHide);
 
-  $("#nav-wrapper").mouseover(function(event) {
+  $("#nav-wrapper").mouseover(function()
+  {
     $("#nav-bar").css("overflow-y", "auto");
     $("#nav-bar").css("height", navHeight);
-    $("#nav-bar ul a").css("color", "#ccc");
     $("#nav-wrapper").css("width", "200px");
     $("#nav-wrapper").css("height", "50%");
     $("#toc").css("padding", "5px");
-    $("#toc").css("border-bottom", "1px solid #999");
+    $("#toc").css("border-bottom", "1px solid #111");
+    $("#nav-bar").css("color", "#ccc");
+    $("#toc").css("animation", "none");
+    $("nav").css("display", "block");
   });
 
   $("nav ul li").on("click", "a", function(event) {
