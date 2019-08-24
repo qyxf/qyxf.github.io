@@ -3,7 +3,7 @@ date: 2019-8-12
 ---
 
 # 学辅首页
-![本图片来自于西安交通大学官方网站，版权归其所有。](http://www.xjtu.edu.cn/images/jdgk.jpg)
+![本图片来自于西安交通大学官方网站，版权归其所有。](assets/images/frontpage.jpg)
 
 <p style="text-align:center;text-shadow: 2px 2px 1px lightgrey;">“精勤求学，敦笃励志；果毅力行，忠恕任事。”</p>
 
