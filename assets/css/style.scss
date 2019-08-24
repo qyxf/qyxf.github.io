@@ -3,72 +3,6 @@
 
 @import "leap-month.scss";
 
-/*
-引用块：
-- 字体：修正为正常字体（原为斜体），并调小字体
-- 样式：美化为带阴影、圆角的发光块
-*/
-blockquote {
-    font-style: normal;
-    padding: 12px 10px 10px;
-    margin: 10px;
-    border-radius: 5px;
-    border: 1px solid lightblue;
-    box-shadow: inset 1px 1px 2px 1px lightgray;
-    font-size: small;
-}
-
-/* 引用块内子元素：去除底部边距 */
-blockquote *{
-    margin-bottom: 0px;
-}
-
-/* 一级标题：居中并加阴影 */
-section h1 {
-    text-shadow: 1px 1px 2px #00000040;
-    text-align: center;
-    /*border-bottom: 1px dashed gray;*/
-    padding-bottom: 10px;
-    padding-top: 10px;
-    white-space: pre-wrap;
-}
-
-/* 二级标题：附加底线与顶部间距 */
-section h2 {
-    border-bottom: 1px solid lightgray;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
-section h3 {
-    padding: 2px 0;
-}
-
-/* 导航栏：颜色替换为蓝色（原为黄色） */
-#banner {
-    .downloads {
-        float: unset;
-        display: flex;
-        margin: 0;
-        ul {
-            display: block;
-            margin: 0 auto;
-        }
-    }
-}
-
-
-/* 导航栏按钮：颜色替换为灰色（原为蓝色） */
-a.button {
-    background: none!important;
-    border: 1px solid #ccc!important;
-    color: #ccc!important;
-    box-shadow: none!important;
-}
-a:hover.button {
-    color: white!important;
-}
-
 
 /* 脚注块：美化为带内阴影、圆角的发光块 */
 .footnotes {
@@ -77,132 +11,10 @@ a:hover.button {
     border-radius: inherit;
     padding: 5pt;
     margin: 10pt;
-}
 
-.footnotes ol {
-    padding-left: 20px;
-}
-
-/* 宽度小于1060px：隐藏导航菜单 */
-@media print, screen and (max-width: 1060px)
-{
-    #banner {
-        width: auto;
-        max-width: 100%;
+    ol {
+        padding-left: 20px;
     }
-    header {
-        padding-left: 0!important;
-        padding-right: 0!important;
-    }
-}
-
-/*
-宽度小于480px：
-- 固定导航栏
-- 修改标题间距
-- 隐藏项目按钮
-*/
-@media print, screen and (max-width: 530px)
-{
-    #banner li#project-page {
-        display: none;
-    }
-}
-
-@media print, screen and (max-width: 480px)
-{
-    #banner{
-        display: unset;
-        position: absolute;
-        top: 55px;
-        padding-right: 0;
-        width: 100%;
-        border-right: 0;    
-    }
-    #banner #logo {
-        display: none;
-    }
-    #banner .downloads {
-        margin-right: 30px;
-        margin-left: 30px;
-    }
-    section {
-        margin-top: 100px;
-    }
-}
-
-@media print, screen and (max-width: 400px)
-{
-    #banner li#log {
-        display: none;
-    }
-}
-
-
-/* 链接内粗体块：保留链接色彩（原更换为黑色） */
-a strong
-{
-    color: inherit;
-}
-
-/* 多级列表：取消底部间距 */
-ul ul, ul ul ul, ul ul ul ul {
-    margin-bottom: 0px;
-}
-
-/* 标题头部：消除特殊性 */
-th {
-    border-top: 1px solid #e5e5e5;
-    color: inherit!important;
-}
-
-/* 导航菜单：清除原有样式，交由外部容器决定 */
-nav {
-    position: relative;
-    left: unset;
-    top: unset;
-    width: unset;
-    margin-left: unset;
-    text-align: left; 
-}
-
-/* 导航栏：外观设置，照搬自section的默认值 */
-#nav-wrapper {
-    background: #555;
-    color: #ccc;
-    border: 1px solid #111;
-    border-left: 0;
-    border-radius: 0 3px 3px 0;
-}
-
-/* 导航菜单外部容器：定义位置，遮盖滚动条 */
-#nav-wrapper {
-    position: fixed;
-    width: 200px;
-    height: 50%;
-    z-index: 1;
-    top: 35%;
-    left: 0;
-    overflow: hidden;
-    transition: 0.3s width;
-}
-
-/* 导航菜单内容器：设置滚动条 */
-#nav-bar {
-    height: auto;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    transition: 0.3s height;
-    ul a {
-        transition: 1s color;
-    }
-}
-
-/* 导航栏列表：清除底部margin，并扩展左侧padding */
-nav ul {
-    margin-bottom: unset;
-    padding: 0 0 0 10px;
 }
 
 /* 图片：利用block对象自动边距居中 */
@@ -212,35 +24,20 @@ section img {
     margin-right: auto;
 }
 
-#toc {
-    background: #333;
-    border-bottom: 1px solid #111;
-    text-align: center;
-    padding: 5px;
-    font-weight: bold;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+.fa-ul {
+    list-style: none;
 }
 
-code {
-    padding: 1px 4px;
-    margin: 0 2px;
+@media print, screen and (max-width: 449px)
+{
+  #banner li#project-page {
+      display: none;
+  }
 }
 
-kbd {
-    border: 1px solid lightgray;
-    padding: 0px 3px;
-    border-radius: 2px;
-    background: #eee;
-}
-
-header, #banner, #banner .fork {
-    position: absolute;
-}
-
-header {
-    background: linear-gradient(to top, #30cfd0 0%, #330867 100%);;
-}
-
-footer {
-    color: #999;
+@media print, screen and (max-width: 359px)
+{
+  #banner li#log {
+      display: none;
+  }
 }
