@@ -30,13 +30,13 @@
 钱学森班在大一年级时上相同的通识课；大二开始前，根据志愿、参考大一一年公选课的均分排名，划分具体的专业。
 
 - [钱学森班（公选课）](/program/qianxuesen)  
-    + [钱学森班-电气](/program/qianshao-dianqi)
-    + [钱学森班-能动](/program/qianshao-nengdong)
-    + [钱学森班-机械](/program/qianshao-jixie)
-    + [钱学森班-计算机](/program/qianshao-jisuanji)
-    + [钱学森班-自动化](/program/qianshao-zidonghua)
-    + [钱学森班-微电子](/program/qianshao-weidianzi)
-    + [钱学森班-力学](/program/qianshao-lixue)
+    + [钱学森班-电气](/program/qian-dianqi)
+    + [钱学森班-能动](/program/qian-nengdong)
+    + [钱学森班-机械](/program/qian-jixie)
+    + [钱学森班-计算机](/program/qian-jisuanji)
+    + [钱学森班-自动化](/program/qian-zidonghua)
+    + [钱学森班-微电子](/program/qian-weidianzi)
+    + [钱学森班-力学](/program/qian-lixue)
 
 ## 少年班
 
@@ -44,10 +44,10 @@
 
 - [少年班（预科二年级）](/program/shaonianban-2017)
 - [少年班（大二年级）（公选课）](/program/shaonianban-2015)
-  - [少年班-电气](/program/qianshao-dianqi)
-  - [少年班-自动化](/program/qianshao-zidonghua)
-  - [少年班-微电子](/program/qianshao-weidianzi)
-  - [少年班-力学](/program/qianshao-lixue)
+  - [少年班-电气](/program/qian-dianqi)
+  - [少年班-自动化](/program/qian-zidonghua)
+  - [少年班-微电子](/program/qian-weidianzi)
+  - [少年班-力学](/program/qian-lixue)
 
 ## 纠错与更新
 
