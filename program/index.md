@@ -9,7 +9,7 @@
 - [物理试验班](/program/wushi)
 - [化生试验班](/program/huasheng)
 - [计算机试验班](/program/jishi)
-- 人工智能试验班
+- [人工智能试验班](/program/renshi)
 - 侯宗濂医学试验班
 
 ## 越杰班
