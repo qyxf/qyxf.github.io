@@ -13,22 +13,13 @@ date: 2019-8-12
 
 ---
 
-## <i class="fas fa-question-circle"></i> 学辅发布
-
-> 与学辅线下辅导活动配合使（shí）用，效果更佳！
-
-- 答疑时间表查询
-- 自习室申请
-- 线下活动1
-- 线下活动2
-
 ## <i class="fas fa-medal"></i> 精品功能
 > 别人不知道的信息，我们知道！
 
-- [**新生必读**](/intro/life-in-xjtu):萌新戳这里！！
-- [培养方案查询](/program/):课程清单早知道，提前预习好帮手！
-- [课程中心](/course/):课程信息、辅导资料、前人经验一站式收录！
-- [校园站点导航](/navigator):近在咫尺却远在天边的本校资源，**全部集齐**！
+- <i class="fas fa-star"></i> [新生必读](/intro/life-in-xjtu):萌新戳这里！！
+- <i class="fas fa-file"></i> [培养方案查询](/program/):课程清单早知道，提前预习好帮手！
+- <i class="fas fa-book-reader"></i> [课程中心](/course/):课程信息、辅导资料、前人经验一站式收录！
+- <i class="fas fa-map"></i> [校园站点导航](/navigator):近在咫尺却远在天边的本校资源，**全部集齐**！
 
 
 ## <i class="fas fa-book"></i> 最新资料
@@ -43,11 +34,11 @@ date: 2019-8-12
 ## <i class="fas fa-compass"></i> 实用指南
 > 我们不止提供资料，我们更提供**自主学习**的工具与方法！
 
-- [Git 与 GitHub 快速上手教程](/tutorials/git-github) 
-- [Git 客户端使用指南](/tutorials/git-client)
-- [OneNote 简介](/tutorials/onenote)
-- [钱院学辅 LaTeX 讲座](https://github.com/qyxf/lec-on-LaTeX) 
-- [钱院学辅 LaTeX 安装指导](/tutorials/latex-download)
+- <i class="fas fa-file-alt"></i> [Git 与 GitHub 快速上手教程](/tutorials/git-github) 
+- <i class="fas fa-file-alt"></i> [Git 客户端使用指南](/tutorials/git-client)
+- <i class="fas fa-file-alt"></i> [OneNote 简介](/tutorials/onenote)
+- <i class="fas fa-file-alt"></i> [钱院学辅 LaTeX 讲座](https://github.com/qyxf/lec-on-LaTeX) 
+- <i class="fas fa-file-alt"></i> [钱院学辅 LaTeX 安装指导](/tutorials/latex-download)
 
 ## <i class="fas fa-address-card"></i> 关于我们
 
