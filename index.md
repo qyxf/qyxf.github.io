@@ -16,10 +16,10 @@ date: 2019-8-12
 ## <i class="fas fa-medal"></i> 精品功能
 > 别人不知道的信息，我们知道！
 
-- <i class="fas fa-star"></i> [新生必读](/intro/life-in-xjtu):萌新戳这里！！
-- <i class="fas fa-file"></i> [培养方案查询](/program/):课程清单早知道，提前预习好帮手！
-- <i class="fas fa-book-reader"></i> [课程中心](/course/):课程信息、辅导资料、前人经验一站式收录！
-- <i class="fas fa-map"></i> [校园站点导航](/navigator):近在咫尺却远在天边的本校资源，**全部集齐**！
+- <span class='mono'><i class="fas fa-star"></i></span> [新生必读](/intro/life-in-xjtu):萌新戳这里！！
+- <span class='mono'><i class="fas fa-file"></i></span> [培养方案查询](/program/):课程清单早知道，提前预习好帮手！
+- <span class='mono'><i class="fas fa-book-reader"></i></span> [课程中心](/course/):课程信息、辅导资料、前人经验一站式收录！
+- <span class='mono'><i class="fas fa-map"></i></span> [校园站点导航](/navigator):近在咫尺却远在天边的本校资源，**全部集齐**！
 
 
 ## <i class="fas fa-book"></i> 最新资料
