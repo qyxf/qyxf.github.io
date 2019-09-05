@@ -28,6 +28,12 @@ section img {
     list-style: none;
 }
 
+.mono {
+  width: 1em;
+  text-align: center;
+  display: inline-block;
+}
+
 @media print, screen and (max-width: 449px)
 {
   #banner li#project-page {
