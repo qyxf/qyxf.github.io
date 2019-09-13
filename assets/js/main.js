@@ -33,6 +33,7 @@ $(function() {
 
   var navHeight = computeNavigationBar();
   navHide();
+  $("#nav-wrapper").css("display", "block");
 
   $("section h1, section h2, section h3").each(function(){
     if ($(this).prop("tagName") == "H1"){
