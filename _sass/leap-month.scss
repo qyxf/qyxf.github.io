@@ -304,6 +304,7 @@ small {
   left: 0;
   overflow: hidden;
   transition: 0.3s width, 0.3s height;
+  display: none;
 
   #toc {
     border-bottom: 1px solid $border-color;
