@@ -73,6 +73,9 @@ strong {
 
 section img {
   max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 blockquote {
@@ -356,6 +359,18 @@ small {
   }
 }
 
+
+.footnotes {
+  background: linear-gradient(to top left, rgba(255, 140, 0, .4), rgba(144, 238, 144, .4));
+  border: 1px solid #c7c7c7;
+  border-radius: inherit;
+  padding: 5pt;
+  margin: 10pt;
+
+  ol {
+    padding-left: 20px;
+  }
+}
 
 
 footer{
