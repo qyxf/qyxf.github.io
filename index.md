@@ -20,7 +20,7 @@ date: 2019-8-12
 - <span class='mono'><i class="fas fa-file"></i></span> [培养方案查询](/program/) 课程清单早知道，提前预习好帮手！
 - <span class='mono'><i class="fas fa-book-reader"></i></span> [课程中心](/course/) 课程信息、辅导资料、前人经验一站式收录！
 - <span class='mono'><i class="fas fa-map"></i></span> [校园站点导航](/navigator) 近在咫尺却远在天边的本校资源，**全部集齐**！
-- <span class='mono'><i class="fas fa-laptop-code"></i></span> [技术中心](/tecnique/) 感受最精品的排版、网页、开源协作学习体验！
+- <span class='mono'><i class="fas fa-laptop-code"></i></span> [技术中心](/technique/) 感受最精品的排版、网页、开源协作学习体验！
 
 
 ## <i class="fas fa-book"></i> 最新资料
