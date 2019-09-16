@@ -1,33 +1,12 @@
 # 钱院学辅·技术中心
-## 技术讲座资料区
-这里发布的是与钱院学辅技术讲座（Technical Lecture of QYXF）相关的文本资料。讲座幻灯片可到钱院学辅·书库的[对应页面](/BookHub/007.technical-lecture)下载。
 
-<!--- 视频请参见 XXX --->
+## 资源中心
+以下提供各个技术项目的资源链接。
 
-### 第一讲：网页与 Markdown
+- [学研部：排版技术路线](typeset)
+- [钱院学辅技术讲座](technical-lecture)（未完工）
 
-Markdown 的教程，多如牛毛，但写的精简明白、无歧义的并不多。以下的推荐资源中，有我们自撰的精简入门教程，有严整的官方语法说明，也有好玩的实践学习网站（答题过关的模式）。
-
-- [入门教程](https://blog.huihut.com/2017/01/25/MarkdownTutorial/#primary)
-- [官方语法说明](https://www.markdown.cn)（中文翻译版本）
-- [英文文档](https://www.markdownguide.org)
-- [在实践中学习](https://www.markdowntutorial.com)（英文）
-
-### 第二讲：Git 与 GitHub
-
-- [Git 与 GitHub 快速上手教程](https://qyxf.site/tutorials/git-github)
-- [GitHub 官方入门教程](https://github.highlight.ink/hello-world/intro)（中文翻译版）
-
-### 第三讲：TeX 基础
-
-### 第四讲：LaTeX 入门
-
-### 第五讲：LaTeX 提高与排版规范
-
-
-## 其他资源链接
-
-### 文本编辑器
+## 文本编辑器下载
 首先是三款最流行的通用文本编辑器，风格类似，功能强大，也容易学习。初学者可以尝试。
 
 - [Atom 下载](https://atom.io)（开源）
