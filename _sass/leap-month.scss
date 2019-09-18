@@ -180,7 +180,6 @@ header {
 
   h1 {
     font: 40px/48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #f3f3f3;
     text-shadow: 0px 2px 0px #235796;
     margin: 0px;
     white-space: nowrap;
@@ -188,12 +187,16 @@ header {
     text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     -ms-text-overflow: ellipsis;
+
+    a {
+      color: #f3f3f3;
+    }
   }
 
   p {
+    font: 18px 'Alegreya', 'Georgia', 'Times New Roman', serif;
     color: #d8d8d8;
     text-shadow:rgba(#000, 0.2) 0 1px 0;
-    font-size: 18px;
     margin: 0px;
   }
 }
@@ -296,30 +299,32 @@ small {
   border-left: 0;
   border-radius: 0 5px 5px 0;
   position: fixed;
-  width: 200px;
-  height: 50%;
-  max-height: 300px;
+  width: 250px;
+  height: 280px;
   z-index: 1;
   top: 35%;
   left: 0;
   overflow: hidden;
-  transition: 0.3s width, 0.3s height;
+  transition: width 0.3s, height 0.3s;
   display: none;
 
   #toc {
     border-bottom: 1px solid $border-color;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5px;
     font-weight: bold;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+    height: 20px;
   }
 
   #nav-bar {
-    height: auto;
+    height: 250px;
     width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    transition: 0.3s height;
+    transition: height 0.3s, opacity 0.3s 0.3s;
 
     nav {
       position: relative;
@@ -524,15 +529,25 @@ footer{
 }
 
 @-webkit-keyframes blink {
-  0% {color: $light-border-color;}
-  30% {color: $background-color}
+  0% {color: $background-color}
   80% {color: $background-color}
   100% {color: $light-border-color;}
 }
 
 @keyframes blink {
-  0% {color: $light-border-color;}
-  30% {color: $background-color}
+  0% {color: $background-color}
+  80% {color: $background-color}
+  100% {color: $light-border-color;}
+}
+
+@-webkit-keyframes blinkback {
+  0% {color: $background-color}
+  80% {color: $background-color}
+  100% {color: $light-border-color;}
+}
+
+@keyframes blinkback {
+  0% {color: $background-color}
   80% {color: $background-color}
   100% {color: $light-border-color;}
 }

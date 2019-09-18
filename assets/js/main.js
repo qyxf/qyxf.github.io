@@ -10,19 +10,17 @@ var sectionHeight = function() {
   }
 }
 
-var computeNavigationBar = function() {
-  var navBarHeight = $("#nav-wrapper").height() - $("#toc").height() - 10;
-  return navBarHeight;
-}
-
 var navHide = function() {
-  $("nav").css("display", "none");
-  $("#nav-bar").css("overflow-y", "hidden");
   $("#nav-bar").css("height", "0");
+  $("#nav-bar").css("opacity", "0");
+  $("#nav-bar").css("visibility", "hidden")
+  $("#nav-bar").css("overflow-y", "hidden");
   $("#nav-wrapper").css("width", "25px");
-  $("#nav-wrapper").css("height", "auto");
+  $("#nav-wrapper").css("height", "50px");
   $("#toc").css("padding", "1px");
   $("#toc").css("border-bottom", "0px");
+  $("#toc").css("height", "48px");
+  $("#toc").css("flex-direction", "column");
   $("#toc").css("animation", "blink 0.5s");
 }
 
@@ -31,7 +29,6 @@ $(window).resize(sectionHeight);
 
 $(function() {
 
-  var navHeight = computeNavigationBar();
   navHide();
   $("#nav-wrapper").css("display", "block");
 
@@ -54,19 +51,22 @@ $(function() {
   $("#nav-wrapper").mouseover(function()
   {
     $("#nav-bar").css("overflow-y", "auto");
-    $("#nav-bar").css("height", navHeight);
-    $("#nav-wrapper").css("width", "200px");
-    $("#nav-wrapper").css("height", "50%");
+    $("#nav-bar").css("height", "250px");
+    $("#nav-wrapper").css("width", "250px");
+    $("#nav-wrapper").css("height", "280px");
     $("#toc").css("padding", "5px");
     $("#toc").css("border-bottom", "1px solid #111");
+    $("#toc").css("height", "20px");
+    $("#toc").css("flex-direction", "row");
+    $("#toc").css("animation", "blinkback 0.5s");
     $("#nav-bar").css("color", "#ccc");
-    $("#toc").css("animation", "none");
-    $("nav").css("display", "block");
+    $("#nav-bar").css("visibility", "visible");
+    $("#nav-bar").css("opacity", "1");
   });
 
   $("nav ul li").on("click", "a", function(event) {
     var position = $($(this).attr("href")).offset().top;
-    $("html, body").animate({scrollTop: position}, 400);
+    $("html, body").animate({scrollTop: position}, 750);
     $("nav ul li a").parent().removeClass("active");
     $(this).parent().addClass("active");
     event.preventDefault();
