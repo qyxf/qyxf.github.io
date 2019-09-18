@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2019-9-18
+editor: '[![能动少C71尤佳睿](person)](@xjtu-blacksmith)'
 ---
 
 # 9 月 21 日出国分享交流会
