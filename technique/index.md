@@ -1,3 +1,8 @@
+---
+date: 2019-9-21
+author: '[![能动少C71尤佳睿](person)](@xjtu-blacksmith)'
+---
+
 # 钱院学辅·技术中心
 
 ## 资源中心
@@ -6,7 +11,18 @@
 - [学研部：排版技术路线](typeset)
 - [钱院学辅技术讲座](technical-lecture)（未完工）
 
-## 文本编辑器下载
+## 开源项目发布
+以下给出钱院学辅各自有开源项目/技术作品的发布地址。
+
+### TeX/LaTeX
+- [Qyxf-sets 宏集](https://github.com/qyxf/qyxf-sets) 内含 `qyxf-book`、`qyxf-note`、`qyxf-notice` 等多个文档类，样式典雅，便于使用。
+- [西安交通大学 Beamer 主题](https://github.com/qyxf/beamerthemexjtu) 经过改良的西安交通大学 Beamer 主题，接手自 @weisi。
+- [Easymcm 美赛模板](https://github.com/qyxf/easymcm) 简洁易用、持续更新的美赛 LaTeX 模板，下载量过万，由 @xjtu-blacksmith 转移给钱院学辅继续开发。
+
+### Jekyll
+> 国庆后将发布我们的 Jekyll 主题，敬请期待！
+
+## 附录：文本编辑器
 首先是三款最流行的通用文本编辑器，风格类似，功能强大，也容易学习。初学者可以尝试。
 
 - [Atom 下载](https://atom.io)（开源）
