@@ -185,8 +185,8 @@ LaTeX 公式排版的难点有二：
 
 > 这类表格大多数情况下没有用，少数情况下你要用——但找不到想要的符号。~~所以，百度、Google 等搜索引擎无疑是最大赢家、幕后黑手。~~
 
-- [The Comprehensive LaTeX Symbol List]()：包含了整个 LaTeX 系统中的特殊符号，数学符号仅为其一子集；所有需要的符号一定在这里，但你需要事先翻阅，弄清其复杂的结构.
-- [LaTeX Mathematical Symbols]()：仅涉及常用的符号，基本够用。内容丰富。
+- [The Comprehensive LaTeX Symbol List](/BookHub/000.resources/symbols-a4.pdf)：包含了整个 LaTeX 系统中的特殊符号，数学符号仅为其一子集；所有需要的符号一定在这里，但你需要事先翻阅，弄清其复杂的结构.
+- [LaTeX Mathematical Symbols](/BookHub/000.resources/latex-math-symbol.pdf)：仅涉及常用的符号，基本够用。内容丰富。
 - [Codecogs 公式编辑器](https://www.codecogs.com/latex/eqneditor.php)：一个在线编辑器，提供若干按钮，便于你通过图形化的页面找到所需的符号。境外网站，加载速度可能较慢。
 
 #### 2.2.2 样式调整命令
