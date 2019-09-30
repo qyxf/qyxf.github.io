@@ -34,3 +34,12 @@ fig-cap {
   text-decoration: underline;
   text-underline-position: under;
 }
+
+tb-cap {
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  text-underline-position: under;
+  margin-bottom: 10px;
+}
