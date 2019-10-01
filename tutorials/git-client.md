@@ -1,11 +1,14 @@
 ---
-date: 2019-8-6
+date: 2019-10-01
 author: '[![自动化钱71吴思源](person)](@edmundwsy)'
+editor: '![能动少C71尤佳睿](person)'
 ---
 
-# 关于 Git 客户端介绍
+# 关于 Git 客户端的介绍
 
 ## Git Extensions 简述
+
+> 此段暂缺。
 
 ## 安装
 
@@ -37,7 +40,7 @@ author: '[![自动化钱71吴思源](person)](@edmundwsy)'
 
 ![git_client_2](assets/git_client_2.jpg)
 
-在你想放的位置（我知道肯定是桌面）打开右键菜单，选择“GitExt Clone”，粘贴上仓库的地址，然后点击`克隆`饥即可。
+在你想放的位置（我知道肯定是桌面）打开右键菜单，选择“GitExt Clone”，粘贴上仓库的地址，然后点击「克隆」即可。
 
 ![git_client_3](assets/git_client_3.jpg)
 
@@ -45,16 +48,16 @@ author: '[![自动化钱71吴思源](person)](@edmundwsy)'
 
 ### 将本地更改上传
 
-改完了总要传吧？先对本地仓库文件夹点击右键`右键菜单 -> GitExt Commit` 
+改完了总要传吧？先对本地仓库文件夹打开右键菜单 -> `GitExt Commit`：
 
 ![git_client_4](assets/git_client_4.jpg)
 
-如果你真的点了提交而不是提交并推送，需要再右键点击文件夹 `右键菜单 -> Git Extension -> Push` 
+如果你真的点了提交而不是提交并推送，需要再右键点击文件夹打开右键菜单 -> `Git Extension` -> `Push` 。
 
 ### 拉取远程更改
 
 打开右键菜单，选择“Git Extension -> Pull”，然后直接点击右下角拉取，合并选项不需要动。
 
-有时候当远程仓库此文件已经修改，会出现冲突（conflict）——拉取时对话框出现“CONFLICT”，表示出现冲突。点击`解决冲突` ，然后`合并更改`，此时会使用你选择的合并工具进行合并。解决冲突之后，会弹窗询问是否解决、是否可以提交，点击`提交`即可。
+有时候当远程仓库此文件已经修改，会出现冲突（conflict）：若拉取时对话框出现「CONFLICT」，则表示出现冲突。点击「解决冲突」 ，然后「合并更改」，此时会使用你选择的合并工具进行合并。解决冲突之后，会弹窗询问是否解决、是否可以提交，点击「提交」即可。
 
 ![git_client_5](assets/git_client_5.jpg)
