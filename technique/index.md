@@ -20,7 +20,7 @@ author: '[![能动少C71尤佳睿](person)](@xjtu-blacksmith)'
 - [Easymcm 美赛模板](https://github.com/qyxf/easymcm) 简洁易用、持续更新的美赛 LaTeX 模板，下载量过万，由 @xjtu-blacksmith 转移给钱院学辅继续开发。
 
 ### Jekyll
-> 国庆后将发布我们的 Jekyll 主题，敬请期待！
+- [Jekyll 主题：Leap month（闰月）](https://github.com/qyxf/leap-month) 在 GitHub Pages 提供的 [Leap day](https://github.com/pages-themes/leap-day) 主题上大幅改进，更佳适合中文内容，通用性更强！
 
 ## 附录：文本编辑器
 首先是三款最流行的通用文本编辑器，风格类似，功能强大，也容易学习。初学者可以尝试。
