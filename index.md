@@ -5,7 +5,7 @@ date: 2019-9-13
 # 学辅首页
 ![本图片来自于西安交通大学官方网站，版权归其所有。](assets/images/frontpage.jpg)
 
-<p style="text-align:center;text-shadow: 2px 2px 1px lightgrey;">“精勤求学，敦笃励志；果毅力行，忠恕任事。”</p>
+<center-banner>第一次上信息站？<a href="/welcome">戳我快速入门！</a></center-banner>
 
 <i class="fas fa-star"></i> [**新生必读**](/intro/life-in-xjtu)|<i class="fas fa-file"></i> [**培养方案**](/program/)|<i class="fas fa-map"></i> [**交大站点导航**](/navigator)
 :-:|:-:|:-:
