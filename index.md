@@ -13,6 +13,16 @@ date: 2019-9-13
 
 ---
 
+## 推送一览
+
+<ul>
+  {% for post in site.posts limit:5 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> @ {{ post.date | date:'%Y 年 %m 月 %d 日' }}
+    </li>
+  {% endfor %}
+</ul>
+
 ## <i class="fas fa-medal"></i> 精品功能
 > 别人不知道的信息，我们知道！
 
