@@ -80,8 +80,6 @@ author: '[![能动少C71尤佳睿](person)](@xjtu-blacksmith)、[![自动化钱7
 - 西安交大软件镜像站（网管协会维护）：[**mirrors**.xjtu.edu.cn](https://mirrors.xjtu.edu.cn/)
 - 兵马俑BBS：[**bbs**.xjtu.edu.cn](http://bbs.xjtu.edu.cn)
 - e瞳网：[www.**eeyes**.net](https://www.eeyes.net)
-  - e快下[^Download]：[**down**.eeyes.net](https://down.eeyes.net)
-  - e学堂：[**course**.eeyes.net](https://course.eeyes.net)
 - 挑战网：[www.**tiaozhan**.com](https://www.tiaozhan.com)
 - 学长享答：[www.**xzxda**.com](http://www.xzxda.com)
 
