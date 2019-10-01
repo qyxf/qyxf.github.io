@@ -13,7 +13,7 @@ date: 2019-9-13
 
 ---
 
-## 推送一览
+## <i class="fa fa-commenting-o"></i> 推送一览
 
 <ul>
   {% for post in site.posts limit:5 %}
@@ -24,7 +24,7 @@ date: 2019-9-13
   <li><a href="post">更多推送...</a></li>
 </ul>
 
-## <i class="fa fa-medal"></i> 精品功能
+## <i class="fa fa-rocket"></i> 精品功能
 > 别人不知道的信息，我们知道！
 
 - <span class='mono'><i class="fa fa-star"></i></span> [新生必读](/intro/life-in-xjtu) 钱院萌新戳这里！！
@@ -46,11 +46,11 @@ date: 2019-9-13
 ## <i class="fa fa-compass"></i> 实用指南
 > 我们不止提供资料，我们更提供**自主学习**的工具与方法！
 
-- <i class="fa fa-file-alt"></i> [Git 与 GitHub 快速上手教程](/tutorials/git-github)
-- <i class="fa fa-file-alt"></i> [Git 客户端使用指南](/tutorials/git-client)
-- <i class="fa fa-file-alt"></i> [OneNote 简介](/tutorials/onenote)
-- <i class="fa fa-file-alt"></i> [钱院学辅 LaTeX 讲座](https://github.com/qyxf/lec-on-LaTeX)
-- <i class="fa fa-file-alt"></i> [钱院学辅 LaTeX 安装指导](/tutorials/latex-download)
+- <i class="fa fa-file-word-o"></i> [Git 与 GitHub 快速上手教程](/tutorials/git-github)
+- <i class="fa fa-file-word-o"></i> [Git 客户端使用指南](/tutorials/git-client)
+- <i class="fa fa-file-word-o"></i> [OneNote 简介](/tutorials/onenote)
+- <i class="fa fa-file-word-o"></i> [钱院学辅 LaTeX 讲座](https://github.com/qyxf/lec-on-LaTeX)
+- <i class="fa fa-file-word-o"></i> [钱院学辅 LaTeX 安装指导](/tutorials/latex-download)
 
 ## <i class="fa fa-address-card"></i> 关于我们
 
