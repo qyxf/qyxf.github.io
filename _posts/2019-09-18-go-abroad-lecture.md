@@ -1,6 +1,8 @@
 ---
 layout: post
+title: 9 月 21 日出国分享交流会
 date: 2019-9-18
+author: 钱院学辅宣传部
 editor: '[![能动少C71尤佳睿](person)](@xjtu-blacksmith)'
 ---
 
