@@ -1,9 +1,9 @@
 ---
-date: 2019-9-13
+date: 2019-10-03
 ---
 
 # 学辅首页
-![本图片来自于西安交通大学官方网站，版权归其所有。](assets/images/frontpage.jpg)
+![本图片来自于西安交通大学官方网站，版权归其所有。](/assets/images/frontpage.jpg)
 
 <center-banner>第一次上信息站？<a href="/welcome">戳我快速入门！</a></center-banner>
 
@@ -17,7 +17,7 @@ date: 2019-9-13
 
 <ul class="postlist">
   {% for post in site.posts limit:10 %}
-    <li><i class="fa fa-star"></i>
+    <li><i class="fa fa-comment-o"></i>
       <a href="{{ post.url }}"><u><strong>{{ post.title }}</strong></u></a> by {{ post.author | markdownify | remove: '<p>' | remove: '</p>' }} @ {{ post.date | date:'%Y.%m.%d' }}
     </li>
   {% endfor %}
