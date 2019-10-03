@@ -17,7 +17,7 @@ date: 2019-9-13
 
 <ul class="postlist">
   {% for post in site.posts limit:10 %}
-    <li><span class="mono"><i class="fa fa-star"></i></span>
+    <li><i class="fa fa-star"></i>
       <a href="{{ post.url }}"><u><strong>{{ post.title }}</strong></u></a> by {{ post.author | markdownify | remove: '<p>' | remove: '</p>' }} @ {{ post.date | date:'%Y.%m.%d' }}
     </li>
   {% endfor %}
@@ -27,11 +27,11 @@ date: 2019-9-13
 ## <i class="fa fa-rocket"></i> 精品功能
 > 别人不知道的信息，我们知道！
 
-- <span class='mono'><i class="fa fa-star"></i></span> [新生必读](/intro/life-in-xjtu) 钱院萌新戳这里！！
-- <span class='mono'><i class="fa fa-file"></i></span> [培养方案查询](/program/) 课程清单早知道，提前预习好帮手！
-- <span class='mono'><i class="fa fa-th"></i></span> [课程中心](/course/) 课程信息、辅导资料、前人经验一站式收录！
-- <span class='mono'><i class="fa fa-map"></i></span> [校园站点导航](/navigator) 近在咫尺却远在天边的本校资源，**全部集齐**！
-- <span class='mono'><i class="fa fa-code"></i></span> [技术中心](/technique/) 感受最精品的排版、网页、开源协作学习体验！
+- <i class="fa fa-star"></i> [新生必读](/intro/life-in-xjtu) 钱院萌新戳这里！！
+- <i class="fa fa-file"></i> [培养方案查询](/program/) 课程清单早知道，提前预习好帮手！
+- <i class="fa fa-th"></i> [课程中心](/course/) 课程信息、辅导资料、前人经验一站式收录！
+- <i class="fa fa-map"></i> [校园站点导航](/navigator) 近在咫尺却远在天边的本校资源，**全部集齐**！
+- <i class="fa fa-code"></i> [技术中心](/technique/) 感受最精品的排版、网页、开源协作学习体验！
 
 
 ## <i class="fa fa-book"></i> 最新资料
