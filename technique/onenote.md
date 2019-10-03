@@ -24,7 +24,7 @@ OneNote 是微软公司开发的免费笔记应用，是 Office 家族（Word、
 
 可以在各大应用市场找到。虽然是移动端，但是包含了正式版几乎所有的功能。（据说 Google 商店的新版本可以同步微软便签，自备梯子的同学可以下载看看。）
 
-![1552109880543](./fig/onenote_2.jpg)
+![1552109880543](/img/onenote/onenote_2.jpg)
 
 ### Window 版（OneNote 2016）
 
@@ -35,13 +35,13 @@ OneNote 是微软公司开发的免费笔记应用，是 Office 家族（Word、
 
 目前这个软件功能最多，但是有些过于臃肿，界面不美观。
 
-![1552109339574](./fig/onenote_1.png)
+![1552109339574](/img/onenote/onenote_1.png)
 
 ### UWP版本
 
 打开微软商店，搜索 OneNote， 并下载安装到 Windows 系统中。
 
-![1552110115796](./fig/onenote_3.png)
+![1552110115796](/img/onenote/onenote_3.png)
 
 这是 Win 平台上的另一个 OneNote 版本。这个版本虽然功能较少，但是软件界面美观，软件响应速度和同步速度都比 OneNote 2016 快。这个版本在不断更新中。
 
@@ -49,7 +49,7 @@ OneNote 是微软公司开发的免费笔记应用，是 Office 家族（Word、
 
 在 AppStore 中也同样可以找到 OneNote。
 
-![TIM图片20190309155651](./fig/onenote_4.png)
+![TIM图片20190309155651](/img/onenote/onenote_4.png)
 
 ## 2. 获取共享笔记本
 
