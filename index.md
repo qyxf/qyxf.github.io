@@ -15,13 +15,13 @@ date: 2019-9-13
 
 ## <i class="fa fa-commenting-o"></i> 推送一览
 
-<ul>
-  {% for post in site.posts limit:5 %}
-    <li><span class='mono'><i class="fa fa-star"></i></span>
-      <a href="{{ post.url }}">{{ post.title }}</a> @ {{ post.date | date:'%Y 年 %m 月 %d 日' }}
+<ul class="postlist">
+  {% for post in site.posts limit:10 %}
+    <li><span class="mono"><i class="fa fa-star"></i></span>
+      <a href="{{ post.url }}"><u><strong>{{ post.title }}</strong></u></a> by {{ post.author | markdownify | remove: '<p>' | remove: '</p>' }} @ {{ post.date | date:'%Y.%m.%d' }}
     </li>
   {% endfor %}
-  <li><a href="post">更多推送...</a></li>
+  <li><span class="mono"><i class="fa fa-chevron-circle-down"></i></span> <a href="post"><strong>更多推送...</strong></a></li>
 </ul>
 
 ## <i class="fa fa-rocket"></i> 精品功能
@@ -43,14 +43,14 @@ date: 2019-9-13
 - [![002-GRE指南-blue](shield)](/BookHub/002.gre-guide)
 - [![001-TOEFL备考心得-blue](shield)](/BookHub/001.toefl-tips)
 
-## <i class="fa fa-compass"></i> 实用指南
-> 我们不止提供资料，我们更提供**自主学习**的工具与方法！
+## <i class="fa fa-compass"></i> 技术中心
+> 我们不止提供资料，我们更提供**自主学习**的工具与方法！[**戳我进技术中心**](/technique)
 
-- <i class="fa fa-file-word-o"></i> [Git 与 GitHub 快速上手教程](/tutorials/git-github)
-- <i class="fa fa-file-word-o"></i> [Git 客户端使用指南](/tutorials/git-client)
-- <i class="fa fa-file-word-o"></i> [OneNote 简介](/tutorials/onenote)
+- <i class="fa fa-file-word-o"></i> [Git 与 GitHub 快速上手教程](/technique/git-github)
+- <i class="fa fa-file-word-o"></i> [Git 客户端使用指南](/technique/git-client)
+- <i class="fa fa-file-word-o"></i> [OneNote 简介](/technique/onenote)
 - <i class="fa fa-file-word-o"></i> [钱院学辅 LaTeX 讲座](https://github.com/qyxf/lec-on-LaTeX)
-- <i class="fa fa-file-word-o"></i> [钱院学辅 LaTeX 安装指导](/tutorials/latex-download)
+- <i class="fa fa-file-word-o"></i> [钱院学辅 LaTeX 安装指导](/technique/latex-download)
 
 ## <i class="fa fa-address-card"></i> 关于我们
 
