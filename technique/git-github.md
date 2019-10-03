@@ -149,7 +149,7 @@ Git 是一个**版本控制系统**，即可以记录一个目录（文件夹）
 
 使用 GitHub 客户端是一个更好的选择。在 GitHub 客户端中登陆后，你将看到这样的页面（以 Windows 客户端为例）：
 
-![GitHub Desktop under Windows System](/fig/github-desktop-fixed.png)
+![GitHub Desktop under Windows System](/img/git-github/github-desktop-fixed.png)
 
 <p style="text-align: center"><small>(图片来源：<a href="https://desktop.github.com">GitHub Desktop | Simple collaboration from your desktop</a> ，已修改)</small></p>
 
