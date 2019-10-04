@@ -3,18 +3,3 @@ layout: default
 ---
 
 {{ content }}
-
-<div id="gitalk-container"></div>
-<script type="text/javascript">
-  const gitalk = new Gitalk({
-    clientID: 'c3149c4a0948a89e7d30',
-    clientSecret: '133aec412b403bc7f78acda479782e8e317d7e0a',
-    repo: 'qyxf.github.io',
-    owner: 'qyxf',
-    admin: ['xjtu-blacksmith'],
-    id: location.pathname,      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-</script>
