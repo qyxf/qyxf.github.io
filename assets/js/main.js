@@ -82,7 +82,8 @@ $(function() {
     distractionFreeMode: false  // Facebook-like distraction free mode
   })
 
-  gitalk.render('gitalk-container')
+  if($("#gitalk-container").length > 0)  // prevent error informed by browser
+    gitalk.render('gitalk-container')
 
   $("#gitalk-container").on("resize", sectionHeight);
   sectionHeight();
