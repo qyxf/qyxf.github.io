@@ -77,13 +77,14 @@ author: '[![能动少C71尤佳睿](person)](@xjtu-blacksmith)、[![自动化钱7
 ## <i class="fa fa-key"></i> 学生自营网站
 
 - 网络管理协会：[**ana**.xjtu.edu.cn](https://ana.xjtu.edu.cn)
-- 西安交大软件镜像站（网管协会维护）：[**mirrors**.xjtu.edu.cn](https://mirrors.xjtu.edu.cn/)
+- 西安交大软件镜像站（网管协会维护）：[**mirrors**.xjtu.edu.cn](https://mirrors.xjtu.edu.cn/)[^resources]
 - 兵马俑BBS：[**bbs**.xjtu.edu.cn](http://bbs.xjtu.edu.cn)
 - e瞳网：[www.**eeyes**.net](https://www.eeyes.net)
 - 挑战网：[www.**tiaozhan**.com](https://www.tiaozhan.com)
 - 学长享答：[www.**xzxda**.com](http://www.xzxda.com)
 
-[^Download]: 这个网站中收录了你可能会用到的所有软件，某些软件还是学生版本。校园网使用本链接下载网速可达`10 M/s`。
+[^resources]: 进入 https://mirrors.xjtu.edu.cn/commercial/ 可以通过校内线路下载 Adobe Jetbrain Microsoft Google 家相关工程软件
+
 
 
 ## <i class="fa fa-folder-open"></i> 其他
