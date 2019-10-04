@@ -25,6 +25,10 @@ li i, h2 i, h3 i, .mono {
   #banner li#log {
       display: none;
   }
+
+  .mobile-info {
+    display: block!important;
+  }
 }
 
 fig-cap {
@@ -51,6 +55,59 @@ center-banner {
   margin: 10px;
 }
 
-.postlist {
-  margin-bottom: 10px;
+.postlist li{
+  margin-bottom: 5px;
+
+  a {
+    font-weight: bold;
+  }
+}
+
+.mobile-info {
+  display: none;
+}
+
+
+
+.icon-bar {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    padding: 10px 5px;
+    margin: 3px;
+    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.2);
+    text-shadow: 1px 1px 2px rgba(75, 75, 75, 0.5);
+    border: 1px solid #2e6da4;
+    background-color: #337ab7; // colors from bootstrap
+    border-radius: 5px;
+    color: $highlight-color;
+    font-weight: bold;
+
+    i {
+      margin-bottom: 3px;
+      margin-right: 5px;
+    }
+  }
+}
+
+@media print, screen and (max-width: 359px) {
+  .icon-bar a {
+    width: 100px;
+  }
+}
+
+.gt-container .gt-comment-admin .gt-comment-content {
+    border: 1px solid darkgray;
+    border-radius: 5px;
+}
+
+header p {
+  font-weight: bold;
 }

@@ -37,7 +37,7 @@ $(function() {
       $("nav ul").append("<li class='tag-" + this.nodeName + "'><a href='#" + $(this).text().replace(/[\s\.\(\):&+]/g, '-').replace(/-+/g, '-') + "'>" + $(this).text() + "</a></li>");
     }
     else if ($(this).prop("tagName") == "H2"){
-      $("nav ul").append("<li class='tag-" + this.nodeName + "'>　<a href='#" + $(this).text().replace(/[\s\.\(\):&+]/g, '-').replace(/-+/g, '-') + "'>" + $(this).text() + "</a></li>");      
+      $("nav ul").append("<li class='tag-" + this.nodeName + "'>　<a href='#" + $(this).text().replace(/[\s\.\(\):&+]/g, '-').replace(/-+/g, '-') + "'>" + $(this).text() + "</a></li>");
     }
     else{
       $("nav ul").append("<li class='tag-" + this.nodeName + "'>　　<a href='#" + $(this).text().replace(/[\s\.\(\):&+]/g, '-').replace(/-+/g, '-') + "'>" + $(this).text() + "</a></li>");
@@ -82,7 +82,10 @@ $(function() {
     distractionFreeMode: false  // Facebook-like distraction free mode
   })
 
-  gitalk.render('gitalk-container')
+  $(".footnotes ol").prepend("<h3 style='text-align: center; margin-right: 20px;'>注释</h3>");
+
+  if($("#gitalk-container").length > 0)  // prevent error informed by browser
+    gitalk.render('gitalk-container')
 
   $("#gitalk-container").on("resize", sectionHeight);
   sectionHeight();
