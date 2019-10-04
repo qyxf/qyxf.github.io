@@ -20,7 +20,7 @@
             本页面总阅读量已达 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> 次。
         </li>
         <li><span class="fa-li"><i class="fa fa-exclamation-triangle"></i></span>
-            {{ site.license_info }}
+            {{ page.license_info | default: site.license_info }}
         </li>
     </ul>
 </blockquote>
