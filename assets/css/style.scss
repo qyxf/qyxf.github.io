@@ -25,6 +25,10 @@ li i, h2 i, h3 i, .mono {
   #banner li#log {
       display: none;
   }
+
+  .mobile-info {
+    display: block!important;
+  }
 }
 
 fig-cap {
@@ -53,4 +57,8 @@ center-banner {
 
 .postlist {
   margin-bottom: 10px;
+}
+
+.mobile-info {
+  display: none;
 }
