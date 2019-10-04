@@ -1,5 +1,5 @@
 ---
-date: 2019-10-03
+date: 2019-10-04
 ---
 
 # 学辅首页
@@ -44,6 +44,7 @@ date: 2019-10-03
 ## <i class="fa fa-compass"></i> 技术指南
 > 我们不止提供资料，我们更提供**自主学习**的工具与方法！[**戳我进技术中心**](/technique)
 
+- <i class="fa fa-file-word-o"></i> [钱院学辅信息站技术一览](/technique/website-tech-list)
 - <i class="fa fa-file-word-o"></i> [学研部排版技术路线](/technique/typeset)
 - <i class="fa fa-file-word-o"></i> [Git 与 GitHub 快速上手教程](/technique/git-github)
 - <i class="fa fa-file-word-o"></i> [Git 客户端使用指南](/technique/git-client)
