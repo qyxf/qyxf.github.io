@@ -288,6 +288,7 @@ section {
   }
 
   h3 {
+      margin-top: 10px;
       padding: 2px 0;
   }
 
@@ -378,12 +379,18 @@ small {
   background: linear-gradient(to top left, rgba(255, 140, 0, .4), rgba(144, 238, 144, .4));
   border: 1px solid #c7c7c7;
   border-radius: inherit;
-  padding: 5pt;
-  margin: 10pt;
+  padding: 5px;
+  margin: 10px;
 
   ol {
     padding-left: 20px;
+    margin: 5px 5px 0;
+
+    li p {
+      margin-bottom: 5px;
+    }
   }
+
 }
 
 

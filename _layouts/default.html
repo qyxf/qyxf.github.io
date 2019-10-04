@@ -2,7 +2,7 @@
 <!-- site: https://github.com/pages-themes/leap-day -->
 
 <!doctype html>
-<html lang="{{ site.lang | default: "zh-CN" }}">
+<html lang="zh-CN">
   {% include head.html %}
   <body>
       {% include header.html %}
@@ -12,8 +12,9 @@
       {% include nav-menu.html %}
 
       <section>
+        {% include mobile-info.html %}
         {{ content }}
-        
+
         {% include extra-info.html %}
       </section>
 

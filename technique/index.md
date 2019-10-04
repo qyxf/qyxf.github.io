@@ -15,6 +15,7 @@ author: '[![能动少C71尤佳睿](person)](@xjtu-blacksmith)'
 ### <i class="fa fa-sticky-note"></i> 学辅教程（使用指南）
 
 - [学研部排版技术路线](typeset)
+- [钱院学辅信息站技术一览](website-tech-list)
 - [Git 与 GitHub 快速上手教程](git-github)
 - [Git 客户端教程](git-client)
 - [LaTeX 环境配置指南](latex-download)
