@@ -11,7 +11,7 @@ date: 2019-10-04
   <a href="/intro/life-in-xjtu"><i class="fa fa-star fa-pulse"></i> 新生必读</a>
   <a href="/program/"><i class="fa fa-file"></i> 培养方案</a>
   <a href="/course/"><i class="fa fa-th"></i> 课程中心</a>
-  <a href="/navigator/"><i class="fa fa-map"></i> 交大导航</a>
+  <a href="/navigator"><i class="fa fa-map"></i> 交大导航</a>
   <a href="https://github.com/qyxf/"><i class="fa fa-github"></i> Star us!</a>
   <a href="/BookHub/"><i class="fa fa-book"></i> 学辅书库</a>
   <a href="/technique/"><i class="fa fa-rocket"></i> 技术中心</a>
