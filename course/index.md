@@ -22,13 +22,14 @@ author: '[![能动少C71尤佳睿](person)](@xjtu-blacksmith)、[![自动化钱7
 ### 数理基础课程
 
 - 大学化学
+- [大学计算机基础](fundamentals-of-college-computer)
 - [大学物理](university-physics)
-- [复变函数](complex-function)
-- [概率统计](probability-and-statistics)
+- 复变函数
+- 概率统计
 - [高等数学](advanced-mathematics)
-- [计算方法（数值分析）](numerical-analysis)
-- [离散数学](discrete-mathematics)
-- [线性代数](linear-algebra)
+- [计算方法](computing-methods)
+- 离散数学
+- 线性代数
 
 ### 工程基础课程
 
