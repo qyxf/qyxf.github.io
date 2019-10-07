@@ -84,6 +84,8 @@ $(function() {
 
   $(".footnotes ol").prepend("<h3 style='text-align: center; margin-right: 20px;'>注释</h3>");
 
+  $("section h1").after("<hr style='height: 1px; background-image: linear-gradient(to right, #fbfbfb 15%, #333333 50%, #fbfbfb 85%);'>")
+
   if($("#gitalk-container").length > 0)  // prevent error informed by browser
     gitalk.render('gitalk-container')
 
