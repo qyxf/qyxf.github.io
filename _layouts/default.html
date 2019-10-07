@@ -1,25 +1,9 @@
-<!-- original layout & style from Jekyll: Leap Day  -->
-<!-- site: https://github.com/pages-themes/leap-day -->
+---
+layout: base
+---
 
-<!doctype html>
-<html lang="zh-CN">
-  {% include head.html %}
-  <body>
-      {% include header.html %}
-      {% include banner.html %}
+{{ content }}
 
-    <div class="wrapper">
-      {% include nav-menu.html %}
+<hr>
 
-      <section>
-        {% include mobile-info.html %}
-        {{ content }}
-
-        {% include extra-info.html %}
-      </section>
-
-      {% include footer.html %}
-    </div>
-
-  </body>
-</html>
+{% include extra-info.html %}

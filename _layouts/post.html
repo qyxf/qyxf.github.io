@@ -1,5 +1,15 @@
 ---
-layout: default
+layout: base
 ---
 
+<h1>{{ page.title }}</h1>
+
+{% include page-info.html %}
+
 {{ content }}
+
+<hr>
+
+<blockquote>
+<i class="fa fa-exclamation-triangle"></i> {{ page.license_info | default: site.license_info }}
+</blockquote>
