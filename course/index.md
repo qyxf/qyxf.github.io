@@ -43,7 +43,7 @@ editor: '![能动少C71尤佳睿](person)、![自动化钱71吴思源](person)'
 
 ### 数学系课程
 
-- [高等代数](advanced-algebra)
+- [高等代数](higher-algebra)
 
 ## 常见问题
 - 为什么有的课程找不到？
