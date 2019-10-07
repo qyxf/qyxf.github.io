@@ -6,8 +6,6 @@ date: 2019-10-01
 path: '/img/toefl-beginner'
 ---
 
-# 托福入门知识
-
 ## TOEFL iBT 考试内容
 
 TOEFL iBT（Internet-based Test）为网络形式考试，使用英语语言出题。考试内容包含四项（阅读、听力、口语和写作），综合考查这四项技能。整场考试约需 3 小时。
