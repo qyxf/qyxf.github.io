@@ -32,11 +32,11 @@ $(function() {
   navHide();
   $("#nav-wrapper").css("display", "block");
 
-  $("section h1, section h2, section h3").each(function(){
-    if ($(this).prop("tagName") == "H1"){
+  $("section h2, section h3, section h4").each(function(){
+    if ($(this).prop("tagName") == "H2"){
       $("nav ul").append("<li class='tag-" + this.nodeName + "'><a href='#" + $(this).text().replace(/[\s\.\(\):&+]/g, '-').replace(/-+/g, '-') + "'>" + $(this).text() + "</a></li>");
     }
-    else if ($(this).prop("tagName") == "H2"){
+    else if ($(this).prop("tagName") == "H3"){
       $("nav ul").append("<li class='tag-" + this.nodeName + "'>　<a href='#" + $(this).text().replace(/[\s\.\(\):&+]/g, '-').replace(/-+/g, '-') + "'>" + $(this).text() + "</a></li>");
     }
     else{

@@ -5,8 +5,6 @@ author: '![电气钱82李明轩](person)'
 editor: '![能动少C71尤佳睿](person)'
 ---
 
-# 实用经验：在 iPad 上免费使用 Office 365
-
 > 如何在 iPad 上免费使用 Office 365？
 
 在 iPadOS 系统更新出来以后， iPad 已经可以同时配合鼠标键盘等外设，使得 iPad 成为真正的生产力工具。不少同学都有用 iPad 的 Office 365 阅读文献，看 PPT，学习复习等需求。但是同学们都发现 Office 365 在 iPad 上需要收费才能使用，那么本文介绍如何利用交大邮箱免费使用 Office 365 应用。

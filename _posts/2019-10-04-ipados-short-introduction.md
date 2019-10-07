@@ -4,9 +4,6 @@ author: '![自动化钱71吴思源](person)'
 title: iPad OS 使用心得
 ---
 
-
-# iPad OS 使用心得
-
 > 副标题：一篇不太正经的 iPad OS 的心得
 
 ## 绪论
