@@ -1,0 +1,20 @@
+<div class="page-info">
+  {% if page.author %}
+  <span class="metadata">
+    <i class="fa fa-pencil-square-o"></i>{{ page.author | markdownify }}
+  </span>
+  {% endif %}
+  {% if page.editor %}
+  <span class="metadata">
+    <i class="fa fa-keyboard-o"></i>{{ page.editor | markdownify }}
+  </span>
+  {% endif %}
+  {% if page.date %}
+  <span class="metadata">
+    <i class="fa fa-clock-o"></i>{{ page.date | date:'%Y 年 %m 月 %d 日' }}
+  </span>
+  {% endif %}
+  <span class="metadata" id="busuanzi_container_page_pv">
+    <i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+  </span>
+</div>

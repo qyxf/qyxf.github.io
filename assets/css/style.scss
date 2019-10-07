@@ -111,3 +111,21 @@ center-banner {
 header p {
   font-weight: bold;
 }
+
+.page-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .metadata {
+    display: inline-flex;
+    align-items: baseline;
+
+    i {
+      margin: {
+        left: 6px;
+        right: 3px;
+      }
+    }
+  }
+}
