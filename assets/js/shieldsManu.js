@@ -19,7 +19,7 @@ $(function() {
         else if(/化\S*生/.test(label)){ labelColor = "blueviolet"; }
         else if(/计\S*试/.test(label)){ labelColor = "orange"; }
         else if(/人\S*试/.test(label)){ labelColor = "silver"; }
-        else { labelColor = "grey"; }
+        else { labelColor = "green"; }
         $(this).attr("src", "https://img.shields.io/badge/" + label + "-" + message + "-grey?style=plastic&labelColor=" + labelColor);
         var name_ref = /@\S*/.exec($(this).parent().attr("href"));
         if(name_ref != null && name_ref != "@"){
