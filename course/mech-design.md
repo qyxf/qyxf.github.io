@@ -1,6 +1,6 @@
 ---
 date: 2019-8-13
-author: '[![能动少C71尤佳睿](person)](@xjtu-blacksmith)'
+author: '`能动少C71尤佳睿`'
 ---
 
 # 机械设计基础

@@ -1,6 +1,6 @@
 ---
 date: 2019-10-04
-author: '![自动化钱71吴思源](person)'
+author: '`自动化钱71吴思源`'
 title: iPad OS 使用心得
 ---
 
