@@ -1,6 +1,6 @@
 ---
-date: today
-author: '![能动少C71尤佳睿](person)'
+date: 2019-10-04
+author: '`能动少C71尤佳睿`'
 ---
 
 # 钱院学辅信息站技术一览

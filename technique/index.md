@@ -1,6 +1,6 @@
 ---
 date: 2019-9-21
-author: '[![能动少C71尤佳睿](person)](@xjtu-blacksmith)'
+author: '`能动少C71尤佳睿`'
 ---
 
 # 钱院学辅·技术中心

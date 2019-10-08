@@ -1,6 +1,6 @@
 ---
 layout: post
-author: '![越杰81郭秉瑞](person)、![越杰81苏预达](person)'
+author: '`越杰81郭秉瑞`、`越杰81苏预达`'
 title: 托福入门知识
 date: 2019-10-01
 path: '/img/toefl-beginner'

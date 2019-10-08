@@ -1,7 +1,7 @@
 ---
 date: 2019-10-01
-author: '[![自动化钱71吴思源](person)](@edmundwsy)'
-editor: '![能动少C71尤佳睿](person)'
+author: '`自动化钱71吴思源`'
+editor: '`能动少C71尤佳睿`'
 ---
 
 # 关于 Git 客户端的介绍

@@ -1,6 +1,6 @@
 ---
 date: 2019-8-6
-author: '[![能动少C71尤佳睿](person)](@xjtu-blacksmith)'
+author: '`能动少C71尤佳睿`'
 ---
 
 # 少年班（预科二年级）培养方案

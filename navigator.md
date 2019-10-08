@@ -1,6 +1,6 @@
 ---
 date: 2019-8-8
-author: '[![能动少C71尤佳睿](person)](@xjtu-blacksmith)、[![自动化钱71吴思源](person)](@edmundwsy)'
+author: '`能动少C71尤佳睿`、`自动化钱71吴思源`'
 ---
 
 # 西安交通大学站点导航

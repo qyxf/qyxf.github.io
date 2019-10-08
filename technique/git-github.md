@@ -1,6 +1,6 @@
 ---
 date: 2019-9-13
-author: '[![自动化钱71吴思源](person)](@edmundwsy)，[![能动少C71尤佳睿](person)](@xjtu-blacksmith)'
+author: '`自动化钱71吴思源`，`能动少C71尤佳睿`'
 ---
 
 # Git 与 GitHub 快速上手教程
