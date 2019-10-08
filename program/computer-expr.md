@@ -1,6 +1,6 @@
 ---
 date: 2019-10-03
-author: '[![计试71韩意](person)](@ApproachingScience)，[![计试71朱泽荧](person)](@zzylol)'
+author: '`计试71韩意`、`计试71朱泽荧`'
 ---
 
 # 计算机试验班培养方案

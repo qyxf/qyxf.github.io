@@ -1,7 +1,7 @@
 ---
 date: 2019-8-22
-author: '[![自动化钱71吴思源](person)](@edmundwsy)'
-editor: '[![能动少C71尤佳睿](person)](@xjtu-blacksmith)'
+author: '`自动化钱71吴思源`'
+editor: '`能动少C71尤佳睿`'
 ---
 
 # OneNote 入门

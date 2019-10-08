@@ -1,6 +1,6 @@
 ---
 date: 2019-10-01
-author: '[![自动化钱71吴思源](person)](@edmundwsy)，[![能动少C71尤佳睿](person)](@xjtu-blacksmith)'
+author: '`自动化钱71吴思源`，`能动少C71尤佳睿`'
 ---
 
 # LaTeX 环境配置教程

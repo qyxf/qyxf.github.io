@@ -1,6 +1,7 @@
 ---
 date: 2019-8-6
-author: '[![力学少71朱相辰](person)](@LoganZhucn)、[![自动化钱71吴思源](person)](@edmundwsy)'
+author: '`力学少71朱相辰`'
+editor: '`自动化钱71吴思源`'
 ---
 
 # 钱学森班/少年班（工程力学）培养方案

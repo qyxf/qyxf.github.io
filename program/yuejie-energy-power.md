@@ -1,6 +1,6 @@
 ---
 date: 2019-8-6
-author: '[![越杰71柯春旭](person)](@kechunxu)'
+author: '`越杰71柯春旭`'
 ---
 
 # 越杰（能动）培养方案
@@ -35,7 +35,7 @@ author: '[![越杰71柯春旭](person)](@kechunxu)'
 - 电工电子技术实验2
 - 燃烧学
 - 热流体课程实验2
-- 自动控制原理 
+- 自动控制原理
 - Heat Transfer
 - 机械设计基础
 - 工程材料基础
@@ -51,4 +51,3 @@ author: '[![越杰71柯春旭](person)](@kechunxu)'
 - 流体机械原理
 - 内燃机原理 Internal Combustion Engine Principals
 - 计算传热学基础
-

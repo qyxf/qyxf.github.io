@@ -1,7 +1,7 @@
 ---
 date: 2019-10-03
-author: '![人试81王宁南](person)'
-editor: '[![能动少C71尤佳睿](person)](@xjtu-blacksmith)'
+author: '`人试81王宁南`'
+editor: '`能动少C71尤佳睿`'
 ---
 
 # 人工智能试验班培养方案

@@ -1,8 +1,8 @@
 ---
 title: 实用经验：在 iPad 上免费使用 Office 365
 date: 2019-10-05
-author: '![电气钱82李明轩](person)'
-editor: '![能动少C71尤佳睿](person)'
+author: '`电气钱82李明轩`'
+editor: '`能动少C71尤佳睿`'
 ---
 
 > 如何在 iPad 上免费使用 Office 365？

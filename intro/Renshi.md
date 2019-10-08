@@ -1,7 +1,7 @@
 ---
 date: 2019-7-8
 author: '[钱学森书院新手手册编写组](/BookHub/005.freshman-manual)'
-editor: '[![自动化钱71吴思源](person)](@edmundwsy)'
+editor: '`自动化钱71吴思源`'
 ---
 
 # 人工智能实验班

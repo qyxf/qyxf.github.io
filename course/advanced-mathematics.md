@@ -1,6 +1,6 @@
 ---
 date: 2019-10-01
-author: '[钱院新生手册编写组](/BookHub/005.freshman-manual)、![化生81高旭帆](person)'
+author: '[钱院新生手册编写组](/BookHub/005.freshman-manual)、`化生81高旭帆`'
 ---
 
 # 高数

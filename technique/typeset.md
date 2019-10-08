@@ -1,6 +1,6 @@
 ---
 date: 2019-10-04
-author: '[![能动少C71尤佳睿](person)](@xjtu-blacksmith)'
+author: '`能动少C71尤佳睿`'
 ---
 
 # 学研部排版学习路线
