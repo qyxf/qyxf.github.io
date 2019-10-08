@@ -1,36 +1,24 @@
 $(function() {
-    $("img[src='shield']").each(function()
-    {
-        $(this).attr("src", "https://img.shields.io/badge/" + $(this).attr("alt"));
-    });
-
-    $("img[src='person']").each(function()
-    {
-        var label = /\S*\d{2,3}/.exec($(this).attr("alt"));
-        var message = /\d{2,3}-?\S*/.exec($(this).attr("alt"));
+    $("code").each(function() {
+      if(this.innerText != null && this.innerText.match(/\S*\d{2,3}\S*/))
+      {
+        var label = /\S*\d{2,3}/.exec(this.innerText);
+        var message = /\d{2,3}\S*/.exec(this.innerText);
         message = message.toString().replace(/[-\d]/g,'');
         var labelColor = "";
-        if(/钱/.test(label)){ labelColor = "yellow"; }
-        else if(/少/.test(label)){ labelColor = "red"; }
-        else if(/宗濂/.test(label)){ labelColor = "violet"; }
-        else if(/越杰/.test(label)){ labelColor = "brightgreen"; }
-        else if(/数\S*试/.test(label)){ labelColor = "lightblue"; }
-        else if(/物\S*试/.test(label)){ labelColor = "blue"; }
-        else if(/化\S*生/.test(label)){ labelColor = "blueviolet"; }
-        else if(/计\S*试/.test(label)){ labelColor = "orange"; }
-        else if(/人\S*试/.test(label)){ labelColor = "silver"; }
-        else { labelColor = "green"; }
-        $(this).attr("src", "https://img.shields.io/badge/" + label + "-" + message + "-grey?style=plastic&labelColor=" + labelColor);
-        var name_ref = /@\S*/.exec($(this).parent().attr("href"));
-        if(name_ref != null && name_ref != "@"){
-            $(this).parent().attr("href", "https://github.com/" + name_ref.toString().replace(/@/, ''));
-            $(this).attr("src", $(this).attr("src") + "&logo=GitHub");
+        var classList = new Array(/钱/, /少/, /宗濂/, /越杰/, /数\S*试/, /物\S*试/, /化\S*生/, /计\S*试/, /人\S*试/);
+        var classNameList = new Array("qian", "shao", "zonglian", "yuejie", "shushi", "wushi", "huasheng", "jishi", "renshi")
+        var className = "other";
+        for(var i = 0; i < classList.length; i++)
+        {
+          if(classList[i].test(label))
+          {
+            className = classNameList[i];
+            break;
+          }
         }
-    });
-
-    $("[src*='img\.shields\.io']").css({
-      "display": "unset",
-      "vertical-align": "text-bottom",
-      "padding": "0 2px 0 2px"
-    });
+        var badgeItem = "<span class='badge'><span class='badge-label badge-" + className + "'>" + label + "</span><span class='badge-message'>" + message + "</span></span>";
+        $(this).replaceWith(badgeItem);
+      }
+    })
 });
