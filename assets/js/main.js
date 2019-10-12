@@ -34,23 +34,25 @@ $(function() {
   $("section h1").after("<hr class='heading'>");
   pangu.spacingPage();
 
+  $("nav ul").append("<li class='tag-H2'><a href='#'><i class='fa fa-home'></i> 返回顶部</a></li>");
   $("section h2, section h3, section h4").each(function(){
+    var unallowedCharacters = /[\s\.\(\):&+]/g;
     if ($(this).prop("tagName") == "H2"){
       $("nav ul").append("<li class='tag-" + this.nodeName + "'><a href='#" +
-      $(this).text().replace(/[\s\.\(\):&+]/g, '-').replace(/-+/g, '-') + "'>" +
+      $(this).text().replace(unallowedCharacters, '-').replace(/-+/g, '-') + "'>" +
       $(this).text() + "</a></li>");
     }
     else if ($(this).prop("tagName") == "H3"){
       $("nav ul").append("<li class='tag-" + this.nodeName + "'>　<a href='#" +
-      $(this).text().replace(/[\s\.\(\):&+]/g, '-').replace(/-+/g, '-') + "'>" +
+      $(this).text().replace(unallowedCharacters, '-').replace(/-+/g, '-') + "'>" +
       $(this).text() + "</a></li>");
     }
     else{
       $("nav ul").append("<li class='tag-" + this.nodeName + "'>　　<a href='#" +
-      $(this).text().replace(/[\s\.\(\):&+]/g, '-').replace(/-+/g, '-') + "'>" +
+      $(this).text().replace(unallowedCharacters, '-').replace(/-+/g, '-') + "'>" +
       $(this).text() + "</a></li>");
     }
-    $(this).attr("id",$(this).text().replace(/[\s\.\(\):&+]/g, '-').replace(/-+/g, '-'));
+    $(this).attr("id",$(this).text().replace(unallowedCharacters, '-').replace(/-+/g, '-'));
     $("nav ul li:first-child a").parent().addClass("active");
   });
 
