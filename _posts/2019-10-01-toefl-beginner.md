@@ -28,7 +28,7 @@ TOEFL iBT（Internet-based Test）为网络形式考试，使用英语语言出�
 
 背单词对阅读很重要，不仅是对句意的把握，托福的词汇题可能与上下文联系不紧密，所以必须要了解词意。
 
-![图片](/img/toefl-beginner/reading.png)
+![图片](/img/toefl-beginner/reading.jpg)
 
 ### 2 听力
 听力部分（不加试的前提下）共包括28道试题，包含两个对话（conversation）和三段课堂讲解（lecture）。听力部分的时间大约是 41 分钟。每个对话涉及 2 个或 2 个以上的说话者，时长 2 -- 3 分钟，对应5道试题;每段演讲时长 4 -- 6 分钟，对应 6 道试题。考生可以在听录音的过程中做笔记帮助答题。
@@ -83,7 +83,7 @@ Conversation 大多数人选择不记笔记，lecture 记笔记的比较多。�
 
 ## 附录 1：2019年考试时间安排
 
-![图片](/img/toefl-beginner/schedule.png)
+![图片](/img/toefl-beginner/schedule.jpg)
 
 ## 附录 2：各国名校录取分数要求
 
