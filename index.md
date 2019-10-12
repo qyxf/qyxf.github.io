@@ -7,7 +7,7 @@ date: 2019-10-04
 
 <center-banner>第一次上信息站？<a href="/welcome">戳我快速入门！</a></center-banner>
 
-{% include button-list.html %}
+{% include icon-bar.html %}
 
 ## <i class="fa fa-commenting-o"></i> 推送一览
 
