@@ -248,6 +248,7 @@ section {
   u { text-underline-position: under; }
   li p { margin-bottom: 5px; }
   li + li { margin-top: 5px; }
+  img + img { margin-top: 10px; }
   &> p > img {
     max-width: 90%;
     display: block;
