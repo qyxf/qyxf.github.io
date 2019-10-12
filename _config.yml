@@ -4,6 +4,7 @@ organization_full: 西安交通大学钱学森书院学业辅导中心
 version: 青云·雪峰 (V2.1)
 plugins:
   - jekyll-mentions
+  - jekyll-feed
 
 markdown: kramdown
 future: true
