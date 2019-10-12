@@ -118,20 +118,22 @@ $amount: 40%;
 span.badge {
   color: #efefef;
   margin: 0 2px;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 100%;
+  text-align: center;
   .badge-label {
     border: {
       top-left-radius: 3px;
       bottom-left-radius: 3px; }
-    padding: 3px 3px 0;
-    text-shadow: 1px 1px 2px $background-color; }
+    padding: 3px;
+    text-shadow: 1px 1px 1px $background-color; }
   .badge-message {
     border: {
       top-right-radius: 3px;
       bottom-right-radius: 3px; }
     background-color: $background-color;
-    padding: 3px 3px 0 0; }
+    padding: 3px;
+    padding-left: 0px; }
     .badge-qian { background-image: linear-gradient($qian-color, darken($qian-color, $amount)); }
     .badge-shao { background-image: linear-gradient($shao-color, darken($shao-color, $amount)); }
     .badge-zonglian { background-image: linear-gradient($zonglian-color, darken($zonglian-color, $amount)); }
