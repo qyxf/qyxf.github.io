@@ -126,6 +126,19 @@ header p {
   }
 }
 
+
+$qian-color: #f6d365;
+$shao-color: #ff6666;
+$zonglian-color: #fa71cd;
+$yuejie-color: #9be15d;
+$shushi-color: #7de2fc;
+$wushi-color: #33aaff;
+$huasheng-color: #6633ff;
+$jishi-color: #ff9a44;
+$renshi-color: #00cccc;
+$other-color: #cccc99;
+$amount: 40%;
+
 span.badge {
   color: #efefef;
   margin: 0 2px;
@@ -150,35 +163,16 @@ span.badge {
     padding: 3px 3px 0;
   }
 
-  // All colors are from https://webgradients.com
-  // Sunny Morning,
-  .badge-qian { background-image: linear-gradient(#f6d365, #865042); }
 
-  // Love Kiss
-  .badge-shao { background-image: linear-gradient(#ffb199, #ff0844); }
-
-  // Mixed Hopes
-  .badge-zonglian { background-image: linear-gradient(#fa71cd, #c471f5); }
-
-  // Young Grass
-  .badge-yuejie { background-image: linear-gradient(#9be15d, #007957); }
-
-  // Fresh Oasis
-  .badge-shushi { background-image: linear-gradient(#7de2fc, #5c5b72); }
-
-  // River City
-  .badge-wushi { background-image: linear-gradient(#04befe, #4481eb); }
-
-  // Smart Indigo
-  .badge-huasheng { background-image: linear-gradient(#7579ff, #b224ef); }
-
-  // Orange Juice
-  .badge-jishi { background-image: linear-gradient(#ff9a44, #fc6076); }
-
-  // Rich Metal
-  .badge-renshi { background-image: linear-gradient(#d7d2cc, #304352); }
-
-  // Solid Stone
-  .badge-other { background-image: linear-gradient(#517fa4, #243949); }
+  .badge-qian { background-image: linear-gradient($qian-color, darken($qian-color, $amount)); }
+  .badge-shao { background-image: linear-gradient($shao-color, darken($shao-color, $amount)); }
+  .badge-zonglian { background-image: linear-gradient($zonglian-color, darken($zonglian-color, $amount)); }
+  .badge-yuejie { background-image: linear-gradient($yuejie-color, darken($yuejie-color, $amount)); }
+  .badge-shushi { background-image: linear-gradient($shushi-color, darken($shushi-color, $amount)); }
+  .badge-wushi { background-image: linear-gradient($wushi-color, darken($wushi-color, $amount)); }
+  .badge-huasheng { background-image: linear-gradient($huasheng-color, darken($huasheng-color, $amount)); }
+  .badge-jishi { background-image: linear-gradient($jishi-color, darken($jishi-color, $amount)); }
+  .badge-renshi { background-image: linear-gradient($renshi-color, darken($renshi-color, $amount)); }
+  .badge-other { background-image: linear-gradient($other-color, darken($other-color, $amount)); }
 
 }
