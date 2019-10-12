@@ -21,14 +21,7 @@ date: 2019-10-04
 
 ## <i class="fa fa-commenting-o"></i> 推送一览
 
-<ul class="postlist">
-  {% for post in site.posts limit:10 %}
-    <li><i class="fa fa-comment-o"></i>
-      <a href="{{ post.url }}">{{ post.title }}</a> by {{ post.author | markdownify | remove: '<p>' | remove: '</p>' }}
-    </li>
-  {% endfor %}
-  <li><span class="mono"><i class="fa fa-chevron-circle-down"></i></span> <a href="post"><strong>更多推送...</strong></a></li>
-</ul>
+{% include post-list.html %}
 
 
 ## <i class="fa fa-book"></i> 最新资料
