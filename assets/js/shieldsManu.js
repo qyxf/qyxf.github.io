@@ -1,5 +1,5 @@
 $(function() {
-    $("p > code").each(function() {
+    $("p > code, li > code, span > code").each(function() {
       // 匹配示例：ACCA61王敏、3D打印钱71张三丰、能动少C71诸葛孔明（暂不检测外文名）
       if(this.innerText != null && this.innerText.match(/[\u4e00-\u9fa5A-D3]{1,5}\d{2,3}[\u4e00-\u9fa5]{2,4}/))
       {
