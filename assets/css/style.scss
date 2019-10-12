@@ -4,40 +4,36 @@
 @import "leap-month.scss";
 
 .fa-ul {
-    list-style: none;
-}
+    list-style: none; }
 
 li i, h2 i, h3 i, .mono {
   width: 1.1em;
   text-align: center;
-  display: inline-block;
-}
+  display: inline-block; }
+
+@media print, screen and (max-width: 862px)
+{
+  .icon-bar a.not-laptop {
+    display: none; } }
 
 @media print, screen and (max-width: 449px)
 {
   #banner li#project-page {
-      display: none;
-  }
-}
+      display: none; } }
 
 @media print, screen and (max-width: 359px)
 {
   #banner li#log {
-      display: none;
-  }
-
-  .mobile-info {
-    display: block!important;
-  }
-}
+      display: none; }
+  section .mobile-info {
+      display: block; } }
 
 fig-cap {
   font-size: small;
   display: flex;
   justify-content: center;
   text-decoration: underline;
-  text-underline-position: under;
-}
+  text-underline-position: under; }
 
 tb-cap {
   font-size: small;
@@ -45,32 +41,25 @@ tb-cap {
   justify-content: center;
   text-decoration: underline;
   text-underline-position: under;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 center-banner {
   display: flex;
   justify-content: center;
   font-weight: bold;
-  margin: 10px;
-}
+  margin: 10px; }
 
 .postlist li a {
-    font-weight: bold;
-}
+    font-weight: bold; }
 
 .mobile-info {
-  display: none;
-}
-
-
+  display: none; }
 
 .icon-bar {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
   a {
     display: flex;
     justify-content: center;
@@ -85,46 +74,33 @@ center-banner {
     border-radius: 5px;
     color: $highlight-color;
     font-weight: bold;
-
+    &:hover {
+      border: 1px solid #337ab7;
+      background-color: #2e6da4;
+    }
     i {
       margin-bottom: 3px;
-      margin-right: 5px;
-    }
-  }
-}
+      margin-right: 5px; } } }
 
 @media print, screen and (max-width: 359px) {
   .icon-bar a {
-    width: 100px;
-  }
-}
+    width: 100px; } }
 
 .gt-container .gt-comment-content {
     border: 1px solid darkgray;
-    border-radius: 5px;
-}
-
-header p {
-  font-weight: bold;
-}
+    border-radius: 5px; }
 
 .page-info {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
   .metadata {
     display: inline-flex;
     align-items: baseline;
-
     i {
       margin: {
         left: 6px;
-        right: 3px;
-      }
-    }
-  }
-}
+        right: 3px; } } } }
 
 
 $qian-color: #f6d365;
@@ -142,37 +118,29 @@ $amount: 40%;
 span.badge {
   color: #efefef;
   margin: 0 2px;
-  font-weight: normal;
-  font-size: small;
-
+  font-weight: 500;
+  font-size: 100%;
+  text-align: center;
   .badge-label {
     border: {
       top-left-radius: 3px;
-      bottom-left-radius: 3px;
-    }
-    padding: 3px 3px 0;
-    text-shadow: 1px 1px 2px $background-color;
-  }
-
+      bottom-left-radius: 3px; }
+    padding: 3px;
+    text-shadow: 1px 1px 1px $background-color; }
   .badge-message {
     border: {
       top-right-radius: 3px;
-      bottom-right-radius: 3px;
-    }
+      bottom-right-radius: 3px; }
     background-color: $background-color;
-    padding: 3px 3px 0;
-  }
-
-
-  .badge-qian { background-image: linear-gradient($qian-color, darken($qian-color, $amount)); }
-  .badge-shao { background-image: linear-gradient($shao-color, darken($shao-color, $amount)); }
-  .badge-zonglian { background-image: linear-gradient($zonglian-color, darken($zonglian-color, $amount)); }
-  .badge-yuejie { background-image: linear-gradient($yuejie-color, darken($yuejie-color, $amount)); }
-  .badge-shushi { background-image: linear-gradient($shushi-color, darken($shushi-color, $amount)); }
-  .badge-wushi { background-image: linear-gradient($wushi-color, darken($wushi-color, $amount)); }
-  .badge-huasheng { background-image: linear-gradient($huasheng-color, darken($huasheng-color, $amount)); }
-  .badge-jishi { background-image: linear-gradient($jishi-color, darken($jishi-color, $amount)); }
-  .badge-renshi { background-image: linear-gradient($renshi-color, darken($renshi-color, $amount)); }
-  .badge-other { background-image: linear-gradient($other-color, darken($other-color, $amount)); }
-
-}
+    padding: 3px;
+    padding-left: 0px; }
+    .badge-qian { background-image: linear-gradient($qian-color, darken($qian-color, $amount)); }
+    .badge-shao { background-image: linear-gradient($shao-color, darken($shao-color, $amount)); }
+    .badge-zonglian { background-image: linear-gradient($zonglian-color, darken($zonglian-color, $amount)); }
+    .badge-yuejie { background-image: linear-gradient($yuejie-color, darken($yuejie-color, $amount)); }
+    .badge-shushi { background-image: linear-gradient($shushi-color, darken($shushi-color, $amount)); }
+    .badge-wushi { background-image: linear-gradient($wushi-color, darken($wushi-color, $amount)); }
+    .badge-huasheng { background-image: linear-gradient($huasheng-color, darken($huasheng-color, $amount)); }
+    .badge-jishi { background-image: linear-gradient($jishi-color, darken($jishi-color, $amount)); }
+    .badge-renshi { background-image: linear-gradient($renshi-color, darken($renshi-color, $amount)); }
+    .badge-other { background-image: linear-gradient($other-color, darken($other-color, $amount)); } }
