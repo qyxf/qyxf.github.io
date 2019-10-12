@@ -24,7 +24,7 @@ date: 2019-10-04
 <ul class="postlist">
   {% for post in site.posts limit:10 %}
     <li><i class="fa fa-comment-o"></i>
-      <a href="{{ post.url }}">{{ post.title }}</a> by {{ post.author | markdownify | remove: '<p>' | remove: '</p>' }}
+      <a href="{{ post.url | remove: '.html' }}">{{ post.title }}</a> by {{ post.author | markdownify | remove: '<p>' | remove: '</p>' }}
     </li>
   {% endfor %}
   <li><span class="mono"><i class="fa fa-chevron-circle-down"></i></span> <a href="post"><strong>更多推送...</strong></a></li>
