@@ -1,0 +1,16 @@
+<ul class="postlist">
+  {% if page.postpage %}
+  {% for post in site.posts %}
+    <li><i class="fa fa-comment-o"></i>
+      <a href="{{ post.url | remove: '.html' }}">{{ post.title }}</a> by {{ post.author | markdownify | remove: '<p>' | remove: '</p>' }}
+    </li>
+  {% endfor %}
+  {% else %}
+  {% for post in site.posts limit:10 %}
+    <li><i class="fa fa-comment-o"></i>
+      <a href="{{ post.url | remove: '.html' }}">{{ post.title }}</a> by {{ post.author | markdownify | remove: '<p>' | remove: '</p>' }}
+    </li>
+  {% endfor %}
+  <li><i class="fa fa-chevron-circle-down"></i> <a href="post"><strong>更多推送...</strong></a></li>
+  {% endif %}
+</ul>
