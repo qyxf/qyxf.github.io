@@ -1,5 +1,5 @@
 ---
-date: 2019-10-04
+date: 2019-10-12
 author: '`能动少C71尤佳睿`'
 ---
 
@@ -10,7 +10,7 @@ author: '`能动少C71尤佳睿`'
 ## 站点基本功能
 
 - 网页三剑客：HTML、CSS、JavaScript
-- 日常文档撰写：Markdown（目前使用 Kramdown 引擎编译）
+- 日常文档撰写：Markdown（使用 [Kramdown](https://kramdown.gettalong.org/) 引擎编译）
 - 一站式网站生成：[Jekyll](https://jekyllrb.com/)（V3.8.6）
 - 版本控制：[Git](https://git-scm.com/)
 - 开源协作：[GitHub](https://github.com/)
@@ -24,6 +24,7 @@ author: '`能动少C71尤佳睿`'
 - 彩色标牌：[shields.io](https://shields.io/) 静态/动态标牌服务
 - 字体改良：webfont（目前暂未优化中文字体）
 - 访问量统计：[不蒜子](https://busuanzi.ibruce.info/)
+- 中西文混排空格：[pangu.js](https://github.com/vinta/pangu.js)
 
 ## 效率提升
 
