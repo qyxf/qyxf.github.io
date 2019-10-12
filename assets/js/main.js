@@ -32,6 +32,7 @@ $(function() {
   navHide();
   $("#nav-wrapper").css("display", "block");
 
+  pangu.spacingPage();
   $("section h2, section h3, section h4").each(function(){
     if ($(this).prop("tagName") == "H2"){
       $("nav ul").append("<li class='tag-" + this.nodeName + "'><a href='#" + $(this).text().replace(/[\s\.\(\):&+]/g, '-').replace(/-+/g, '-') + "'>" + $(this).text() + "</a></li>");
