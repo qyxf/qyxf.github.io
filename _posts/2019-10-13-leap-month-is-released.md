@@ -5,7 +5,7 @@ author: '`能动少C71尤佳睿`'
 
 经过近一周的持续改进，本站自用的 Jekyll 主题——**闰月主题**（Leap Month）终于完善至可以发布的水平，从本站分离后正式在 GitHub 发布。版本号与本站项目版本号一致，目前为 V2.1 版本。
 
-> 项目主页：[https://github.com/qyxf/leap-day](https://github.com/qyxf/leap-day)
+> 项目主页：[https://github.com/qyxf/leap-day](https://github.com/qyxf/leap-month)
 
 ## 主题简介
 闰月主题衍生自 GitHub Pages 服务默认提供的闰日主题（[Leap Day](https://github.com/pages-themes/leap-day)）。取名为「闰月」，是来自于这样一个事实：西方阳历通过「闰日」补足年历误差，中国农历（阴阳历）则通过数年之内的「闰月」补偿年余；作为「闰日」主题的改进版本，闰月主题更佳贴合中文网站的需求，并改进了其原有的若干问题。
@@ -33,11 +33,11 @@ remote_theme: qyxf/leap-month
 
 此条元数据允许 GitHub Pages 服务（及你的本地 Jekyll 工具）通过 [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-theme) 从 GitHub 上调用闰月主题——你可以参考[这篇 GitHub 博客](https://github.blog/2017-11-29-use-any-theme-with-github-pages/)的说明。注意，在使用本主题的同时不要通过 `theme` 指定其他的主题。
 
-在确定主题之后，还需要在 `_config.yml` 完善一些站点的元数据，包括站点标题 `title`、副标题 `subtitle` 等。你可以访问[项目主页](https://github.com/qyxf/leap-day)，以了解更多细节。
+在确定主题之后，还需要在 `_config.yml` 完善一些站点的元数据，包括站点标题 `title`、副标题 `subtitle` 等。你可以访问[项目主页](https://github.com/qyxf/leap-month)，以了解更多细节。
 
 ### 克隆到本地
 
-如果你希望获得本主题的源代码，将其布置在自己的代码仓库中，你可以直接在 GitHub 上克隆本主题的代码，覆盖到本地仓库之后再做若干改动，如配置元数据等。同样的，请参考[项目主页](https://github.com/qyxf/leap-day)，以了解更多细节。
+如果你希望获得本主题的源代码，将其布置在自己的代码仓库中，你可以直接在 GitHub 上克隆本主题的代码，覆盖到本地仓库之后再做若干改动，如配置元数据等。同样的，请参考[项目主页](https://github.com/qyxf/leap-month)，以了解更多细节。
 
 ## 开发过程
 本站在建站之处，直接从远端调用 GitHub Pages 默认支持的 Leap Day 主题。在通过覆盖主题样式表与脚本的过程中，渐感原主题的诸多局限，包括但不限于：
