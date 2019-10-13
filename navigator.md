@@ -26,6 +26,7 @@ author: '`能动少C71尤佳睿`、`自动化钱71吴思源`'
 
 - 教务处首页：[**dean**.xjtu.edu.cn](http://dean.xjtu.edu.cn)
 - 评教：[**zhpj**.xjtu.edu.cn](http://zhpj.xjtu.edu.cn)
+- 学生工作（奖/助学金）：[**sa**.xjtu.edu.cn](http://sa.xjtu.edu.cn)
 
 ## <i class="fa fa-globe"></i> 在线信息服务
 
@@ -83,7 +84,7 @@ author: '`能动少C71尤佳睿`、`自动化钱71吴思源`'
 - 挑战网：[www.**tiaozhan**.com](https://www.tiaozhan.com)
 - 学长享答：[www.**xzxda**.com](http://www.xzxda.com)
 
-[^resources]: 进入 https://mirrors.xjtu.edu.cn/commercial/ 可以通过校内线路下载 Adobe Jetbrain Microsoft Google 家相关工程软件
+[^resources]: 在镜像站的[校园专享](https://mirrors.xjtu.edu.cn/commercial/)模块，可通过校内线路高速下载 Adobe、Jetbrain、Microsoft、Google 等系列的商用软件。
 
 
 
@@ -94,7 +95,7 @@ author: '`能动少C71尤佳睿`、`自动化钱71吴思源`'
 - 学生处知心网：[**xsc**.xjtu.edu.cn](http://xsc.xjtu.edu.cn)
 - 视觉影像识别系统[^PPT]：[**vi**.xjtu.edu.cn](http://vi.xjtu.edu.cn)
 
-[^PPT]: 想要交大校徽、校训标准样式及官方信纸、交大PPT模板可以从这里下载哦！
+[^PPT]: 想要交大校徽、校训标准样式，及官方信纸、交大PPT模板，可以从这里下载哦！
 
 
 ## <i class="fa fa-history"></i> 考古现场
