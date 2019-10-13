@@ -58,7 +58,7 @@ author: '钱院学辅学研部'
 
 ### <i class="fa fa-user-plus"></i> 如果你没用过 GitHub
 
-> 有空时可以阅读[钱院学辅 Git 与 GitHub 快速上手指南](/tutorials/git-github)，进入开源美（keng）丽（die）新世界！
+> 有空时可以阅读[钱院学辅 Git 与 GitHub 快速上手指南](/technique/git-github)，进入开源美（keng）丽（die）新世界！
 
 你可以向我们的邮箱 <i class="fa fa-envelope-o"></i> qianxiaofu.mail@qq.com 发送邮件，内容包括：
 
