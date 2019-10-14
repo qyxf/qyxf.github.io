@@ -144,3 +144,13 @@ span.badge {
     .badge-jishi { background-image: linear-gradient($jishi-color, darken($jishi-color, $amount)); }
     .badge-renshi { background-image: linear-gradient($renshi-color, darken($renshi-color, $amount)); }
     .badge-other { background-image: linear-gradient($other-color, darken($other-color, $amount)); } }
+
+section {
+  h2 {
+    font-size: 1.7em; }
+  h3 {
+    font-size: 1.5em; }
+  h4 {
+    font-size: 1.2em;
+    text-decoration: underline;
+    text-underline-position: under; } }
