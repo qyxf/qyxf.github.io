@@ -4,4 +4,4 @@
 [![Build Status](https://travis-ci.org/qyxf/qyxf.github.io.svg?branch=master)](https://travis-ci.org/qyxf/qyxf.github.io)
 
 - 网址：[qyxf.site](https://qyxf.site)
-- 主题：由 [Leap Day](https://github.com/pages-themes/leap-day) 大幅改进、优化而来的 [Leap Month](https://github.com/qyxf/qyxf.github.io/blob/master/_sass/leap-month.scss)，尚未最终定稿
+- 主题：[Leap Month](https://github.com/qyxf/leap-month)（V2.1，自制）
