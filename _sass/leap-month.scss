@@ -19,7 +19,6 @@ $theme-color: #7cafc2;
 
 body {
   font: 14px 'Quattrocento Sans', sans-serif;
-  line-height: 1.7em;
   color: $default-color;
   font-weight: normal;
   margin: 0px;
@@ -33,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1em; }
 
 p, ul, ol, table, pre, dl {
+  line-height: 1.7em;
   margin: 0 0 1em; }
 
 small { font-size: 0.9em; }
@@ -345,14 +345,6 @@ footer {
     color: $light-color;
     @media print, screen and (max-width: 1060px) {
       float: none; } }
-
-h1 {
-  @media print, screen and (max-width: 1060px) {
-    white-space: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    -ms-text-overflow: ellipsis; } }
 
 @-webkit-keyframes blink {
   0% { color: $background-color; }
