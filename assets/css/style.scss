@@ -116,10 +116,11 @@ $other-color: #cccc99;
 $amount: 40%;
 
 span.badge {
+  display: inline-block;
   color: #efefef;
   margin: 0 2px;
   font-weight: 500;
-  font-size: 100%;
+  font-size: 0.8em;
   text-align: center;
   .badge-label {
     border: {
