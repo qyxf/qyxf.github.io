@@ -5,7 +5,7 @@ author: '`能动少C71尤佳睿`'
 
 经过近一周的持续改进，本站自用的 Jekyll 主题——**闰月主题**（Leap Month）终于完善至可以发布的水平，从本站分离后正式在 GitHub 发布。版本号与本站项目版本号一致，目前为 V2.1 版本。
 
-> 项目主页：[https://github.com/qyxf/leap-day](https://github.com/qyxf/leap-month)
+> 项目主页：[https://github.com/qyxf/leap-month](https://github.com/qyxf/leap-month)
 
 ## 主题简介
 闰月主题衍生自 GitHub Pages 服务默认提供的闰日主题（[Leap Day](https://github.com/pages-themes/leap-day)）。取名为「闰月」，是来自于这样一个事实：西方阳历通过「闰日」补足年历误差，中国农历（阴阳历）则通过数年之内的「闰月」补偿年余；作为「闰日」主题的改进版本，闰月主题更佳贴合中文网站的需求，并改进了其原有的若干问题。
