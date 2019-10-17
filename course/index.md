@@ -19,7 +19,7 @@ editor: '`能动少C71尤佳睿`、`自动化钱71吴思源`'
 
 ### 数理基础课程
 
-- 大学化学
+- [大学化学](fundamental-chemistry)
 - [大学计算机基础](fundamentals-of-college-computer)
 - [大学物理](university-physics)
 - 复变函数
