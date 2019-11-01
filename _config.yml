@@ -11,3 +11,15 @@ future: true
 license_info: >
   如无特别声明，本站发布内容均采用<a href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享 BY-SA 4.0
   协议</a>许可。使用者可在明确注明作者、作品链接之前提下转载本站作品，但必须使用相同或兼容的许可证对传播、再创作的内容授权。
+
+# valine
+valine:
+  enable: true
+  appid: PGiKOJ7cHFkr860I5ohCgSOn-gzGzoHsz
+  appkey: SwTXHceYxOjiKMCIouFcB2ky
+  notify: true
+  verify: true
+  placeholder: Write your comments
+  avatar:
+  guest_info: nickname, mail_address, website
+  pageSize: 10
