@@ -9,6 +9,12 @@ layout: base
 {{ content }}
 
 <hr>
+<!-- Valine 评论框 start -->
+{% if site.valine.enable %}
+  {% include valine_comments.html %}
+{% endif %}
+<!-- Valine 评论框 end -->
+<hr>
 
 <blockquote>
 <p><i class="fa fa-exclamation-triangle"></i> {{ page.license_info | default: site.license_info }}</p>
