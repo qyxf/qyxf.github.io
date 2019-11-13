@@ -109,11 +109,7 @@ hr {
   outline: none;
   height: 11px;
   background: transparent url('../images/hr.gif') center center repeat-x;
-  margin: 0 0 20px;
-  &.heading {
-    height: 2px;
-    background-image: linear-gradient(to right, #fbfbfb 15%, #333333 50%, #fbfbfb 85%);
-  } }
+  margin: 0 0 20px; }
 
 header {
   padding: 25px 20px 40px 20px;
@@ -215,11 +211,9 @@ section {
   margin-top: 190px;
   position: relative;
   background: $section-color;
-  border-radius: 3px;
+  border-radius: 15px;
   border: 1px solid $light-border-color;
-  box-shadow: 0px 1px 2px rgba(0,0,0,.09),
-              inset 0px 0px 2px 2px rgba(255,255,255,.5),
-              inset 0 0 5px 5px rgba(255,255,255,.4);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
   @media print, screen and (max-width: 1060px) {
     float: none;
     border:1px solid #e5e5e5;
@@ -238,7 +232,6 @@ section {
     + h3, + h4 {
       padding-top: 0; }}
   h1 {
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
       text-align: center;
       white-space: pre-wrap;
       padding-top: 0.8em; }

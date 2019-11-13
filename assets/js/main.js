@@ -31,7 +31,6 @@ $(function() {
   $("#nav-wrapper").css("display", "block");
 
   $(".footnotes ol").prepend("<h2>注释</h2>");
-  $("section h1").after("<hr class='heading'>");
   pangu.spacingPage();
 
   $("nav ul").append("<li class='tag-H2'><a href='#'><i class='fa fa-home'></i> 返回顶部</a></li>");
