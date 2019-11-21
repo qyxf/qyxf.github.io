@@ -1,7 +1,7 @@
 ---
 permalink: /zhufeng/
 editor: 珠峰学报编辑部
-date: 2019-11-14
+date: 2019-11-21
 ---
 
 # 《珠峰学报》专栏
@@ -16,7 +16,7 @@ date: 2019-11-14
 
 ## 往期发行本下载
 
-- 2019 秋季刊：[书库下载](/BookHub/008.journal-of-zhufeng/zhufeng-2019-autumn.pdf) 或 [百度网盘](https://pan.baidu.com/s/1ypOm64nbWq5N6ct9JkL-Rw)（提取码 pcnd）
+- 2019 秋季刊：[书库下载](/BookHub/008.journal-of-zhufeng/zhufeng-2019-autumn.pdf) 或 [百度网盘](https://pan.baidu.com/s/1Hw5qUVH7TPu-qZB62g70-g)（提取码 hp9v）
 
 ## 征稿信息
 
