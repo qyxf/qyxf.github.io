@@ -1,7 +1,7 @@
 ---
 permalink: /zhufeng/
 editor: 珠峰学报编辑部
-date: 2019-11-21
+date: 2019-11-26
 ---
 
 # 《珠峰学报》专栏
@@ -16,13 +16,13 @@ date: 2019-11-21
 
 ## 往期发行本下载
 
-- 2019 秋季刊：[书库下载](/BookHub/008.journal-of-zhufeng/zhufeng-2019-autumn.pdf) 或 [百度网盘](https://pan.baidu.com/s/1Hw5qUVH7TPu-qZB62g70-g)（提取码 hp9v）
+- 2019 秋季刊：[书库下载](/BookHub/008.journal-of-zhufeng/zhufeng-2019-autumn.pdf) 或 [百度网盘](https://pan.baidu.com/s/1MU5KZX4mK2eIJftDaGCOxg)（提取码 nvn4）
 
 ## 征稿信息
 
 > 「2019 冬季刊」正在征稿中，欢迎您的参与！投稿前，请认真阅读《征稿启事》。
 >
-> **截稿日期**：2019 年 12 月 7 日，13 周周日。（当日内提交有效）
+> **截稿日期**：2019 年 12 月 14 日，13 周周日。（当日内提交有效）
 
 - [《珠峰学报》征稿启事（第二版）](/2019/10/18/journal-of-zhufeng-call-of-papers)
 - 征稿邮箱：**qianyuanxuefu@163.com**
