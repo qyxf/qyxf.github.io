@@ -1,6 +1,0 @@
-language: ruby
-cache: bundler
-rvm: 2.6
-
-install: gem install github-pages
-script: bundle exec jekyll build
