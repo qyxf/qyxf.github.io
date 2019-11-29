@@ -1,4 +1,5 @@
 ---
+permalink: /post/
 postpage: true
 ---
 

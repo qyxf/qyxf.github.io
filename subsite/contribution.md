@@ -1,4 +1,5 @@
 ---
+permalink: /contribution/
 date: 2019-10-04
 author: '钱院学辅学研部'
 ---
@@ -45,7 +46,7 @@ author: '钱院学辅学研部'
 
 - 题目解析：[大学物理题解（上）](/BookHub/003.key-to-university-physics)
 - 试卷分析：[大学物理往年期末试题](/BookHub/006.university-physics-tests)
-- 课程笔记：暂缺
+- 课程笔记：[计算方法撷英](/BookHub/009.notes-on-computing-methods)
 - 经验杂谈：[GRE 指南](/BookHub/002.gre-guide)
 
 ## <i class="fa fa-users"></i> 贡献方法
@@ -73,8 +74,4 @@ author: '钱院学辅学研部'
 2. 对于钱院学辅的成员，我们将按照预先制订的工时标准发放工时或工资；对于学辅之外的贡献者，遵守一般开源社区的惯例，不发放实物奖励，仅通过署名、记录档案等形式表达感谢。
 3. 大型活动（如征文比赛）会按照事先制定的标准统一发放奖励。
 
-## <i class="fa fa-comment"></i> 其他
-
-在注册 GitHub 账号后，你可以直接在下面评论，告诉我们你的需求！
-
-<div id="gitalk-container"></div>
+{% include valine_comments.html %}

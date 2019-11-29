@@ -1,4 +1,5 @@
 ---
+permalink: /navigator/
 date: 2019-8-8
 author: '`能动少C71尤佳睿`、`自动化钱71吴思源`'
 ---

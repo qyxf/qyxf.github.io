@@ -1,4 +1,5 @@
 ---
+permalink: /about/
 date: 2019-10-04
 author: 钱院学辅宣传部
 ---
