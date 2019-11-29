@@ -1,4 +1,5 @@
 ---
+permalink: /welcome/
 date: 2019-10-12
 author: '`能动少C71尤佳睿`'
 ---
