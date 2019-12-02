@@ -1,6 +1,7 @@
 ---
 permalink: /easymcm/
-author: @xjtu-blacksmith
+date: 2019-12-01
+author: '@xjtu-blacksmith'
 ---
 
 # 美赛模板 EasyMCM 专区
