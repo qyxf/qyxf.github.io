@@ -1,10 +1,8 @@
 ---
-date: 2019-8-22
+title: OneNote 入门
 author: '`自动化钱71吴思源`'
 editor: '`能动少C71尤佳睿`'
 ---
-
-# OneNote 入门
 
 ## 0. 什么是OneNote
 
