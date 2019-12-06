@@ -29,7 +29,6 @@ author: '钱院学辅学研部'
 - 干货整理：[托福入门知识](/2019/10/01/toefl-beginner)
 - 技术杂谈：[iPad OS 使用心得](/2019/10/04/ipados-short-introduction)
 - 经验分享：[TOEFL 备考心得](/2019/03/16/toefl-tips)
-- 严肃分析：暂缺
 
 ### <i class="fa fa-university"></i> 课程相关
 
@@ -59,7 +58,7 @@ author: '钱院学辅学研部'
 
 ### <i class="fa fa-user-plus"></i> 如果你没用过 GitHub
 
-> 有空时可以阅读[钱院学辅 Git 与 GitHub 快速上手指南](/technique/git-github)，进入开源美（keng）丽（die）新世界！
+> 有空时可以阅读[钱院学辅 Git 与 GitHub 快速上手指南](/2019/09/13/git-github-tutorial)，进入开源美（keng）丽（die）新世界！
 
 你可以向我们的邮箱 <i class="fa fa-envelope-o"></i> qianxiaofu.mail@qq.com 发送邮件，内容包括：
 
