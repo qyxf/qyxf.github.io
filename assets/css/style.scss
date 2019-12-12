@@ -4,3 +4,49 @@
 .user-details h1 {
     color: purple;
 }
+
+.mdui-bottom-nav {
+  a {
+    flex-direction: row;
+    span {
+      max-width: 90%; }}}
+
+.js-toc {
+  .toc-list {
+    list-style: none;
+    line-height: 4ex;
+    .is-collapsed .toc-link::before {
+      height: 0ex !important; }
+    .toc-list-item {
+      a.toc-link {
+        text-decoration: none;
+        font-size: 1.2em; }}
+      .toc-link::before {
+        height: 4ex;
+        width: 5px;
+      }
+  }
+}
+
+#main-toc {
+  padding: 20px;
+  .js-toc {
+    .toc-list .toc-list-item a.toc-link {
+      font-size: 1em;
+    }
+}}
+
+
+// source: https://github.com/tscanlin/tocbot/issues/53
+.js-toc-content h2::before, h3::before, h4::before, h5::before, h6::before {
+    display: block;
+    content: " ";
+    height: 80px;
+    margin-top: -80px;
+    visibility: hidden;
+}
+
+.mdui-typo {
+  code, kbd, pre, pre tt, samp {
+      font-family: "Fira Mono", "DejaVu Sans Mono", Menlo, Consolas, "Liberation Mono", Monaco, "Lucida Console", monospace;
+  }}

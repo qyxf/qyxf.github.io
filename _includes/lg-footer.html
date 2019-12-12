@@ -1,0 +1,17 @@
+<div id="bottom-nav-lg" class="mdui-toolbar mdui-shadow-2 mdui-m-b-0 mdui-hidden-md-down">
+  <div style="width: 5%;"></div>
+  <a class="mdui-ripple mdui-btn mdui-btn-block" href="{{ site.baseurl }}{{ page.previous.url }}">
+    <span class="mdui-typo-subheading mdui-text-truncate">
+    <i class="fa fa-chevron-left"></i>
+    {% if page.previous.url %} {{ page.previous.title }} {% else %} 这是最早的了... {% endif %}
+    </span>
+  </a>
+  <div class="mdui-toolbar-spacer"></div>
+  <a class="mdui-ripple mdui-btn mdui-btn-block" href="{{ site.baseurl }}{{ page.next.url }}">
+    <span class="mdui-typo-subheading mdui-text-truncate">
+    {% if page.next.url %} {{ page.next.title }} {% else %} 这是最新一篇了... {% endif %}
+    <i class="fa fa-chevron-right"></i>
+  </span>
+  </a>
+  <div style="width: 5%;"></div>
+</div>
