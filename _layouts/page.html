@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    {% seo %}
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/{{site.favicon}}">
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--- MDUI -->
+    <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
+    <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Scripts: lunr, tocbot, pangu -->
+    <script src="{{site.baseurl}}/assets/js/lunr.js"></script>
+    <link href="https://cdn.bootcss.com/tocbot/4.8.1/tocbot.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/tocbot/4.8.1/tocbot.min.js"></script>
+    <script src="https://cdn.bootcss.com/pangu/4.0.7/pangu.min.js"></script>
+
+    <!--- custom style -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/rouge-theme.css">
+    <style> article h1 { text-align: center; }</style>
+
+</head>
+
+<body class="mdui-color-white mdui-theme-accent-indigo mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-p-b-0">
+
+    <!-- Navbar -->
+    {% include menu-header.html %}
+
+    <!-- Search Results -->
+    <div id="lunrsearchresults">
+        <ul class="mb-0"></ul>
+    </div>
+
+    <!--- Bottom Navbar -->
+    {% if page.layout == "post" %} {% include bottom-nav.html %} {% endif %}
+
+    <!--- TOC in drawer -->
+    <div id="main-toc" class="mdui-drawer mdui-drawer-close mdui-shadow-4 mdui-hidden-lg-up">
+    </div>
+
+    <!-- Content -->
+    <main role="main" class="mdui-container-fluid">
+
+        <div class="mdui-container-fluid">
+          <div class="row justify-content-center">
+
+            <!-- Side TOC -->
+            <div class="mdui-col-md-3 mdui-hidden-sm-down">
+              {% include toc.html %}
+            </div>
+
+            <div class="mdui-col-sm-12 mdui-col-md-7">
+
+              <!-- Article -->
+              <article class="mdui-typo">
+                <div class="js-toc-content">
+                  {{ content }}
+                </div>
+              </article>
+
+            </div>
+
+            <div class="mdui-col-lg-2 mdui-hidden-md-down"></div>
+          </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      {% if page.layout == "post" %} {% include lg-footer.html %} {% endif %}
+    </footer>
+
+    <script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
+    <script src="/assets/js/shieldsMenu.js"></script>
+    <script src="/assets/js/page.js"></script>
+
+</body>
+
+</html>

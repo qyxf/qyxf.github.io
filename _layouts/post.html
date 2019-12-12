@@ -1,158 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ page.title }} | {{ site.title }}</title>
+---
+layout: page
+---
+<h1>{{ page.title }}</h1>
 
-    {% seo %}
+<div>
+  {% if page.author %} <p> 作者：{{ page.author | markdownify | remove: '<p>' | remove: '</p>' }} </p> {% endif %}
+  {% if page.editor %} <p> 编辑：{{ page.editor | markdownify | remove: '<p>' | remove: '</p>' }} </p> {% endif %}
+</div>
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/{{site.favicon}}">
-
-    <!-- Font Awesome Icons -->
-    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-
-    <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
-    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-
-    <!--- MDUI -->
-    <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
-    <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-
-    <!-- Scripts: lunr, tocbot -->
-    <script src="{{site.baseurl}}/assets/js/lunr.js"></script>
-    <link href="https://cdn.bootcss.com/tocbot/4.8.1/tocbot.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/tocbot/4.8.1/tocbot.min.js"></script>
-
-    <!--- custom style -->
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/rouge-theme.css">
-
-</head>
-
-<body class="mdui-color-white mdui-theme-accent-indigo mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-p-b-0">
-
-    <!-- Navbar -->
-    {% include menu-header.html %}
-
-    <!-- Search Results -->
-    <div id="lunrsearchresults">
-        <ul class="mb-0"></ul>
-    </div>
-
-    <!--- Bottom Navbar -->
-    {% include bottom-nav.html %}
-
-    <!--- TOC in drawer -->
-    <div id="main-toc" class="mdui-drawer mdui-drawer-close mdui-shadow-4 mdui-hidden-lg-up">
-    </div>
-
-    <!-- Content -->
-    <main role="main" class="mdui-container-fluid">
-
-        <div class="mdui-container-fluid">
-          <div class="row justify-content-center">
-
-            <!-- Side TOC -->
-            <div class="mdui-col-lg-3 mdui-hidden-md-down">
-              <div class="mdui-card" style="position: fixed; left: 50px; top: 150px; max-width: 17%;">
-                <div class="mdui-card-primary">
-                  <div class="mdui-card-title mdui-typo-title">
-                    目录
-                  </div>
-                </div>
-
-                <div class="mdui-card-content">
-                  <div class="js-toc"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="mdui-col-xs-12 mdui-col-lg-7">
-
-              <!-- Article -->
-              <article class="mdui-typo">
-              <h1>{{ page.title }}</h1>
-              <div class="js-toc-content">
-              {{ content }}
-              </div>
-              </article>
-
-              <!-- Tags -->
-              <div class="mdui-mb-4">
-                <span class="taglist">
-                {% for tag in page.tags %}
-                  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag | downcase }}</a>
-                {% endfor %}
-                </span>
-              </div>
-
-              <div class="row mt-5">
-                {% if page.author %} 作者：{{ page.author | markdownify }} {% endif %}
-                {% if page.editor %} 编辑：{{ page.editor | markdownify }} {% endif %}
-              </div>
+{{ content }}
 
 
-              <!-- Comments -->
-              {% if page.comments != false %}
-                  {% include comments.html %}
-              {% endif %}
 
-            </div>
+<!-- Tags -->
+<div class="mdui-mb-4">
+  <span class="taglist">
+  {% for tag in page.tags %}
+    <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag | downcase }}</a>
+  {% endfor %}
+  </span>
+</div>
 
-            <div class="mdui-col-lg-2 mdui-hidden-md-down"></div>
-          </div>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      {% include lg-footer.html %}
-    </footer>
-
-    <!-- tocbot -->
-    <script type="text/javascript">
-    // source: https://eriri.ink/archives/build-a-toc-for-an-article.html
-    var headerEl = 'h2, h3, h4',  //headers
-        content = '.js-toc-content',//文章容器
-        idArr = {};  //标题数组以确定是否增加索引id
-    //add #id
-    $(content).children(headerEl).each(function () {
-        //去除空格以及多余标点
-        var headerId = $(this).text().replace(/[\s|\~|`|\!|\@|\#|\$|\%|\^|\&|\*|\(|\)|\_|\+|\=|\||\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?|\：|\，|\。]/g, '');
-        headerId = headerId.toLowerCase();
-        if (idArr[headerId]) {
-            //id已经存在
-            $(this).attr('id', headerId + '-' + idArr[headerId]);
-            idArr[headerId]++;
-        }
-        else {
-            //id未存在
-            idArr[headerId] = 1;
-            $(this).attr('id', headerId);
-        }
-    });
-
-    tocbot.init({
-      // Where to render the table of contents.
-      tocSelector: '.js-toc',
-      // Where to grab the headings to build the table of contents.
-      contentSelector: '.js-toc-content',
-      // Which headings to grab inside of the contentSelector element.
-      headingSelector: 'h2, h3, h4',
-      scrollSmooth: true,
-      hasInnerContainers: true,
-      headingsOffset: 80
-    });
-
-    $('#drawer-toc-btn').click(function(){
-      $('#main-toc').append($('.js-toc'));
-    })
-    </script>
-
-    <script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
-
-</body>
-
-</html>
+<!-- Comments -->
+{% if page.comments != false %}
+    {% include comments.html %}
+{% endif %}

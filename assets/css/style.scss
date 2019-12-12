@@ -1,6 +1,10 @@
 ---
 ---
 
+@import "shields-menu.scss";
+
+$github-color: #eaecef;
+
 .user-details h1 {
     color: purple;
 }
@@ -23,30 +27,65 @@
         font-size: 1.2em; }}
       .toc-link::before {
         height: 4ex;
-        width: 5px;
-      }
-  }
-}
+        width: 5px; }}}
 
 #main-toc {
   padding: 20px;
   .js-toc {
     .toc-list .toc-list-item a.toc-link {
-      font-size: 1em;
-    }
-}}
+      font-size: 1em; }}}
 
 
 // source: https://github.com/tscanlin/tocbot/issues/53
-.js-toc-content h2::before, h3::before, h4::before, h5::before, h6::before {
-    display: block;
-    content: " ";
-    height: 80px;
-    margin-top: -80px;
-    visibility: hidden;
+.js-toc-content {
+    h2::before, h3::before, h4::before, h5::before, h6::before {
+      display: block;
+      content: " ";
+      height: 80px;
+      margin-top: -80px;
+      visibility: hidden; }
+}
+
+.ref-fix::before {
+  display: block;
+  content: " ";
+  height: 80px;
+  margin-top: -80px;
+  visibility: hidden;
 }
 
 .mdui-typo {
   code, kbd, pre, pre tt, samp {
-      font-family: "Fira Mono", "DejaVu Sans Mono", Menlo, Consolas, "Liberation Mono", Monaco, "Lucida Console", monospace;
-  }}
+      font-family: "Fira Mono", "DejaVu Sans Mono",
+                    Menlo, Consolas, "Liberation Mono", Monaco,
+                    "Lucida Console", monospace; }
+  pre {
+    background-color: lighten($github-color, 5%); }}
+
+article.mdui-typo {
+  p > img {
+    max-width: 90%;
+  }
+  h2 {
+    border-bottom: 1px solid $github-color;
+    padding-bottom: .3em;
+  }
+  sup  {
+    a {
+    vertical-align: unset;
+    overflow: inherit; }
+    &::before {
+      content: '['; }
+    &::after {
+      content: ']'; }}
+  .footnotes ol li::before, sup a::before {
+    display: block;
+    content: " ";
+    height: 80px;
+    margin-top: -80px;
+    visibility: hidden; }
+}
+
+span.badge {
+  vertical-align: text-bottom;
+}
