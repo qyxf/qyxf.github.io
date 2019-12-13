@@ -2,6 +2,7 @@
 ---
 
 @import "shields-menu.scss";
+@import "rouge-theme.scss";
 
 $github-color: #eaecef;
 
@@ -16,21 +17,23 @@ $github-color: #eaecef;
       max-width: 90%; }}}
 
 .js-toc {
+  &>.toc-list { position: relative; left: 0; padding-left: 20px; }
   .toc-list {
     list-style: none;
     line-height: 4ex;
+    overflow: hidden;
     .is-collapsed .toc-link::before {
       height: 0ex !important; }
     .toc-list-item {
       a.toc-link {
         text-decoration: none;
-        font-size: 1.2em; }}
-      .toc-link::before {
-        height: 4ex;
-        width: 5px; }}}
+        font-size: 1.2em; }
+      .toc-link::before { width: 5px; }
+      .is-active-link::before { background-color: #536bfd; }}}}
 
 #main-toc {
   padding: 20px;
+  padding-left: 0px;
   .js-toc {
     .toc-list .toc-list-item a.toc-link {
       font-size: 1em; }}}
@@ -54,11 +57,16 @@ $github-color: #eaecef;
   visibility: hidden;
 }
 
+// 解决开关控件显示不完全问题
+.mdui-switch {
+  overflow: visible; }
+
 .mdui-typo {
   code, kbd, pre, pre tt, samp {
       font-family: "Fira Mono", "DejaVu Sans Mono",
                     Menlo, Consolas, "Liberation Mono", Monaco,
-                    "Lucida Console", monospace; }
+                    "Lucida Console", monospace;
+      font-size: 0.9em; }
   pre {
     background-color: lighten($github-color, 5%); }}
 
@@ -66,10 +74,11 @@ article.mdui-typo {
   p > img {
     max-width: 90%;
   }
+  h1 { text-align: center; }
   h2 {
     border-bottom: 1px solid $github-color;
-    padding-bottom: .3em;
-  }
+    padding-bottom: .3em; }
+  blockquote { opacity: 70%; }
   sup  {
     a {
     vertical-align: unset;
@@ -84,8 +93,14 @@ article.mdui-typo {
     height: 80px;
     margin-top: -80px;
     visibility: hidden; }
-}
-
-span.badge {
-  vertical-align: text-bottom;
-}
+  table {
+    max-width: 90%;
+    word-break: break-all;
+    overflow-x: auto;
+    overflow-y: hidden;
+    th, tr td { font-size: 0.9em; }
+  }
+  .MJXc-display {
+    max-width: 90%;
+    overflow-x: auto;
+    overflow-y: hidden; }}

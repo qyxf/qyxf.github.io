@@ -1,17 +1,37 @@
-<div id="bottom-nav-lg" class="mdui-toolbar mdui-shadow-2 mdui-m-b-0 mdui-hidden-xs-down">
+<!-- 大视窗下文章导航栏 -->
+
+<div id="bottom-nav-lg" class="mdui-toolbar mdui-m-a-1 mdui-hidden-xs-down">
   <div style="width: 5%;"></div>
+  {% if page.previous.url %}
   <a class="mdui-ripple mdui-btn mdui-btn-block" href="{{ site.baseurl }}{{ page.previous.url }}">
-    <span class="mdui-typo-subheading mdui-text-truncate">
+    <span class="mdui-typo-title mdui-text-truncate">
     <i class="fa fa-chevron-left"></i>
-    {% if page.previous.url %} {{ page.previous.title }} {% else %} 这是最早的了... {% endif %}
+     {{ page.previous.title }}
     </span>
   </a>
-  <div class="mdui-toolbar-spacer"></div>
-  <a class="mdui-ripple mdui-btn mdui-btn-block" href="{{ site.baseurl }}{{ page.next.url }}">
-    <span class="mdui-typo-subheading mdui-text-truncate">
-    {% if page.next.url %} {{ page.next.title }} {% else %} 这是最新一篇了... {% endif %}
-    <i class="fa fa-chevron-right"></i>
-  </span>
+  {% else %}
+  <a class="mdui-ripple mdui-btn mdui-btn-block" href="#">
+    <span class="mdui-typo-title mdui-text-truncate" style="opacity: 50%">
+      <i class="fa fa-chevron-left"></i>
+      这是最早一篇了...
+    </span>
   </a>
+  {% endif %}
+  <div class="mdui-toolbar-spacer"></div>
+  {% if page.next.url %}
+  <a class="mdui-ripple mdui-btn mdui-btn-block" href="{{ site.baseurl }}{{ page.next.url }}">
+    <span class="mdui-typo-title mdui-text-truncate">
+      {{ page.next.title }}
+      <i class="fa fa-chevron-right"></i>
+     </span>
+  </a>
+  {% else %}
+  <a class="mdui-ripple mdui-btn mdui-btn-block" href="#">
+    <span class="mdui-typo-title mdui-text-truncate" style="opacity: 50%">
+      这是最新一篇了...
+      <i class="fa fa-chevron-right"></i>
+    </span>
+  </a>
+  {% endif %}
   <div style="width: 5%;"></div>
 </div>

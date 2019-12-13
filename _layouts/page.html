@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,16 +20,23 @@
     <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
     <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
-    <!-- Scripts: lunr, tocbot, pangu -->
-    <script src="{{site.baseurl}}/assets/js/lunr.js"></script>
+    <!-- Scripts: tocbot, pangu -->
     <link href="https://cdn.bootcss.com/tocbot/4.8.1/tocbot.css" rel="stylesheet">
     <script src="https://cdn.bootcss.com/tocbot/4.8.1/tocbot.min.js"></script>
     <script src="https://cdn.bootcss.com/pangu/4.0.7/pangu.min.js"></script>
 
-    <!--- custom style -->
+    <!-- MathJax -->
+    <script src="https://cdn.bootcss.com/mathjax/2.7.6/latest.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["MathMenu.js", "MathZoom.js", "AssistiveMML.js", "a11y/accessibility-menu.js"],
+        jax: ["input/TeX", "output/CommonHTML"],
+        TeX: { extensions: ["AMSmath.js", "AMSsymbols.js", "noErrors.js", "noUndefined.js"] }
+      });
+    </script>
+
+    <!--- 自定义样式表（含代码高亮及名牌设置） -->
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/rouge-theme.css">
-    <style> article h1 { text-align: center; }</style>
 
 </head>
 
@@ -37,11 +44,6 @@
 
     <!-- Navbar -->
     {% include menu-header.html %}
-
-    <!-- Search Results -->
-    <div id="lunrsearchresults">
-        <ul class="mb-0"></ul>
-    </div>
 
     <!--- Bottom Navbar -->
     {% if page.layout == "post" %} {% include bottom-nav.html %} {% endif %}
@@ -54,13 +56,15 @@
     <main role="main" class="mdui-container-fluid">
 
         <div class="mdui-container-fluid">
-          <div class="row justify-content-center">
+          <div class="mdui-row">
 
-            <!-- Side TOC -->
+            <!-- Side bar -->
             <div class="mdui-col-md-3 mdui-hidden-sm-down">
+              <!-- Side TOC -->
               {% include toc.html %}
             </div>
 
+            <!-- Main part -->
             <div class="mdui-col-sm-12 mdui-col-md-7">
 
               <!-- Article -->
@@ -69,9 +73,10 @@
                   {{ content }}
                 </div>
               </article>
-
+              {% if page.layout == "post" %} {% include lg-footer.html %} {% endif %}
             </div>
 
+            <!-- Empty filling -->
             <div class="mdui-col-lg-2 mdui-hidden-md-down"></div>
           </div>
         </div>
@@ -79,12 +84,16 @@
 
     <!-- Footer -->
     <footer>
-      {% if page.layout == "post" %} {% include lg-footer.html %} {% endif %}
+      <div class="mdui-shadow-4 mdui-text-center mdui-p-a-2">
+        <span class="mdui-typo-body-2">钱院学辅信息站 - Jekyll & MDUI</span>
+      </div>
     </footer>
 
+    <!-- Scripts to load at end: MDUI, custom scripts -->
     <script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
-    <script src="/assets/js/shieldsMenu.js"></script>
     <script src="/assets/js/page.js"></script>
+
+    </script>
 
 </body>
 

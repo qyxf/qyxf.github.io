@@ -1,5 +1,6 @@
-var $$ = mdui.JQ;
+var $$ = mdui.JQ;  // 创建 MDUI JS 库
 
+// 中文目录链接修正
 // source: https://eriri.ink/archives/build-a-toc-for-an-article.html
 var headerEl = 'h2, h3, h4',  //headers
     content = '.js-toc-content',//文章容器
@@ -21,6 +22,7 @@ $(content).children(headerEl).each(function () {
     }
 });
 
+// 目录初始化
 tocbot.init({
   // Where to render the table of contents.
   tocSelector: '.js-toc',
@@ -34,26 +36,31 @@ tocbot.init({
   headingsOffset: 80
 });
 
-pangu.spacingPage();
+pangu.spacingPage();  // 自动加空格
 
+// 侧边目录生成（仅移动端上）
 $('#drawer-toc-btn').click(function(){
   $('#main-toc').append($('.js-toc'));
 })
 
 
+// 排版样式修正
 $$('article.mdui-typo p > img').addClass("mdui-center mdui-shadow-4 mdui-m-a-1");
 $$('article h1').addClass("mdui-ripple");
-$$('article blockquote').addClass("mdui-text-color-black-secondary");
-$$('article table').addClass("mdui-table");
+$$('article table').addClass("mdui-table mdui-center");
 $$('.footnotes').addClass("mdui-card mdui-p-a-2 mdui-m-a-1");
 $$('.footnotes').prepend('<div class="mdui-card-primary"> \
                          <div class="mdui-card-title mdui-typo-title"> \
                          注释 </div> </div>');
-$$('fig-cap, tab-cap').addClass("mdui-center mdui-text-center mdui-m-t-0 mdui-m-b-4");
+$$('fig-cap').addClass("mdui-center mdui-text-center mdui-typo-body-2 mdui-m-t-0 mdui-m-b-4");
+$$('tb-cap').addClass("mdui-center mdui-text-center mdui-typo-body-2 mdui-m-b-1 mdui-m-t-2");
 
-$('.js-toc:empty').append('<span class="mdui-center"> 没有条目哦... </span>');
-$('main').css('min-height', $(window).height() - 136);
+// 空目录修正
+$('.js-toc:empty').append('<span class="mdui-center mdui-p-l-2"> 没有条目哦... </span>');
+// 确保页面填满
+$('main').css('min-height', $(window).height() - 114);
 
+// 实现并修复脚注互跳转问题
 // source: https://www.ihewro.com/archives/523/
 $('a.reversefootnote').click(function() {
     var target = document.getElementById(this.hash.slice(1));
@@ -74,6 +81,7 @@ $('article sup a').click(function() {
     return false;
 });
 
+// 切换主题功能的实现（待改进）
 $("#theme-btn").click(function() {
     if($(this).is(":checked")) {
       $$('.mdui-color-white').addClass('mdui-color-grey-900');
@@ -86,6 +94,7 @@ $("#theme-btn").click(function() {
 });
 
 // shieldsMenu.js here
+// 实现名牌功能
 $("p > code, li > code, span > code").each(function() {
   // 匹配示例：ACCA61王敏、3D打印钱71张三丰、能动少C71诸葛孔明（暂不检测外文名）
   if(this.innerText != null && this.innerText.match(/[\u4e00-\u9fa5A-D3]{1,5}\d{2,3}[\u4e00-\u9fa5]{2,4}/))
@@ -109,5 +118,5 @@ $("p > code, li > code, span > code").each(function() {
     $(this).replaceWith(badgeItem);
   }
 })
-
+// 为所有名牌附加涟漪效果（并没有什么用）
 $$('span.badge').addClass("mdui-ripple");

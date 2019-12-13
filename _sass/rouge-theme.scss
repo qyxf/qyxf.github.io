@@ -1,3 +1,4 @@
+// modified by xjtu-blacksmith
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight, .highlight .w {
@@ -17,10 +18,10 @@
   color: #f4bf75;
 }
 .highlight .o, .highlight .ow {
-  color: #d0d0d0;
+  color: darken(#d0d0d0, 15%);
 }
 .highlight .p, .highlight .pi {
-  color: #d0d0d0;
+  color: darken(#d0d0d0, 15%);
 }
 .highlight .gi {
   color: #90a959;
