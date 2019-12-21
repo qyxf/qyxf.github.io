@@ -7,7 +7,7 @@
 $github-color: #eaecef;
 
 .user-details h1 {
-    color: purple;
+    color: #C8161E;
 }
 
 .mdui-bottom-nav {
@@ -105,27 +105,26 @@ article.mdui-typo {
     overflow-x: auto;
     overflow-y: hidden; }}
 
-
-    .container{
+    .container{ //容器：卡片组
       width:100%;
       display: flex;
       grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
       justify-content: center;
       align-items: center;
-      margin:0 auto;
+      margin: initial;
       flex-wrap: wrap;
-      align-content: space-around;
+      align-content: center;
   }
   .container .card{
       position: relative;
       width: 300px;
-      height: 400px;
-      margin: 0 auto;
+      height: 300px;
+      margin: initial;
       background: #fff;
       transition: 0.5s;
   }
   .container .card：hover{
-      box-shadow:  0 30px 50px rgba(0, 0, 0, .2);
+      box-shadow:  0 20px 10px rgba(0, 0, 0, .2);
   }
   .container .card .face{
       position: absolute;
@@ -137,38 +136,39 @@ article.mdui-typo {
       justify-content: center;
       align-items: center;
   }
-  .container .card .face.face1{
+  .container .card .face.face1{ //face1 遮盖下面的部分
       box-sizing: border-box;
-      padding: 20px;
+      padding:10px;
       text-align: center;
       background: #fff;
       color:#013d4a;
   }
   .container .card .face.face1 h2{
-      margin-top: 60px;
+      margin-top: 25px;
+      color:#19f1f8;
+      font-size: 1em;
   
   }
   .container .card .face.face2{
-      background: #013d4a;
+      background: #013d4a;  // 改变face2的颜色
       transition: 0.5s;
-  
   }
   
   .container .card:hover .face.face2{
       height: 80px;
       width: 80px;
       border-radius: 50%;
-      top:40px;
+      top:5px;
       left:50%;
-      transform: translateX(-50%);
+      transform: translateX(-50%);  //改变动画的方向
       background: transparent;
       border: 2px solid  #013d4a;
   }
   
-  .container .card .face.face2 h2{
+  .container .card .face.face2 h2{ //face2 遮盖部分
       margin: 0;
       padding: 0;
-      font-size:3em;
+      font-size:3em;  
       color:#fff;
       transition: 0.5s;
   }
@@ -176,10 +176,10 @@ article.mdui-typo {
       color:#013d4a;
       font-size: 1em;
   }
-  .container .card .face.face1 a{
+  .container .card .face.face1 a{ //open link
       display: inline-block;
       padding: 5px 10px;
-      margin-top: 20px;
+      margin-bottom: 5px;
       text-decoration: none;
       color: #013d4a;
       border: 2px solid #013d4a;

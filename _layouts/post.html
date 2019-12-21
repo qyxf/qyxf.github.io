@@ -1,12 +1,16 @@
 ---
 layout: page
 ---
-<h1>{{ page.title }}</h1>
+{% include meta-read-time.html %}
 
 <div>
   {% if page.author %} <p> 作者：{{ page.author | markdownify | remove: '<p>' | remove: '</p>' }} </p> {% endif %}
   {% if page.editor %} <p> 编辑：{{ page.editor | markdownify | remove: '<p>' | remove: '</p>' }} </p> {% endif %}
 </div>
+
+<h1>{{ page.title }}</h1>
+
+<div class="mdui-divider"></div>
 
 {{ content }}
 

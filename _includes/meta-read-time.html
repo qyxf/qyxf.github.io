@@ -1,9 +1,17 @@
-<span class="reading-time">
-  {% assign words = content | number_of_words %}
-  {% if words < 360 %}
-    1 min read
-  {% else %}
-    {{ words | divided_by:180 }} mins read
-  {% endif %}
-</span>
+<!-- 字数统计 -->
+<!-- 不透明效果 -->
+<div class="mdui-typo-subheading-opacity" align="right">
+  <!-- 浮动到右边 -->
+  <span class="reading-time">
+    {% assign words = content | number_of_words %}
+    {% if words < 360 %}
+      <p class="fa fa-clock-o"> {{words}} 字 |  1 分钟 </p> 
+    {% else %}
+      <p class="fa fa-clock-o">
+        {{words}} 字 | {{ words | divided_by:180 }} 分钟
+      </p>
+    {% endif %}
+  </span>
+</div>
+
     
