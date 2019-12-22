@@ -10,6 +10,13 @@ $github-color: #eaecef;
     color: #C8161E;
 }
 
+.font-page-content {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
 .mdui-bottom-nav {
   a {
     flex-direction: row;
@@ -188,3 +195,117 @@ article.mdui-typo {
       color: #fff;
       background: #013d4a;
   }
+
+// 背景虚化-毛玻璃效果
+.warp {
+  z-index: 1;
+	text-align: center;
+	color: #fff;
+  position: absolute;
+  height: 50%;
+  width: 50%;
+	top: 50%;
+	left: 50%;
+	margin: 0 auto;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+  background: inherit;
+  overflow: hidden;
+  text-align: center;
+}
+.warp::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top:0;
+  right: 0; 
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  background-attachment: fixed;
+  filter: blur(20px);
+  -webkit-filter:blur(20px);
+  -moz-filter:blur(20px);
+  -ms-filter:blur(20px);
+  -o-filter:blur(20px);
+}
+.warp::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .2);
+}
+.warp .h1 {
+  font-size: 40em;
+  z-index: 2;
+  margin: .67em 0;
+	margin-top: 1em;
+	padding-top: 1em;
+	line-height: 1.25;
+  color: #fff;
+  font-size: 2.5rem;
+}
+    
+.warp-info {
+  z-index: 3;
+  padding: 40px;
+  color: #fff;
+}
+
+.warp-links {
+  z-index: 3;
+	margin: 10px
+}
+
+.warp-links .link {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	margin: 10px
+}
+
+@media only screen and (min-width:550px) {
+	.warp-links .link {
+		font-size: 20px
+	}
+}
+
+.warp-icons {
+  z-index: 3;
+	display: flex;
+	justify-content: center;
+	text-align: center
+}
+
+.warp-icons .icon {
+	color: #fff;
+	text-align: center
+}
+
+.warp-icons .icon {
+	height: 20px;
+	padding: 10px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	transition: all .7s;
+	width: 20px;
+	font-size: 20px;
+	margin: 5px
+}
+
+.warp-icons .icon:active,.warp-icons .icon:hover {
+	color: #1a222c;
+	background: #fff
+}
+
+@media only screen and (min-width:550px) {
+	.warp-icons .icon {
+		width: 35px;
+		height: 35px;
+		font-size: 35px
+	}
+}

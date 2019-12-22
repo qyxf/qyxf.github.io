@@ -4,8 +4,8 @@ layout: page
 {% include meta-read-time.html %}
 
 <div>
-  {% if page.author %} <p> 作者：{{ page.author | markdownify | remove: '<p>' | remove: '</p>' }} </p> {% endif %}
-  {% if page.editor %} <p> 编辑：{{ page.editor | markdownify | remove: '<p>' | remove: '</p>' }} </p> {% endif %}
+  <p> {% if page.author %} <i class="fa fa-user-circle-o"> </i> 作者：{{ page.author | markdownify | remove: '<p>' | remove: '</p>' }} </p> {% endif %}
+  <p> {% if page.editor %} <i class="fa fa-edit"></i>编辑：{{ page.editor | markdownify | remove: '<p>' | remove: '</p>' }} </p> {% endif %}
 </div>
 
 <h1>{{ page.title }}</h1>
