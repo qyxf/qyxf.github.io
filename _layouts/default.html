@@ -2,10 +2,19 @@
 <html lang="en">
   {% include head.html %}
   <body>
-      {% include cover-header.html %}
+    <div id="cover-background" style="background-image: url(assets/img/xjtu.jpg);"></div>
+    <!-- 第一层：站名 -->
+      <section id="banner">
+        {% include cover-header.html %}
+      </section>
+
+    <!-- 第二层：网站信息 -->
       <section id="about">
         {% include cover-about.html %}
       </section>
+
+
+    <!-- 第三层：目前项目 -->
       <section id="projects">
         {% include cover-projects.html %}
       </section>
