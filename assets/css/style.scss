@@ -5,13 +5,23 @@
 @import "rouge-theme.scss";
 
 $github-color: #eaecef;
+$title-color: #fff;
+$accent-color: lightcyan;
+$shadow-color: #333;
 
 .user-details h1 {
-    color: red;
+    color: $title-color;
 }
 
 .user-details p {
-  color: lightcyan;
+    color: $accent-color;
+}
+
+.post-info {
+  h1 {
+    color: $title-color;
+    text-shadow: 2px 2px $shadow-color;
+  }
 }
 
 .font-page-content {
@@ -119,7 +129,7 @@ article.mdui-typo {
 
     // 这里想横向全屏，每隔卡片颜色不同（可以差别较小）
     .container{ //容器：卡片组
-      width:100%;
+      width: 100%;
       display: flex;
       grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
       justify-content: center;
@@ -127,7 +137,6 @@ article.mdui-typo {
       margin: 5% 0;
       flex-wrap: wrap;
       align-content: center;
-      background-color: #013d4a;
   }
   .container .card{
       position: relative;
@@ -149,21 +158,17 @@ article.mdui-typo {
       justify-content: center;
       align-items: center;
   }
-  .container .card .face.face1{ //face1 遮盖下面的部分
+  
+  .container .card .face.face1 { //face1 遮盖下面的部分
       box-sizing: border-box;
-      padding:10px;
+      padding: 10px;
       text-align: center;
       background: #fff;
-      color:#013d4a;
+      color:#3F51B5;
   }
-  .container .card .face.face1 h2{
-      margin-top: 25px;
-      color:#19f1f8;
-      font-size: 1em;
   
-  }
   .container .card .face.face2{
-      background: #013d4a;  // 改变face2的颜色
+      background: #3F51B5;  // 改变face2的颜色
       transition: 0.5s;
   }
   
@@ -171,11 +176,11 @@ article.mdui-typo {
       height: 80px;
       width: 80px;
       border-radius: 50%;
-      top:5px;
+      top:20px;
       left:50%;
       transform: translateX(-50%);  //改变动画的方向
       background: transparent;
-      border: 2px solid  #013d4a;
+      border: 2px solid  #3F51B5;
   }
   
   .container .card .face.face2 h2{ //face2 遮盖部分
@@ -186,7 +191,7 @@ article.mdui-typo {
       transition: 0.5s;
   }
   .container .card:hover .face.face2 h2{
-      color:#013d4a;
+      color:#3F51B5;
       font-size: 1em;
   }
   .container .card .face.face1 a{ //open link
@@ -194,12 +199,12 @@ article.mdui-typo {
       padding: 5px 10px;
       margin-bottom: 5px;
       text-decoration: none;
-      color: #013d4a;
-      border: 2px solid #013d4a;
+      color: #3F51B5;
+      border: 2px solid #3F51B5;
   }
   .container .card .face.face1 a:hover{
       color: #fff;
-      background: #013d4a;
+      background: #3F51B5;
   }
 
 #banner {
@@ -213,14 +218,13 @@ article.mdui-typo {
 }
 
 // 背景虚化-毛玻璃效果
-#cover-background {
+.cover-background {
   position:fixed;
   top: 0;
   left: 0;
   width:100%;
   height:100%;
   min-width: 1000px;
-  z-index:-10;
   zoom: 1;
   background-color: #fff;
   background-repeat: no-repeat;
@@ -229,12 +233,13 @@ article.mdui-typo {
   -o-background-size: cover;
   background-position: center 0;
 }
+
 .warp {
   z-index: 1;
 	text-align: center;
   position: absolute;
-  height: 50%;
-  width: 70%;
+  height: 100%;
+  width: 100%;
 	top: 50%;
 	left: 50%;
 	margin: 0 auto;
@@ -243,36 +248,12 @@ article.mdui-typo {
   background: inherit;
   overflow: hidden;
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-.warp::before {
-  content: "";
-  background: url("/assets/img/xjtu.jpg ") center center;
-  background-size: 100vw auto;
-  z-index: -1;
-  position: absolute;
-  top:0;
-  right: 0; 
-  bottom: 0;
-  left: 0;
-  filter: blur(20px);
-  -webkit-filter:blur(20px);
-  -moz-filter:blur(20px);
-  -ms-filter:blur(20px);
-  -o-filter:blur(20px);
-}
-.warp::after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  top:0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: #000000;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWDg4N3d3dtbW17e3t1dXWBgYGHh4d5eXlzc3OLi4ubm5uVlZWPj4+NjY19fX2JiYl/f39ra2uRkZGZmZlpaWmXl5dvb29xcXGTk5NnZ2c8TV1mAAAAG3RSTlNAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEAvEOwtAAAFVklEQVR4XpWWB67c2BUFb3g557T/hRo9/WUMZHlgr4Bg8Z4qQgQJlHI4A8SzFVrapvmTF9O7dmYRFZ60YiBhJRCgh1FYhiLAmdvX0CzTOpNE77ME0Zty/nWWzchDtiqrmQDeuv3powQ5ta2eN0FY0InkqDD73lT9c9lEzwUNqgFHs9VQce3TVClFCQrSTfOiYkVJQBmpbq2L6iZavPnAPcoU0dSw0SUTqz/GtrGuXfbyyBniKykOWQWGqwwMA7QiYAxi+IlPdqo+hYHnUt5ZPfnsHJyNiDtnpJyayNBkF6cWoYGAMY92U2hXHF/C1M8uP/ZtYdiuj26UdAdQQSXQErwSOMzt/XWRWAz5GuSBIkwG1H3FabJ2OsUOUhGC6tK4EMtJO0ttC6IBD3kM0ve0tJwMdSfjZo+EEISaeTr9P3wYrGjXqyC1krcKdhMpxEnt5JetoulscpyzhXN5FRpuPHvbeQaKxFAEB6EN+cYN6xD7RYGpXpNndMmZgM5Dcs3YSNFDHUo2LGfZuukSWyUYirJAdYbF3MfqEKmjM+I2EfhA94iG3L7uKrR+GdWD73ydlIB+6hgref1QTlmgmbM3/LeX5GI1Ux1RWpgxpLuZ2+I+IjzZ8wqE4nilvQdkUdfhzI5QDWy+kw5Wgg2pGpeEVeCCA7b85BO3F9DzxB3cdqvBzWcmzbyMiqhzuYqtHRVG2y4x+KOlnyqla8AoWWpuBoYRxzXrfKuILl6SfiWCbjxoZJUaCBj1CjH7GIaDbc9kqBY3W/Rgjda1iqQcOJu2WW+76pZC9QG7M00dffe9hNnseupFL53r8F7YHSwJWUKP2q+k7RdsxyOB11n0xtOvnW4irMMFNV4H0uqwS5ExsmP9AxbDTc9JwgneAT5vTiUSm1E7BSflSt3bfa1tv8Di3R8n3Af7MNWzs49hmauE2wP+ttrq+AsWpFG2awvsuOqbipWHgtuvuaAE+A1Z/7gC9hesnr+7wqCwG8c5yAg3AL1fm8T9AZtp/bbJGwl1pNrE7RuOX7PeMRUERVaPpEs+yqeoSmuOlokqw49pgomjLeh7icHNlG19yjs6XXOMedYm5xH2YxpV2tc0Ro2jJfxC50ApuxGob7lMsxfTbeUv07TyYxpeLucEH1gNd4IKH2LAg5TdVhlCafZvpskfncCfx8pOhJzd76bJWeYFnFciwcYfubRc12Ip/ppIhA1/mSZ/RxjFDrJC5xifFjJpY2Xl5zXdguFqYyTR1zSp1Y9p+tktDYYSNflcxI0iyO4TPBdlRcpeqjK/piF5bklq77VSEaA+z8qmJTFzIWiitbnzR794USKBUaT0NTEsVjZqLaFVqJoPN9ODG70IPbfBHKK+/q/AWR0tJzYHRULOa4MP+W/HfGadZUbfw177G7j/OGbIs8TahLyynl4X4RinF793Oz+BU0saXtUHrVBFT/DnA3ctNPoGbs4hRIjTok8i+algT1lTHi4SxFvONKNrgQFAq2/gFnWMXgwffgYMJpiKYkmW3tTg3ZQ9Jq+f8XN+A5eeUKHWvJWJ2sgJ1Sop+wwhqFVijqWaJhwtD8MNlSBeWNNWTa5Z5kPZw5+LbVT99wqTdx29lMUH4OIG/D86ruKEauBjvH5xy6um/Sfj7ei6UUVk4AIl3MyD4MSSTOFgSwsH/QJWaQ5as7ZcmgBZkzjjU1UrQ74ci1gWBCSGHtuV1H2mhSnO3Wp/3fEV5a+4wz//6qy8JxjZsmxxy5+4w9CDNJY09T072iKG0EnOS0arEYgXqYnXcYHwjTtUNAcMelOd4xpkoqiTYICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==);
-  border: 1px solid #000000;
-  opacity: 0.65;
-}
+
 .warp .h1 {
   font-size: 40em;
   z-index: 2;

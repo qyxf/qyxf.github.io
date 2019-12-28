@@ -654,51 +654,6 @@ sub,sup {
 	transform: translate(-50%,-50%)
 }
 
-.header .site-title {
-	font-size: 50px;
-	display: block;
-	line-height: 1;
-	color: #fff
-}
-
-@media only screen and (min-width:550px) {
-	.header .site-title {
-		margin: 0;
-		font-size: 100px
-	}
-}
-
-.header .site-description {
-	font-size: 20px;
-	display: block;
-	line-height: 1;
-	color: #fff;
-	margin-top: 10px
-}
-
-@media only screen and (min-width:550px) {
-	.header .site-description {
-		font-size: 40px
-	}
-}
-
-.header-links {
-	margin: 10px
-}
-
-.header-links .link {
-	color: #fff;
-	text-decoration: none;
-	font-size: 15px;
-	margin: 10px
-}
-
-@media only screen and (min-width:550px) {
-	.header-links .link {
-		font-size: 20px
-	}
-}
-
 .header-icons {
 	display: flex;
 	justify-content: center;
