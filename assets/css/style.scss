@@ -165,6 +165,12 @@ article.mdui-typo {
       text-align: center;
       background: #fff;
       color:#3F51B5;
+      .content {
+        position: absolute;
+        bottom: 2ex;
+        margin: 10px auto;
+        max-width: 90%;
+      }
   }
   
   .container .card .face.face2{
