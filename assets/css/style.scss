@@ -1,157 +1,333 @@
 ---
 ---
 
-@import "leap-month.scss";
+@import "shields-menu.scss";
+@import "rouge-theme.scss";
 
-.fa-ul {
-    list-style: none; }
+$github-color: #eaecef;
+$title-color: #fff;
+$accent-color: lightcyan;
+$shadow-color: #333;
 
-li i, h2 i, h3 i, .mono {
-  width: 1.1em;
-  text-align: center;
-  display: inline-block; }
+.user-details h1 {
+    color: $title-color;
+}
 
-@media print, screen and (max-width: 862px)
-{
-  .icon-bar a.not-laptop {
-    display: none; } }
+.user-details p {
+    color: $accent-color;
+}
 
-@media print, screen and (max-width: 449px)
-{
-  #banner li#project-page {
-      display: none; } }
+.post-info{
+  h1 {
+    color: $title-color;
+    text-shadow: 2px 2px $shadow-color;
+  }
+}
 
-@media print, screen and (max-width: 359px)
-{
-  #banner li#log {
-      display: none; }
-  section .mobile-info {
-      display: block; } }
+.font-page-content {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
 
-fig-cap {
-  font-size: small;
-  display: flex;
-  justify-content: center;
-  text-decoration: underline;
-  text-underline-position: under; }
-
-tb-cap {
-  font-size: small;
-  display: flex;
-  justify-content: center;
-  text-decoration: underline;
-  text-underline-position: under;
-  margin-bottom: 10px; }
-
-center-banner {
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-  margin: 10px; }
-
-.postlist li a {
-    font-weight: bold; }
-
-.mobile-info {
-  display: none; }
-
-.icon-bar {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+.mdui-bottom-nav {
   a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    padding: 10px 5px;
-    margin: 3px;
-    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.2);
-    text-shadow: 1px 1px 2px rgba(75, 75, 75, 0.5);
-    border: 1px solid #2e6da4;
-    background-color: #337ab7; // colors from bootstrap
-    border-radius: 5px;
-    color: $highlight-color;
-    font-weight: bold;
-    &:hover {
-      border: 1px solid #337ab7;
-      background-color: #2e6da4;
-    }
-    i {
-      margin-bottom: 3px;
-      margin-right: 5px; } } }
+    flex-direction: row;
+    span {
+      max-width: 90%; }}}
 
-@media print, screen and (max-width: 359px) {
-  .icon-bar a {
-    width: 100px; } }
+.js-toc {
+  &>.toc-list { position: relative; left: 0; padding-left: 20px; }
+  .toc-list {
+    list-style: none;
+    line-height: 4ex;
+    overflow: hidden;
+    .is-collapsed .toc-link::before {
+      height: 0ex !important; }
+    .toc-list-item {
+      a.toc-link {
+        text-decoration: none;
+        font-size: 1.2em; }
+      .toc-link::before { width: 5px; }
+      .is-active-link::before { background-color: #536bfd; }}}}
 
-.gt-container .gt-comment-content {
-    border: 1px solid darkgray;
-    border-radius: 5px; }
+#main-toc {
+  padding: 20px;
+  padding-left: 0px;
+  .js-toc {
+    .toc-list .toc-list-item a.toc-link {
+      font-size: 1em; }}}
 
-.page-info {
+
+// source: https://github.com/tscanlin/tocbot/issues/53
+.js-toc-content {
+    h2::before, h3::before, h4::before, h5::before, h6::before {
+      display: block;
+      content: " ";
+      height: 80px;
+      margin-top: -80px;
+      visibility: hidden; }
+}
+
+.ref-fix::before {
+  display: block;
+  content: " ";
+  height: 80px;
+  margin-top: -80px;
+  visibility: hidden;
+}
+
+// 解决开关控件显示不完全问题
+.mdui-switch {
+  overflow: visible; }
+
+.mdui-typo {
+  code, kbd, pre, pre tt, samp {
+      font-family: "Fira Mono", "DejaVu Sans Mono",
+                    Menlo, Consolas, "Liberation Mono", Monaco,
+                    "Lucida Console", monospace;
+      font-size: 0.9em; }
+  pre {
+    background-color: lighten($github-color, 5%); }}
+
+article.mdui-typo {
+  p > img {
+    max-width: 90%;
+  }
+  h1 { text-align: center; }
+  h2 {
+    border-bottom: 1px solid $github-color;
+    padding-bottom: .3em; }
+  blockquote { opacity: 70%; }
+  sup  {
+    a {
+    vertical-align: unset;
+    overflow: inherit; }
+    &::before {
+      content: '['; }
+    &::after {
+      content: ']'; }}
+  .footnotes ol li::before, sup a::before {
+    display: block;
+    content: " ";
+    height: 80px;
+    margin-top: -80px;
+    visibility: hidden; }
+  table {
+    max-width: 90%;
+    word-break: break-all;
+    overflow-x: auto;
+    overflow-y: hidden;
+    th, tr td { font-size: 0.9em; }
+  }
+  .MJXc-display {
+    max-width: 90%;
+    overflow-x: auto;
+    overflow-y: hidden; }}
+
+
+    // 这里想横向全屏，每隔卡片颜色不同（可以差别较小）
+    .container{ //容器：卡片组
+      width: 100%;
+      display: flex;
+      grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+      justify-content: center;
+      align-items: center;
+      margin: 5% 0;
+      flex-wrap: wrap;
+      align-content: center;
+  }
+  .container .card{
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: initial;
+      transition: 0.5s;
+  }
+  .container .card：hover{
+      box-shadow:  0 20px 10px rgba(0, 0, 0, .2);
+  }
+  .container .card .face{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .container .card .face.face1 { //face1 遮盖下面的部分
+      box-sizing: border-box;
+      padding: 10px;
+      text-align: center;
+      background: #fff;
+      color:#3F51B5;
+      .content {
+        position: absolute;
+        bottom: 2ex;
+        margin: 10px auto;
+        max-width: 90%;
+      }
+  }
+  
+  .container .card .face.face2{
+      background: #3F51B5;  // 改变face2的颜色
+      transition: 0.5s;
+  }
+  
+  .container .card:hover .face.face2{
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      top:20px;
+      left:50%;
+      transform: translateX(-50%);  //改变动画的方向
+      background: transparent;
+      border: 2px solid  #3F51B5;
+  }
+  
+  .container .card .face.face2 h2{ //face2 遮盖部分
+      margin: 0;
+      padding: 0;
+      font-size:3em;  
+      color:#fff;
+      transition: 0.5s;
+  }
+  .container .card:hover .face.face2 h2{
+      color:#3F51B5;
+      font-size: 1em;
+  }
+  .container .card .face.face1 a{ //open link
+      display: inline-block;
+      padding: 5px 10px;
+      margin-bottom: 5px;
+      text-decoration: none;
+      color: #3F51B5;
+      border: 2px solid #3F51B5;
+  }
+  .container .card .face.face1 a:hover{
+      color: #fff;
+      background: #3F51B5;
+  }
+
+#banner {
+  cursor: default;
+  height: 100vh;
+  width: 100vw;
+  min-height: 35em;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+// 背景虚化-毛玻璃效果
+.cover-background {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  min-width: 1000px;
+  zoom: 1;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+}
+
+.warp {
+  z-index: 1;
+	text-align: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+	top: 50%;
+	left: 50%;
+	margin: 0 auto;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+  background: inherit;
+  overflow: hidden;
+  text-align: center;
+
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  .metadata {
-    display: inline-flex;
-    align-items: baseline;
-    i {
-      margin: {
-        left: 6px;
-        right: 3px; } } } }
+  flex-direction: column;
+}
 
+.warp .h1 {
+  font-size: 40em;
+  z-index: 2;
+  margin: .67em 0;
+	margin-top: 1em;
+	padding-top: 1em;
+	line-height: 1.25;
+  color: #fff;
+  font-size: 2.5rem;
+}
+    
+.warp-info {
+  z-index: 3;
+  padding: 40px;
+  color: #fff;
+}
 
-$qian-color: #f6d365;
-$shao-color: #ff6666;
-$zonglian-color: #fa71cd;
-$yuejie-color: #9be15d;
-$shushi-color: #7de2fc;
-$wushi-color: #33aaff;
-$huasheng-color: #6633ff;
-$jishi-color: #ff9a44;
-$renshi-color: #00cccc;
-$other-color: #cccc99;
-$amount: 40%;
+.warp-links {
+  z-index: 3;
+	margin: 10px
+}
 
-span.badge {
-  display: inline-block;
-  color: #efefef;
-  margin: 0 2px;
-  font-weight: 500;
-  font-size: 0.8em;
-  text-align: center;
-  .badge-label {
-    border: {
-      top-left-radius: 3px;
-      bottom-left-radius: 3px; }
-    padding: 3px;
-    text-shadow: 1px 1px 1px $background-color; }
-  .badge-message {
-    border: {
-      top-right-radius: 3px;
-      bottom-right-radius: 3px; }
-    background-color: $background-color;
-    padding: 3px;
-    padding-left: 0px; }
-    .badge-qian { background-image: linear-gradient($qian-color, darken($qian-color, $amount)); }
-    .badge-shao { background-image: linear-gradient($shao-color, darken($shao-color, $amount)); }
-    .badge-zonglian { background-image: linear-gradient($zonglian-color, darken($zonglian-color, $amount)); }
-    .badge-yuejie { background-image: linear-gradient($yuejie-color, darken($yuejie-color, $amount)); }
-    .badge-shushi { background-image: linear-gradient($shushi-color, darken($shushi-color, $amount)); }
-    .badge-wushi { background-image: linear-gradient($wushi-color, darken($wushi-color, $amount)); }
-    .badge-huasheng { background-image: linear-gradient($huasheng-color, darken($huasheng-color, $amount)); }
-    .badge-jishi { background-image: linear-gradient($jishi-color, darken($jishi-color, $amount)); }
-    .badge-renshi { background-image: linear-gradient($renshi-color, darken($renshi-color, $amount)); }
-    .badge-other { background-image: linear-gradient($other-color, darken($other-color, $amount)); } }
+.warp-links .link {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	margin: 10px
+}
 
-section {
-  h2 {
-    font-size: 1.7em; }
-  h3 {
-    font-size: 1.5em; }
-  h4 {
-    font-size: 1.2em;
-    text-decoration: underline;
-    text-underline-position: under; } }
+@media only screen and (min-width:550px) {
+	.warp-links .link {
+		font-size: 20px
+	}
+}
+
+.warp-icons {
+  z-index: 3;
+	display: flex;
+	justify-content: center;
+	text-align: center
+}
+
+.warp-icons .icon {
+	color: #fff;
+	text-align: center
+}
+
+.warp-icons .icon {
+	height: 20px;
+	padding: 10px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	transition: all .7s;
+	width: 20px;
+	font-size: 20px;
+	margin: 5px
+}
+
+.warp-icons .icon:active,.warp-icons .icon:hover {
+	color: #1a222c;
+	background: #fff
+}
+
+@media only screen and (min-width:550px) {
+	.warp-icons .icon {
+		width: 35px;
+		height: 35px;
+		font-size: 35px
+	}
+}
+

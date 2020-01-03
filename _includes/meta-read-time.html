@@ -1,0 +1,21 @@
+<!-- 字数统计 -->
+<!-- 不透明效果 -->
+<div class="mdui-typo-subheading-opacity" align="right">
+
+  {% assign months = "January,February,Mark,April,May,June,July,August,September,October,November,December" | split: "," %}
+  {% assign month_number = include.date | date: "%-m" | minus: 1 %}
+  <p class="fa fa-calendar-o">
+    {{ months[month_number] }} {{ include.date | date: "%-d" }}, {{ include.date | date: "%Y" }}
+  </p>
+
+  <span class="reading-time">
+    {% assign words = content | number_of_words %}
+    {% if words < 360 %}
+      <p class="fa fa-clock-o"> {{words}} 字 |  1 分钟 </p> 
+    {% else %}
+      <p class="fa fa-clock-o">
+        {{words}} 字 | {{ words | divided_by:180 }} 分钟
+      </p>
+    {% endif %}
+  </span>
+</div>

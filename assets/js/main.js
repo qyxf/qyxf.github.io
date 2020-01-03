@@ -1,85 +1,73 @@
-var sectionHeight = function() {
-  var total = $(window).height(), $section = $('section').css('height', 'auto');
-  if ($section.outerHeight(true) < total) {
-    var margin = $section.outerHeight(true) - $section.height();
-    $section.height(total - margin - 20);
-  } else {
-    $section.css('height','auto');
-  }
-}
-
-var navHide = function() {
-  $("#nav-bar").css({ "height": "0", "opacity": "0", "visibility": "hidden",
-                      "overflow-y": "hidden" });
-  $("#nav-wrapper").css({ "width": "25px", "height": "50px" });
-  $("#toc").css({ "padding": "1px", "border-bottom": "0px", "height": "48px",
-                  "flex-direction": "column", "animation": "blink 0.5s" });
-}
-
-var navShow = function() {
-  $("#nav-bar").css({ "overflow-y": "auto", "height": "250px", "color": "#ccc",
-                      "visibility": "visible", "opacity": "1" });
-  $("#nav-wrapper").css({ "width": "250px", "height": "280px" });
-  $("#toc").css({ "padding": "5px", "border-bottom": "1px solid #111", "height": "20px",
-                  "flex-direction": "row", "animation": "blinkback 0.5s" });
-}
-
-$(window).resize(sectionHeight);
-
-$(function() {
-  navHide();
-  $("#nav-wrapper").css("display", "block");
-
-  $(".footnotes ol").prepend("<h2>注释</h2>");
-  pangu.spacingPage();
-
-  $("nav ul").append("<li class='tag-H2'><a href='#'><i class='fa fa-home'></i> 返回顶部</a></li>");
-  $("section h2, section h3, section h4").each(function(){
-    var unallowedCharacters = /[\s\.\(\):&+]/g;
-    if ($(this).prop("tagName") == "H2"){
-      $("nav ul").append("<li class='tag-" + this.nodeName + "'><a href='#" +
-      $(this).text().replace(unallowedCharacters, '-').replace(/-+/g, '-') + "'>" +
-      $(this).text() + "</a></li>");
-    }
-    else if ($(this).prop("tagName") == "H3"){
-      $("nav ul").append("<li class='tag-" + this.nodeName + "'>　<a href='#" +
-      $(this).text().replace(unallowedCharacters, '-').replace(/-+/g, '-') + "'>" +
-      $(this).text() + "</a></li>");
-    }
-    else{
-      $("nav ul").append("<li class='tag-" + this.nodeName + "'>　　<a href='#" +
-      $(this).text().replace(unallowedCharacters, '-').replace(/-+/g, '-') + "'>" +
-      $(this).text() + "</a></li>");
-    }
-    $(this).attr("id",$(this).text().replace(unallowedCharacters, '-').replace(/-+/g, '-'));
-    $("nav ul li:first-child a").parent().addClass("active");
-  });
-
-  $("#nav-wrapper").mouseleave(navHide);
-  $("#nav-wrapper").mouseover(navShow);
-
-  $("nav ul li").on("click", "a", function(event) {
-    var href = $(this).attr("href");
-    var position = (href == "#")?0:$(href).offset().top;
-    $("html, body").animate({scrollTop: position}, 400);
-    $("nav ul li a").parent().removeClass("active");
-    $(this).parent().addClass("active");
-    event.preventDefault();
-  });
-
-  if($("#gitalk-container").length > 0)  // prevent error informed by browser
-  {
-    const gitalk = new Gitalk({
-      clientID: 'c3149c4a0948a89e7d30',
-      clientSecret: '133aec412b403bc7f78acda479782e8e317d7e0a',
-      repo: 'qyxf.github.io',
-      owner: 'qyxf',
-      admin: ['xjtu-blacksmith'],
-      id: location.pathname,      // Ensure uniqueness and length less than 50
-      distractionFreeMode: false  // Facebook-like distraction free mode
-    })
-    gitalk.render('gitalk-container')
-  }
-
-  $('img').on('load', sectionHeight);
-});
+document.addEventListener(
+  "DOMContentLoaded",
+  function() {
+    new SweetScroll({});
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 30, density: { enable: !0, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: {
+          type: "edge",
+          stroke: { width: 0, color: "#000000" },
+          image: { src: "img/github.svg", width: 100, height: 100 }
+        },
+        opacity: {
+          value: 0.5,
+          random: !1,
+          anim: { enable: !1, speed: 1, opacity_min: 0.1, sync: !1 }
+        },
+        size: {
+          value: 3,
+          random: !0,
+          anim: {
+            enable: !1,
+            speed: 19.18081918081918,
+            size_min: 0.1,
+            sync: !1
+          }
+        },
+        line_linked: {
+          enable: !0,
+          distance: 150,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: !0,
+          speed: 4,
+          direction: "none",
+          random: !0,
+          straight: !1,
+          out_mode: "out",
+          bounce: !1,
+          attract: { enable: !1, rotateX: 600, rotateY: 1200 }
+        },
+        nb: 80
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: !1, mode: "grab" },
+          onclick: { enable: !0, mode: "push" },
+          resize: !0
+        },
+        modes: {
+          grab: { distance: 400, line_linked: { opacity: 1 } },
+          bubble: {
+            distance: 400,
+            size: 40,
+            duration: 2,
+            opacity: 8,
+            speed: 3
+          },
+          repulse: { distance: 200, duration: 0.4 },
+          push: { particles_nb: 4 },
+          remove: { particles_nb: 2 }
+        }
+      },
+      retina_detect: !0
+    });
+  },
+  !1
+);

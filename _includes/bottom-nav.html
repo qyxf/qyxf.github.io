@@ -1,0 +1,26 @@
+<!-- 底部文章切换栏 -->
+
+<div class="mdui-color-white mdui-shadow-4 mdui-bottom-nav mdui-bottom-nav-scroll-hide mdui-color-theme mdui-hidden-sm-up" style="z-index: 1;">
+  {% if page.previous.url %}
+  <a class="mdui-ripple" href="{{ site.baseurl }}{{ page.previous.url }}">
+    <i class="fa fa-chevron-left fa-2x fa-pull-left"></i>
+    <span class="mdui-typo-body-2 mdui-text-truncate"> {{ page.previous.title }} </span>
+  </a>
+  {% else %}
+  <a class="mdui-ripple" href="#">
+    <i class="fa fa-chevron-left fa-2x fa-pull-left mdui-text-color-black-disabled"></i>
+    <span class="mdui-typo-body-2 mdui-text-truncate mdui-text-color-black-disabled"> 这是最早一篇了...  </span>
+  </a>
+  {% endif %}
+  {% if page.next.url %}
+  <a class="mdui-ripple" href="{{ site.baseurl }}{{ page.next.url }}">
+    <span class="mdui-typo-body-2 mdui-text-truncate"> {{ page.next.title }} </span>
+    <i class="fa fa-chevron-right fa-2x fa-pull-right"></i>
+  </a>
+  {% else %}
+  <a class="mdui-ripple" href="#">
+    <span class="mdui-typo-body-2 mdui-text-truncate mdui-text-color-black-disabled"> 这是最新一篇了...  </span>
+    <i class="fa fa-chevron-right fa-2x fa-pull-right mdui-text-color-black-disabled"></i>
+  </a>
+  {% endif %}
+</div>

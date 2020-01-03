@@ -1,21 +1,31 @@
 ---
-layout: base
+layout: page
 ---
+{% include meta-read-time.html %}
+
+<div>
+  <p> {% if page.author %} <i class="fa fa-user-circle-o"> </i> 作者：{{ page.author | markdownify | remove: '<p>' | remove: '</p>' }} </p> {% endif %}
+  <p> {% if page.editor %} <i class="fa fa-edit"></i>编辑：{{ page.editor | markdownify | remove: '<p>' | remove: '</p>' }} </p> {% endif %}
+</div>
 
 <h1>{{ page.title }}</h1>
 
-{% include page-info.html %}
+<div class="mdui-divider"></div>
 
 {{ content }}
 
-<hr>
-<!-- Valine 评论框 start -->
-{% if site.valine.enable %}
-  {% include valine_comments.html %}
-{% endif %}
-<!-- Valine 评论框 end -->
-<hr>
 
-<blockquote>
-<p><i class="fa fa-exclamation-triangle"></i> {{ page.license_info | default: site.license_info }}</p>
-</blockquote>
+
+<!-- Tags -->
+<div class="mdui-mb-4">
+  <span class="taglist">
+  {% for tag in page.tags %}
+    <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag | downcase }}</a>
+  {% endfor %}
+  </span>
+</div>
+
+<!-- Comments -->
+{% if page.comments != false %}
+    {% include comments.html %}
+{% endif %}
