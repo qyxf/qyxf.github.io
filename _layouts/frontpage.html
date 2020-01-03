@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include frontpage-head.html %}
+  <body>
+    <div class="cover-background" style="background-image: url(assets/img/xjtu.jpg); filter: blur(5px); z-index: -10;"></div>
+    <div class="cover-background" style="background-image: url(assets/img/xjtu.jpg); filter: blur(2px); z-index: -20;"></div>
+    <div class="cover-background" style="background-image: url(assets/img/xjtu.jpg); z-index: -30;"></div>
+    <!-- 第一层：站名 -->
+      <section id="banner">
+        <div id='particles-js' style="background-color: rgba(0, 0, 0, 0.5);"></div>
+        {% include preface.html %}
+      </section>
+
+    <!-- 第二层：网站信息 -->
+    <section id='nav'>
+      <div class='mdui-hidden-xs'>
+        {% include frontpage-navlist.html %}
+      </div>
+      <div class="post-info mdui-hidden-sm-up mdui-color-theme">
+        {% include mobile-navlist.html %}
+      </div>
+    </section>
+
+
+    <!-- 第三层：最新文章 -->
+      {% include frontpage-post.html %}
+      {% include frontpage-footer.html %}
+  </body>

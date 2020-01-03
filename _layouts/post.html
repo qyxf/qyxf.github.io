@@ -1,20 +1,21 @@
 ---
 layout: page
 ---
-{% include meta-read-time.html %}
-
-<div>
-  <p> {% if page.author %} <i class="fa fa-user-circle-o"> </i> 作者：{{ page.author | markdownify | remove: '<p>' | remove: '</p>' }} </p> {% endif %}
-  <p> {% if page.editor %} <i class="fa fa-edit"></i>编辑：{{ page.editor | markdownify | remove: '<p>' | remove: '</p>' }} </p> {% endif %}
-</div>
+<style>
+.post-metadata .badge{
+  vertical-align: bottom;
+}
+</style>
 
 <h1>{{ page.title }}</h1>
 
+<!-- metadata -->
+{% include metadata.html %}
+
 <div class="mdui-divider"></div>
 
+
 {{ content }}
-
-
 
 <!-- Tags -->
 <div class="mdui-mb-4">
