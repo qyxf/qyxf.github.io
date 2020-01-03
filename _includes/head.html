@@ -1,0 +1,40 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    {% seo %}
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/{{site.favicon}}">
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Jquery -->
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+    <!-- MDUI -->
+    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- 插件：tocbot, pangu -->
+    <link href="https://cdn.bootcss.com/tocbot/4.8.1/tocbot.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/tocbot/4.8.1/tocbot.min.js"></script>
+    <script src="https://cdn.bootcss.com/pangu/4.0.7/pangu.min.js"></script>
+
+    <!-- MathJax -->
+    <script src="https://cdn.bootcss.com/mathjax/2.7.6/latest.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["MathMenu.js", "MathZoom.js", "AssistiveMML.js", "a11y/accessibility-menu.js"],
+        jax: ["input/TeX", "output/CommonHTML"],
+        TeX: { extensions: ["AMSmath.js", "AMSsymbols.js", "noErrors.js", "noUndefined.js"] }
+      });
+    </script>
+
+    <!--- 自定义样式表（含代码高亮及名牌设置） -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
