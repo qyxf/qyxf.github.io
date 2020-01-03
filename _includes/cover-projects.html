@@ -9,7 +9,7 @@
         </div>
       <div class="mdui-card-content mdui-typo post-excerpt">
         <div>{{ post.content | strip_html | truncate: 200 }}</div>
-        <a class="mdui-btn mdui-ripple" href='{{ post.url }}'>Read More</a>
+        <a class="mdui-btn mdui-ripple" href='{{ post.url | prepend: site.baseurl }}'>Read More</a>
       </div>
     </div>
     </div>

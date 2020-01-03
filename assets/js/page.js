@@ -1,5 +1,6 @@
 var $$ = mdui.JQ;  // 创建 MDUI JS 库
 
+
 // 中文目录链接修正
 // source: https://eriri.ink/archives/build-a-toc-for-an-article.html
 var headerEl = 'h2, h3, h4',  //headers
@@ -81,18 +82,6 @@ $('article sup a').click(function() {
     return false;
 });
 
-// 切换主题功能的实现（待改进）
-$("#theme-btn").click(function() {
-    if($(this).is(":checked")) {
-      $$('.mdui-color-white').addClass('mdui-color-grey-900');
-      $$('.mdui-color-grey-900').removeClass('mdui-color-white');
-    }
-    else {
-      $$('.mdui-color-grey-900').addClass('mdui-color-white');
-      $$('.mdui-color-white').removeClass('mdui-color-grey-900');
-    }
-});
-
 // shieldsMenu.js here
 // 实现名牌功能
 $("p > code, li > code, span > code").each(function() {
@@ -102,7 +91,6 @@ $("p > code, li > code, span > code").each(function() {
     var label = /\S*\d{2,3}/.exec(this.innerText);
     var message = /\d{2,3}\S*/.exec(this.innerText);
     message = message.toString().replace(/[-\d]/g,'');
-    var labelColor = "";
     var classList = new Array(/钱/, /少/, /宗濂/, /越杰/, /数\S*试/, /物\S*试/, /化\S*生/, /计\S*试/, /人\S*[试智]/);
     var classNameList = new Array("qian", "shao", "zonglian", "yuejie", "shushi", "wushi", "huasheng", "jishi", "renshi")
     var className = "other";

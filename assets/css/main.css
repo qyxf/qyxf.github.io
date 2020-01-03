@@ -724,12 +724,6 @@ sub,sup {
 	max-width: 960px
 }
 
-@media only screen and (min-width:550px) {
-	#about {
-		width: 80%
-	}
-}
-
 .tech {
 	margin: 10px
 }
@@ -851,7 +845,7 @@ sub,sup {
 .footer {
 	background: #1a222c;
 	padding: 10px 0;
-	margin-top: 100px;
+	margin-top: 20px;
 	text-align: center;
 	color: #fff
 }

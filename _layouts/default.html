@@ -12,13 +12,15 @@
       </section>
 
     <!-- 第二层：网站信息 -->
-      <section id="about">
+      <section id="about" class='mdui-hidden-xs'>
         {% include cover-about.html %}
+      </section>
+      <section id="mob-nav" class="post-info mdui-hidden-sm-up mdui-color-theme">
+        {% include mobile-navlist.html %}
       </section>
 
 
     <!-- 第三层：目前项目 -->
-        {% include cover-projects.html %}
-        {{ content }}
+      {% include cover-projects.html %}
       {% include footer.html %}
   </body>

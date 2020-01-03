@@ -15,9 +15,12 @@
 
     <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="{{ "/assets/js/set-theme.js" | prepend: site.baseurl }}"></script>
 
     <!--- MDUI -->
     <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
     <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
     <!-- Scripts: tocbot, pangu -->
@@ -90,7 +93,6 @@
     </footer>
 
     <!-- Scripts to load at end: MDUI, custom scripts -->
-    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
     <script src="{{ "/assets/js/page.js" | prepend: site.baseurl }}"></script>
 
     </script>
