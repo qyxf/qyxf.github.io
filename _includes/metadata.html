@@ -3,18 +3,5 @@
     <span class="mdui-ripple mdui-btn"><span id="busuanzi_container_page_pv"> <i class="fa fa-eye"></i> <span id="busuanzi_value_page_pv"> <i class="fa fa-spin fa-spinner"></i> </span> </span> </span>
     {% if page.author %} <span class="mdui-ripple mdui-btn"> <i class="fa fa-user-circle-o"></i> 作者：{{ page.author | markdownify | remove: '<p>' | remove: '</p>' }} </span> {% endif %}
     {% if page.editor %} <span class="mdui-ripple mdui-btn"> <i class="fa fa-edit"></i> 编辑：{{ page.editor | markdownify | remove: '<p>' | remove: '</p>' }} </span> {% endif %}
-    <span class="mdui-ripple mdui-btn">
-      <!-- 字数统计 -->
-      <!-- 中文来源：https://taoalpha.github.io/blog/2015/05/21/tech-jekyll-count-of-chinese-characters/ -->
-      <span class="reading-time">
-        {% assign words = content | strip_html | strip_newlines | size | round %}
-        {% if words < 350 %}
-          <p class="fa fa-clock-o"> {{ words }} 字 | 1 分钟 </p> 
-        {% else %}
-          <p class="fa fa-clock-o">
-            {{ words }} 字 | {{ words | divided_by: 350 }} 分钟
-          </p>
-        {% endif %}
-      </span>
-    </span>
+    <span class="mdui-ripple mdui-btn"> <span class="reading-time"> {% include meta-read-time.html %} </span> </span>
 </div>
