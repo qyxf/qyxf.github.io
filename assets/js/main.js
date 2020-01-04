@@ -9,7 +9,6 @@ document.addEventListener(
         shape: {
           type: "edge",
           stroke: { width: 0, color: "#000000" },
-          image: { src: "img/github.svg", width: 100, height: 100 }
         },
         opacity: {
           value: 0.5,
@@ -21,7 +20,7 @@ document.addEventListener(
           random: !0,
           anim: {
             enable: !1,
-            speed: 19.18081918081918,
+            speed: 20,
             size_min: 0.1,
             sync: !1
           }

@@ -6,10 +6,16 @@
       <div class="mdui-card mdui-m-a-1">
         <div class="mdui-card-primary">
           <div class="mdui-card-primary-title">{{ post.title }}</div>
-          <div class="mdui-card-primary-subtitle"><i class="fa fa-calendar"></i> {{ post.date | date: '%Y 年 %m 月 %d 日' }}{% if post.author %}&nbsp;&nbsp;<i class="fa fa-pencil"></i> {{ post.author | markdownify | strip_html }}{% endif %}</div>
+          <div class="mdui-card-primary-subtitle">
+            <i class="fa fa-calendar"></i> {{ post.date | date: '%Y 年 %m 月 %d 日' }}
+            {% if post.author %}&nbsp;&nbsp;<i class="fa fa-pencil"></i> {{ post.author | markdownify | strip_html }}{% endif %}
+            &nbsp;&nbsp;{% include meta-read-time.html %}
+          </div>
         </div>
       <div class="mdui-card-content mdui-typo post-excerpt">
         <div>{{ post.content | strip_html | truncate: 200 }}</div>
+      </div>
+      <div class="mdui-card-actions mdui-typo">
         <a class="mdui-btn mdui-ripple" href='{{ post.url | prepend: site.baseurl }}'>Read More</a>
       </div>
     </div>
