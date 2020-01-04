@@ -1,4 +1,4 @@
-<div class="mdui-typo">
+<div class="mdui-typo mdui-color-white">
 <h2 class="js-toc-ignore"><i class='fa fa-comments-o'></i> 参与讨论</h2>
 <div id="comments"></div>
 <!--Leancloud 操作库:-->
@@ -17,4 +17,7 @@ new Valine({
   verify: '{{ site.valine.verify }}',
 })
 </script>
+<style media="screen">
+  .v * { color: rgba(150, 150, 150, 0.9); }
+</style>
 </div>
