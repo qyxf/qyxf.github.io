@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>关于 Git 客户端的介绍 | 钱院学辅信息站</title>
+
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>关于 Git 客户端的介绍 | 钱院学辅信息站</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="关于 Git 客户端的介绍" />
+<meta name="author" content="`自动化钱71吴思源`" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Git Extensions 简述" />
+<meta property="og:description" content="Git Extensions 简述" />
+<meta property="og:site_name" content="钱院学辅信息站" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-10-01T00:00:00+08:00" />
+<script type="application/ld+json">
+{"description":"Git Extensions 简述","author":{"@type":"Person","name":"`自动化钱71吴思源`"},"@type":"BlogPosting","url":"/2019/10/01/git-client.html","headline":"关于 Git 客户端的介绍","dateModified":"2019-10-01T00:00:00+08:00","datePublished":"2019-10-01T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2019/10/01/git-client.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="/">
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Jquery -->
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+    <!-- MDUI -->
+    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- 插件：tocbot, pangu -->
+    <link href="https://cdn.bootcss.com/tocbot/4.8.1/tocbot.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/tocbot/4.8.1/tocbot.min.js"></script>
+    <script src="https://cdn.bootcss.com/pangu/4.0.7/pangu.min.js"></script>
+
+    <!-- MathJax -->
+    <script src="https://cdn.bootcss.com/mathjax/2.7.6/latest.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["MathMenu.js", "MathZoom.js", "AssistiveMML.js", "a11y/accessibility-menu.js"],
+        jax: ["input/TeX", "output/CommonHTML"],
+        TeX: { extensions: ["AMSmath.js", "AMSsymbols.js", "noErrors.js", "noUndefined.js"] }
+      });
+    </script>
+
+    <!--- 自定义样式表（含代码高亮及名牌设置） -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script async src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <script async src="/assets/js/set-theme.js"></script>
+    <script async src="/assets/js/page.js"></script>
+</head>
+
+
+<body class="mdui-color-white mdui-theme-accent-indigo mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-p-b-0">
+
+    <!-- 导航栏 -->
+    <!-- 站点内部页眉部分 -->
+<div id="appbar" class="mdui-appbar mdui-appbar-fixed mdui-color-white">
+  <div class="mdui-toolbar">
+    <a id="drawer-toc-btn" ref="#" class="mdui-ripple mdui-hidden-md-up mdui-text-center" mdui-drawer="{target: '#main-toc'}">
+      <i class="fa fa-map" style="width: 36px;"></i>
+    </a>
+    <a href="#" class="mdui-ripple mdui-hidden-sm-up" mdui-menu="{ target : '#mobile-list' }">
+      <i class="fa fa-list" style="width: 36px;"></i>
+    </a>
+    <ul id="mobile-list" class="mdui-menu">
+      <li class="mdui-menu-item">
+        <a href="/post/" class="mdui-ripple">文章列表</a>
+      </li>
+      <li class="mdui-menu-item">
+        <a href="/program/" class="mdui-ripple">培养方案查询</a>
+      </li>
+      <li class="mdui-menu-item">
+        <a href="/course/" class="mdui-ripple">课程中心</a>
+      </li>
+      <li class="mdui-divider"></li>
+      <li class="mdui-menu-item">
+        <a href="/navigator/" class="mdui-ripple">交大网址导航</a>
+      </li>
+      <li class="mdui-menu-item">
+        <a href="/zhufeng/" class="mdui-ripple">珠峰学报</a>
+      </li>
+      <li class="mdui-menu-item">
+        <a href="/about/" class="mdui-ripple">关于我们</a>
+      </li>
+    </ul>
+    <a class="mdui-ripple" href="/">
+      <span class="mdui-typo-headline mdui-hidden-xs-down">
+        <i class="fa fa-home"></i>
+        钱院学辅信息站
+      </span>
+      <span class="mdui-typo-body-2 mdui-hidden-sm-up">
+        <i class="fa fa-home"></i>
+        钱院学辅
+      </span>
+    </a>
+    <a class="mdui-btn mdui-ripple mdui-hidden-xs-down mdui-typo-title" href="/post/">
+      <i class="fa fa-quote-left"></i>
+      文章列表
+    </a>
+    <a class="mdui-btn mdui-ripple mdui-hidden-sm-down mdui-typo-title" href="/course/">
+      <i class="fa fa-binoculars"></i>
+      课程中心
+    </a>
+    <a class="mdui-btn mdui-ripple mdui-hidden-sm-down mdui-typo-title" href="/program/">
+      <i class="fa fa-calendar-check-o"></i>
+      培养方案
+    </a>
+    <a class="mdui-btn mdui-ripple mdui-hidden-sm-down mdui-typo-title" href="/zhufeng/">
+      <i class="fa fa-newspaper-o"></i>
+      珠峰学报
+    </a>
+    <a class="mdui-btn mdui-ripple mdui-hidden-md-down mdui-typo-title" href="/technique/">
+      <i class="fa fa-wrench"></i>
+      技术中心
+    </a>
+    <a class="mdui-btn mdui-ripple mdui-hidden-md-down mdui-typo-title" href="/easymcm/">
+      <i class="fa fa-cubes"></i>
+      美赛模板
+    </a>
+    <a class="mdui-btn mdui-ripple mdui-hidden-xs-down mdui-typo-title" href="/about/">
+      <i class="fa fa-id-badge"></i>
+      关于我们
+    </a>
+    <div class="mdui-toolbar-spacer"></div>
+    <label class="mdui-switch" style="overflow: visible;">
+      <input id="theme-btn" type="checkbox"/>
+      <i class="mdui-switch-icon"></i>
+    </label>
+  </div>
+</div>
+
+
+    <!-- 推送的底部导航栏  -->
+     <!-- 底部文章切换栏 -->
+
+<div class="mdui-color-white mdui-shadow-4 mdui-bottom-nav mdui-bottom-nav-scroll-hide mdui-color-theme mdui-hidden-sm-up" style="z-index: 1;">
+  
+  <a class="mdui-ripple" href="/2019/09/18/go-abroad-lecture.html">
+    <i class="fa fa-chevron-left fa-2x fa-pull-left"></i>
+    <span class="mdui-typo-body-2 mdui-text-truncate"> 9 月 21 日出国分享交流会 </span>
+  </a>
+  
+  
+  <a class="mdui-ripple" href="/2019/10/01/latex-download.html">
+    <span class="mdui-typo-body-2 mdui-text-truncate"> LaTeX 环境配置教程 </span>
+    <i class="fa fa-chevron-right fa-2x fa-pull-right"></i>
+  </a>
+  
+</div>
+ 
+
+    <!-- 抽屉导航目录 -->
+    <div id="main-toc" class="mdui-drawer mdui-drawer-close mdui-shadow-4 mdui-hidden-lg-up"></div>
+
+    <!-- 内容部分 -->
+    <main role="main" class="mdui-container-fluid">
+
+        <div class="mdui-container-fluid">
+          <div class="mdui-row">
+
+            <!-- 侧栏 -->
+            <div class="mdui-col-md-3 mdui-hidden-sm-down">
+              <!-- 目录 -->
+              <div class="mdui-card mdui-color-white" style="position: fixed; left: 50px; top: 150px; max-width: 17%;">
+  <div class="mdui-card-primary">
+    <div class="mdui-card-title mdui-typo-title">
+      关于 Git 客户端的介绍
+    </div>
+  </div>
+
+  <div class="mdui-card-content mdui-p-l-0">
+    <div class="js-toc"></div>
+  </div>
+</div>
+
+            </div>
+
+            <!-- Main part -->
+            <div class="mdui-col-sm-12 mdui-col-md-7">
+
+              <!-- 正文 -->
+              <article class="mdui-typo">
+                <div class="js-toc-content">
+                  <style>
+.post-metadata .badge{
+  vertical-align: bottom;
+}
+</style>
+
+<h1>关于 Git 客户端的介绍</h1>
+
+<!-- metadata -->
+<div class="post-metadata mdui-text-center mdui-p-a-1">
+     <span class="mdui-ripple mdui-btn">  <i class="fa fa-calendar"></i> 2019 年 10 月 01 日 </span> 
+    <span class="mdui-ripple mdui-btn"><span id="busuanzi_container_page_pv"> <i class="fa fa-eye"></i> <span id="busuanzi_value_page_pv"> <i class="fa fa-spin fa-spinner"></i> </span> </span> </span>
+     <span class="mdui-ripple mdui-btn"> <i class="fa fa-user-circle-o"></i> 作者：<code class="highlighter-rouge">自动化钱71吴思源</code>
+ </span> 
+     <span class="mdui-ripple mdui-btn"> <i class="fa fa-edit"></i> 编辑：<code class="highlighter-rouge">能动少C71尤佳睿</code>
+ </span> 
+    <span class="mdui-ripple mdui-btn"> <span class="reading-time"> <!-- 字数统计 -->
+<!-- 中文来源：https://taoalpha.github.io/blog/2015/05/21/tech-jekyll-count-of-chinese-characters/ -->
+
+
+  <span class="fa fa-clock-o">
+    836 字 | 2 分钟
+  </span>
+
+ </span> </span>
+</div>
+
+
+<div class="mdui-divider mdui-m-b-2"></div>
+
+
+<h2 id="git-extensions-简述">Git Extensions 简述</h2>
+
+<blockquote>
+  <p>此段暂缺。</p>
+</blockquote>
+
+<h2 id="安装">安装</h2>
+
+<p>点击<a href="https://sourceforge.net/projects/gitextensions/">链接</a>处，下载 Git Extensions。双击下载好的 <code class="highlighter-rouge">msi</code> 文件安装。</p>
+
+<p>出现这个界面时：</p>
+
+<ul>
+  <li>若未安装过 Git，可选择下面的 Putty；</li>
+  <li>若已经使用过 Git，可以选择上面的 OpenSSH。</li>
+</ul>
+
+<blockquote>
+  <p>这里是选择密钥加密方式。我们的 GitHub 远程仓库也需要钥匙才能打开。你注册的 Github 账号只能证明你具有管理仓库的身份，钥匙需要认证后生成，保存在本地。</p>
+</blockquote>
+
+<p>一路右键，直到出现设置界面</p>
+
+<p>如果缺少软件配置合并比较工具 <code class="highlighter-rouge">kdiff3</code>，说明未安装此工具，有两个解决办法：</p>
+
+<ul>
+  <li>点击<a href="https://sourceforge.net/projects/kdiff3/files/">这里</a>安装合并比较工具；</li>
+  <li>进入此界面左边的“Git -&gt; 设置”中 ，选择本地已经安装的其它合并比较工具。</li>
+</ul>
+
+<p><img src="/img/git-client/git_client_1.jpg" alt="git_client_1" /></p>
+
+<blockquote>
+  <p><strong>合并比较工具</strong>：拉取或推送远程文件时，若本地的文件和远程文件有所不同，此时会通过合并比较工具逐行比较本地文件和远程文件，然后让用户取舍。</p>
+</blockquote>
+
+<h2 id="使用">使用</h2>
+
+<h3 id="将远程仓库克隆到本地">将远程仓库克隆到本地</h3>
+
+<p>打开 GitHub 的某个仓库，点击绿色按钮，即可复制仓库地址。</p>
+
+<p><img src="/img/git-client/git_client_2.jpg" alt="git_client_2" /></p>
+
+<p>在你想放的位置（我知道肯定是桌面）打开右键菜单，选择“GitExt Clone”，粘贴上仓库的地址，然后点击「克隆」即可。</p>
+
+<p><img src="/img/git-client/git_client_3.jpg" alt="git_client_3" /></p>
+
+<p>克隆完成后，将提示按 <kbd>Esc</kbd> 或者 <kbd>Enter</kbd> 退出。</p>
+
+<h3 id="将本地更改上传">将本地更改上传</h3>
+
+<p>改完了总要传吧？先对本地仓库文件夹打开右键菜单 -&gt; <code class="highlighter-rouge">GitExt Commit</code>：</p>
+
+<p><img src="/img/git-client/git_client_4.jpg" alt="git_client_4" /></p>
+
+<p>如果你真的点了提交而不是提交并推送，需要再右键点击文件夹打开右键菜单 -&gt; <code class="highlighter-rouge">Git Extension</code> -&gt; <code class="highlighter-rouge">Push</code> 。</p>
+
+<h3 id="拉取远程更改">拉取远程更改</h3>
+
+<p>打开右键菜单，选择“Git Extension -&gt; Pull”，然后直接点击右下角拉取，合并选项不需要动。</p>
+
+<p>有时候当远程仓库此文件已经修改，会出现冲突（conflict）：若拉取时对话框出现「CONFLICT」，则表示出现冲突。点击「解决冲突」 ，然后「合并更改」，此时会使用你选择的合并工具进行合并。解决冲突之后，会弹窗询问是否解决、是否可以提交，点击「提交」即可。</p>
+
+<p><img src="/img/git-client/git_client_5.jpg" alt="git_client_5" /></p>
+
+
+<!-- Tags -->
+<div class="mdui-mb-4">
+  <span class="taglist">
+  
+  </span>
+</div>
+
+<!-- Comments -->
+
+    <div class="mdui-typo mdui-color-white">
+<h2 class="js-toc-ignore"><i class='fa fa-comments-o'></i> 参与讨论</h2>
+<div id="comments"></div>
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库:-->
+<script src="/assets/js/Valine.js"></script>
+<script>
+new Valine({
+  av: AV,
+  el: '#comments',
+  app_id: 'PGiKOJ7cHFkr860I5ohCgSOn-gzGzoHsz',
+  app_key: 'SwTXHceYxOjiKMCIouFcB2ky',
+  path: '',
+  placeholder: 'Write your comments',
+  notify: 'true',
+  verify: 'true',
+})
+</script>
+<style media="screen">
+  .v * { color: rgba(150, 150, 150, 0.9); }
+  .v .power { margin-bottom: 1ex; }
+</style>
+</div>
+
+
+
+                </div>
+              </article>
+               <!-- 大视窗下文章导航栏 -->
+
+<div id="bottom-nav-lg" class="mdui-toolbar mdui-m-a-1 mdui-hidden-xs-down">
+  <div style="width: 5%;"></div>
+  
+  <a class="mdui-ripple mdui-btn mdui-btn-block" href="/2019/09/18/go-abroad-lecture.html">
+    <span class="mdui-typo-title mdui-text-truncate">
+    <i class="fa fa-chevron-left"></i>
+     9 月 21 日出国分享交流会
+    </span>
+  </a>
+  
+  <div class="mdui-toolbar-spacer"></div>
+  
+  <a class="mdui-ripple mdui-btn mdui-btn-block" href="/2019/10/01/latex-download.html">
+    <span class="mdui-typo-title mdui-text-truncate">
+      LaTeX 环境配置教程
+      <i class="fa fa-chevron-right"></i>
+     </span>
+  </a>
+  
+  <div style="width: 5%;"></div>
+</div>
+ 
+            </div>
+
+            <!-- 填充剩余的空白部分 -->
+            <div class="mdui-col-lg-2 mdui-hidden-md-down"></div>
+          </div>
+        </div>
+    </main>
+
+
+    <!-- Scripts to load at end: MDUI, custom scripts -->
+
+    <!-- Footer -->
+    <footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="mdui-shadow-4 mdui-typo mdui-text-center mdui-p-a-1">
+    <p>
+        <a href="/about/">&copy; 西安交通大学钱学森书院学业辅导中心</a><br>
+        Qian Yuan Xue Fu built with Jekyll, MDUI & <span class="love">❤</span><br>
+        <span id="busuanzi_container_site_pv" style="font-style: italic;">Our website has been viewed by <span id="busuanzi_value_site_pv"><i class="fa fa-spin fa-spinner"></i></span> times!</span>
+    </p>
+</div>
+</footer>
+
+
+    </script>
+
+</body>
+
+</html>

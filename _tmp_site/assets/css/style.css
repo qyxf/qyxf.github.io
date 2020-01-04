@@ -1,0 +1,106 @@
+span.badge { display: inline-block; margin: 0 2px; font-weight: 500; font-size: 0.8em; text-align: center; vertical-align: text-bottom; }
+span.badge .badge-label { border-top-left-radius: 2px; border-bottom-left-radius: 2px; color: #fefefe; text-shadow: 1px 1px 1px #777; padding: 3px; }
+span.badge .badge-message { border-top-right-radius: 2px; border-bottom-right-radius: 2px; color: black; background-color: #eee; padding: 3px; }
+span.badge .badge-qian { background-image: linear-gradient(#f6d365, #cfa00c); }
+span.badge .badge-shao { background-image: linear-gradient(#ff6666, #e60000); }
+span.badge .badge-zonglian { background-image: linear-gradient(#fa71cd, #e3089b); }
+span.badge .badge-yuejie { background-image: linear-gradient(#9be15d, #5ba11e); }
+span.badge .badge-shushi { background-image: linear-gradient(#7de2fc, #06c3f4); }
+span.badge .badge-wushi { background-image: linear-gradient(#33aaff, #0068b3); }
+span.badge .badge-huasheng { background-image: linear-gradient(#6633ff, #2d00b3); }
+span.badge .badge-jishi { background-image: linear-gradient(#ff9a44, #c45a00); }
+span.badge .badge-renshi { background-image: linear-gradient(#00cccc, #004d4d); }
+span.badge .badge-other { background-image: linear-gradient(#cccc99, #99994d); }
+
+main .highlight table td { padding: 5px; }
+main .highlight table pre { margin: 0; }
+main .highlight, main .highlight .w { color: #586e75; }
+main .highlight .err { color: #002b36; background-color: #dc322f; }
+main .highlight .c, main .highlight .ch, main .highlight .cd, main .highlight .cm, main .highlight .cpf, main .highlight .c1, main .highlight .cs { color: #657b83; }
+main .highlight .cp { color: #b58900; }
+main .highlight .nt { color: #b58900; }
+main .highlight .o, main .highlight .ow { color: #93a1a1; }
+main .highlight .p, main .highlight .pi { color: #93a1a1; }
+main .highlight .gi { color: #859900; }
+main .highlight .gd { color: #dc322f; }
+main .highlight .gh { color: #268bd2; background-color: #002b36; font-weight: bold; }
+main .highlight .k, main .highlight .kn, main .highlight .kp, main .highlight .kr, main .highlight .kv { color: #6c71c4; }
+main .highlight .kc { color: #cb4b16; }
+main .highlight .kt { color: #cb4b16; }
+main .highlight .kd { color: #cb4b16; }
+main .highlight .s, main .highlight .sa, main .highlight .sb, main .highlight .sc, main .highlight .dl, main .highlight .sd, main .highlight .s2, main .highlight .sh, main .highlight .sx, main .highlight .s1 { color: #859900; }
+main .highlight .sr { color: #2aa198; }
+main .highlight .si { color: #d33682; }
+main .highlight .se { color: #d33682; }
+main .highlight .nn { color: #b58900; }
+main .highlight .nc { color: #b58900; }
+main .highlight .no { color: #b58900; }
+main .highlight .na { color: #268bd2; }
+main .highlight .m, main .highlight .mb, main .highlight .mf, main .highlight .mh, main .highlight .mi, main .highlight .il, main .highlight .mo, main .highlight .mx { color: #859900; }
+main .highlight .ss { color: #859900; }
+
+main.mdui-theme-layout-dark .highlight table td { padding: 5px; }
+main.mdui-theme-layout-dark .highlight table pre { margin: 0; }
+main.mdui-theme-layout-dark .highlight, main.mdui-theme-layout-dark .highlight .w { color: #f8f8f2; background-color: #272822; }
+main.mdui-theme-layout-dark .highlight .err { color: #272822; background-color: #f92672; }
+main.mdui-theme-layout-dark .highlight .c, main.mdui-theme-layout-dark .highlight .ch, main.mdui-theme-layout-dark .highlight .cd, main.mdui-theme-layout-dark .highlight .cm, main.mdui-theme-layout-dark .highlight .cpf, main.mdui-theme-layout-dark .highlight .c1, main.mdui-theme-layout-dark .highlight .cs { color: #75715e; }
+main.mdui-theme-layout-dark .highlight .cp { color: #f4bf75; }
+main.mdui-theme-layout-dark .highlight .nt { color: #f4bf75; }
+main.mdui-theme-layout-dark .highlight .o, main.mdui-theme-layout-dark .highlight .ow { color: #f8f8f2; }
+main.mdui-theme-layout-dark .highlight .p, main.mdui-theme-layout-dark .highlight .pi { color: #f8f8f2; }
+main.mdui-theme-layout-dark .highlight .gi { color: #a6e22e; }
+main.mdui-theme-layout-dark .highlight .gd { color: #f92672; }
+main.mdui-theme-layout-dark .highlight .gh { color: #66d9ef; background-color: #272822; font-weight: bold; }
+main.mdui-theme-layout-dark .highlight .k, main.mdui-theme-layout-dark .highlight .kn, main.mdui-theme-layout-dark .highlight .kp, main.mdui-theme-layout-dark .highlight .kr, main.mdui-theme-layout-dark .highlight .kv { color: #ae81ff; }
+main.mdui-theme-layout-dark .highlight .kc { color: #fd971f; }
+main.mdui-theme-layout-dark .highlight .kt { color: #fd971f; }
+main.mdui-theme-layout-dark .highlight .kd { color: #fd971f; }
+main.mdui-theme-layout-dark .highlight .s, main.mdui-theme-layout-dark .highlight .sa, main.mdui-theme-layout-dark .highlight .sb, main.mdui-theme-layout-dark .highlight .sc, main.mdui-theme-layout-dark .highlight .dl, main.mdui-theme-layout-dark .highlight .sd, main.mdui-theme-layout-dark .highlight .s2, main.mdui-theme-layout-dark .highlight .sh, main.mdui-theme-layout-dark .highlight .sx, main.mdui-theme-layout-dark .highlight .s1 { color: #a6e22e; }
+main.mdui-theme-layout-dark .highlight .sr { color: #a1efe4; }
+main.mdui-theme-layout-dark .highlight .si { color: #cc6633; }
+main.mdui-theme-layout-dark .highlight .se { color: #cc6633; }
+main.mdui-theme-layout-dark .highlight .nn { color: #f4bf75; }
+main.mdui-theme-layout-dark .highlight .nc { color: #f4bf75; }
+main.mdui-theme-layout-dark .highlight .no { color: #f4bf75; }
+main.mdui-theme-layout-dark .highlight .na { color: #66d9ef; }
+main.mdui-theme-layout-dark .highlight .m, main.mdui-theme-layout-dark .highlight .mb, main.mdui-theme-layout-dark .highlight .mf, main.mdui-theme-layout-dark .highlight .mh, main.mdui-theme-layout-dark .highlight .mi, main.mdui-theme-layout-dark .highlight .il, main.mdui-theme-layout-dark .highlight .mo, main.mdui-theme-layout-dark .highlight .mx { color: #a6e22e; }
+main.mdui-theme-layout-dark .highlight .ss { color: #a6e22e; }
+
+.font-page-content { padding-top: 100px; padding-bottom: 40px; background-color: rgba(0, 0, 0, 0.5); text-align: center; }
+
+.mdui-bottom-nav a { flex-direction: row; }
+.mdui-bottom-nav a span { max-width: 90%; }
+
+.js-toc > .toc-list { position: relative; left: 0; padding-left: 20px; }
+.js-toc .toc-list { list-style: none; line-height: 4ex; overflow: hidden; }
+.js-toc .toc-list .is-collapsed .toc-link::before { height: 0ex !important; }
+.js-toc .toc-list .toc-list-item a.toc-link { text-decoration: none; font-size: 1.2em; }
+.js-toc .toc-list .toc-list-item .toc-link::before { width: 5px; }
+.js-toc .toc-list .toc-list-item .is-active-link::before { background-color: #536bfd; }
+
+#main-toc { padding: 20px; padding-left: 0px; }
+#main-toc .js-toc .toc-list .toc-list-item a.toc-link { font-size: 1em; }
+
+.js-toc-content h2::before, .js-toc-content h3::before, .js-toc-content h4::before, .js-toc-content h5::before, .js-toc-content h6::before { display: block; content: " "; height: 80px; margin-top: -80px; visibility: hidden; }
+
+.ref-fix::before { display: block; content: " "; height: 80px; margin-top: -80px; visibility: hidden; }
+
+.mdui-switch { overflow: visible; }
+
+.mdui-typo blockquote { border-left: 4px solid rgba(200, 200, 200, 0.75); }
+.mdui-typo code, .mdui-typo kbd, .mdui-typo pre, .mdui-typo pre tt, .mdui-typo samp { font-family: "Fira Mono", "DejaVu Sans Mono", Menlo, Consolas, "Liberation Mono", Monaco, "Lucida Console", monospace; font-size: 0.9em; }
+
+article.mdui-typo p > img { max-width: 90%; }
+article.mdui-typo h1 { text-align: center; }
+article.mdui-typo h2 { border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; }
+article.mdui-typo blockquote { opacity: 70%; }
+article.mdui-typo sup a { vertical-align: unset; overflow: inherit; }
+article.mdui-typo sup::before { content: "["; }
+article.mdui-typo sup::after { content: "]"; }
+article.mdui-typo .footnotes ol li::before, article.mdui-typo sup a::before { display: block; content: " "; height: 80px; margin-top: -80px; visibility: hidden; }
+article.mdui-typo table { max-width: 90%; word-break: break-all; overflow-x: auto; overflow-y: hidden; }
+article.mdui-typo table th, article.mdui-typo table tr td { font-size: 0.9em; }
+article.mdui-typo .MJXc-display { max-width: 90%; overflow-x: auto; overflow-y: hidden; }
+
+footer .mdui-typo p { font-size: 0.9em; margin-bottom: 0; }
+footer .love { color: red; }
