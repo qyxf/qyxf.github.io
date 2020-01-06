@@ -1,0 +1,12 @@
+<!-- 字数统计 -->
+<!-- 中文来源：https://taoalpha.github.io/blog/2015/05/21/tech-jekyll-count-of-chinese-characters/ -->
+{% if page.layout == 'post' %} {% assign words = content | strip_html | strip_newlines | size | round %}
+{% else %} {% assign words = post.content | strip_html | strip_newlines | size | round %}
+{% endif %}
+{% if words < 350 %}
+  <span class="fa fa-clock-o"> {{ words }} 字 | 1 分钟 </span>
+{% else %}
+  <span class="fa fa-clock-o">
+    {{ words }} 字 | {{ words | divided_by: 350 }} 分钟
+  </span>
+{% endif %}

@@ -1,0 +1,24 @@
+<div class="mdui-typo mdui-color-white">
+<h2 class="js-toc-ignore"><i class='fa fa-comments-o'></i> 参与讨论</h2>
+<div id="comments"></div>
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库:-->
+<script src="{{ "/assets/js/Valine.js" | prepend: site.baseurl }}"></script>
+<script>
+new Valine({
+  av: AV,
+  el: '#comments',
+  app_id: '{{ site.valine.appid }}',
+  app_key: '{{ site.valine.appkey }}',
+  path: '{{ site.valine.path }}',
+  placeholder: '{{ site.valine.placeholder }}',
+  notify: '{{ site.valine.notify }}',
+  verify: '{{ site.valine.verify }}',
+})
+</script>
+<style media="screen">
+  .v * { color: rgba(150, 150, 150, 0.9); }
+  .v .power { margin-bottom: 1ex; }
+</style>
+</div>

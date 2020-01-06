@@ -1,9 +1,58 @@
----
-layout: base
----
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-{{ content }}
+{% include head.html %}
 
-<hr>
+<body class="mdui-color-white mdui-theme-accent-indigo mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-p-b-0">
 
-{% include extra-info.html %}
+    <!-- 导航栏 -->
+    {% include menu-header.html %}
+
+    <!-- 推送的底部导航栏  -->
+    {% if page.layout == "post" %} {% include bottom-nav.html %} {% endif %}
+
+    <!-- 抽屉导航目录 -->
+    <div id="main-toc" class="mdui-drawer mdui-drawer-close mdui-shadow-4 mdui-hidden-lg-up"></div>
+
+    <!-- 内容部分 -->
+    <main role="main" class="mdui-container-fluid">
+
+        <div class="mdui-container-fluid">
+          <div class="mdui-row">
+
+            <!-- 侧栏 -->
+            <div class="mdui-col-md-3 mdui-hidden-sm-down">
+              <!-- 目录 -->
+              {% include toc.html %}
+            </div>
+
+            <!-- Main part -->
+            <div class="mdui-col-sm-12 mdui-col-md-7">
+
+              <!-- 正文 -->
+              <article class="mdui-typo">
+                <div class="js-toc-content">
+                  {{ content }}
+                </div>
+              </article>
+              {% if page.layout == "post" %} {% include lg-footer.html %} {% endif %}
+            </div>
+
+            <!-- 填充剩余的空白部分 -->
+            <div class="mdui-col-lg-2 mdui-hidden-md-down"></div>
+          </div>
+        </div>
+    </main>
+
+
+    <!-- Scripts to load at end: MDUI, custom scripts -->
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+
+    </script>
+
+</body>
+
+</html>

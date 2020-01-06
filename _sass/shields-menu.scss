@@ -1,0 +1,44 @@
+$background-color: #eee;
+$qian-color: #f6d365;
+$shao-color: #ff6666;
+$zonglian-color: #fa71cd;
+$yuejie-color: #9be15d;
+$shushi-color: #7de2fc;
+$wushi-color: #33aaff;
+$huasheng-color: #6633ff;
+$jishi-color: #ff9a44;
+$renshi-color: #00cccc;
+$other-color: #cccc99;
+$amount: 25%;
+
+span.badge {
+  display: inline-block;
+  margin: 0 2px;
+  font-weight: 500;
+  font-size: 0.8em;
+  text-align: center;
+  vertical-align: text-bottom;
+  .badge-label {
+    border: {
+      top-left-radius: 2px;
+      bottom-left-radius: 2px; }
+    color: #fefefe;
+    text-shadow: 1px 1px 1px #777;
+    padding: 3px; }
+  .badge-message {
+    border: {
+      top-right-radius: 2px;
+      bottom-right-radius: 2px; }
+    color: black;
+    background-color: $background-color;
+    padding: 3px; }
+    .badge-qian { background-image: linear-gradient($qian-color, darken($qian-color, $amount)); }
+    .badge-shao { background-image: linear-gradient($shao-color, darken($shao-color, $amount)); }
+    .badge-zonglian { background-image: linear-gradient($zonglian-color, darken($zonglian-color, $amount)); }
+    .badge-yuejie { background-image: linear-gradient($yuejie-color, darken($yuejie-color, $amount)); }
+    .badge-shushi { background-image: linear-gradient($shushi-color, darken($shushi-color, $amount)); }
+    .badge-wushi { background-image: linear-gradient($wushi-color, darken($wushi-color, $amount)); }
+    .badge-huasheng { background-image: linear-gradient($huasheng-color, darken($huasheng-color, $amount)); }
+    .badge-jishi { background-image: linear-gradient($jishi-color, darken($jishi-color, $amount)); }
+    .badge-renshi { background-image: linear-gradient($renshi-color, darken($renshi-color, $amount)); }
+    .badge-other { background-image: linear-gradient($other-color, darken($other-color, $amount)); } }

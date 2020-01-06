@@ -1,0 +1,25 @@
+<div class="post-info mdui-container mdui-theme-accent-indigo">
+  <h1 class="mdui-typo-display-1 mdui-text-center">最新文章</h1>
+  <div class="mdui-row">
+  {% for post in site.posts limit:4 %}
+    <div class='mdui-col-xs-12 mdui-col-md-6'>
+      <div class="mdui-card mdui-m-a-1">
+        <div class="mdui-card-primary">
+          <div class="mdui-card-primary-title">{{ post.title }}</div>
+          <div class="mdui-card-primary-subtitle">
+            <i class="fa fa-calendar"></i> {{ post.date | date: '%Y 年 %m 月 %d 日' }}
+            {% if post.author %}&nbsp;&nbsp;<i class="fa fa-pencil"></i> {{ post.author | markdownify | strip_html }}{% endif %}
+            &nbsp;&nbsp;{% include meta-read-time.html %}
+          </div>
+        </div>
+      <div class="mdui-card-content mdui-typo post-excerpt">
+        <div>{{ post.content | strip_html | truncate: 200 }}</div>
+      </div>
+      <div class="mdui-card-actions mdui-typo">
+        <a class="mdui-btn mdui-ripple" href='{{ post.url | prepend: site.baseurl }}'>Read More</a>
+      </div>
+    </div>
+    </div>
+  {% endfor %}
+  </div>
+</div>

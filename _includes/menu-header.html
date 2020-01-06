@@ -1,0 +1,75 @@
+<!-- 站点内部页眉部分 -->
+<div id="appbar" class="mdui-appbar mdui-appbar-fixed mdui-color-white">
+  <div class="mdui-toolbar">
+    <a id="drawer-toc-btn" ref="#" class="mdui-ripple mdui-hidden-md-up mdui-text-center" mdui-drawer="{target: '#main-toc'}">
+      <i class="fa fa-map" style="width: 36px;"></i>
+    </a>
+    <a href="#" class="mdui-ripple mdui-hidden-sm-up" mdui-menu="{ target : '#mobile-list' }">
+      <i class="fa fa-list" style="width: 36px;"></i>
+    </a>
+    <ul id="mobile-list" class="mdui-menu">
+      <li class="mdui-menu-item">
+        <a href="/post/" class="mdui-ripple">文章列表</a>
+      </li>
+      <li class="mdui-menu-item">
+        <a href="/program/" class="mdui-ripple">培养方案查询</a>
+      </li>
+      <li class="mdui-menu-item">
+        <a href="/course/" class="mdui-ripple">课程中心</a>
+      </li>
+      <li class="mdui-divider"></li>
+      <li class="mdui-menu-item">
+        <a href="/navigator/" class="mdui-ripple">交大网址导航</a>
+      </li>
+      <li class="mdui-menu-item">
+        <a href="/zhufeng/" class="mdui-ripple">珠峰学报</a>
+      </li>
+      <li class="mdui-menu-item">
+        <a href="/about/" class="mdui-ripple">关于我们</a>
+      </li>
+    </ul>
+    <a class="mdui-ripple" href="{{ site.baseurl }}/">
+      <span class="mdui-typo-headline mdui-hidden-xs-down">
+        <i class="fa fa-home"></i>
+        钱院学辅信息站
+      </span>
+      <span class="mdui-typo-body-2 mdui-hidden-sm-up">
+        <i class="fa fa-home"></i>
+        钱院学辅
+      </span>
+    </a>
+    <a class="mdui-btn mdui-ripple mdui-hidden-xs-down mdui-typo-title" href="/post/">
+      <i class="fa fa-quote-left"></i>
+      文章列表
+    </a>
+    <a class="mdui-btn mdui-ripple mdui-hidden-sm-down mdui-typo-title" href="/course/">
+      <i class="fa fa-binoculars"></i>
+      课程中心
+    </a>
+    <a class="mdui-btn mdui-ripple mdui-hidden-sm-down mdui-typo-title" href="/program/">
+      <i class="fa fa-calendar-check-o"></i>
+      培养方案
+    </a>
+    <a class="mdui-btn mdui-ripple mdui-hidden-sm-down mdui-typo-title" href="/zhufeng/">
+      <i class="fa fa-newspaper-o"></i>
+      珠峰学报
+    </a>
+    <a class="mdui-btn mdui-ripple mdui-hidden-md-down mdui-typo-title" href="/technique/">
+      <i class="fa fa-wrench"></i>
+      技术中心
+    </a>
+    <a class="mdui-btn mdui-ripple mdui-hidden-md-down mdui-typo-title" href="/easymcm/">
+      <i class="fa fa-cubes"></i>
+      美赛模板
+    </a>
+    <a class="mdui-btn mdui-ripple mdui-hidden-xs-down mdui-typo-title" href="/about/">
+      <i class="fa fa-id-badge"></i>
+      关于我们
+    </a>
+    <div class="mdui-toolbar-spacer"></div>
+    <label class="mdui-switch" style="overflow: visible;">
+      <input id="theme-btn" type="checkbox"/>
+      <i class="mdui-switch-icon"></i>
+    </label>
+  </div>
+</div>
