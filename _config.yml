@@ -1,6 +1,6 @@
 title: 钱院学辅信息站
-slogan: Info site of Qian Yuan Xue Fu!
-organization_full: 西安交通大学钱学森书院学业辅导中心
+description: Info site of Qian Yuan Xue Fu
+maintainer: 西安交通大学钱学森书院学业辅导中心
 version: 青云·雪峰 (V2.1)
 plugins:
   - jekyll-mentions
@@ -11,9 +11,6 @@ future: true
 license_info: >
   如无特别声明，本站发布内容均采用<a href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享 BY-SA 4.0
   协议</a>许可。使用者可在明确注明作者、作品链接之前提下转载本站作品，但必须使用相同或兼容的许可证对传播、再创作的内容授权。
-
-# 临时
-repository: qyxf/qyxf.github.io
 
 # valine
 valine:
