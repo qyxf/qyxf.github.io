@@ -97,7 +97,7 @@ article.mdui-typo blockquote { opacity: 70%; }
 article.mdui-typo sup a { vertical-align: unset; overflow: inherit; }
 article.mdui-typo sup::before { content: "["; }
 article.mdui-typo sup::after { content: "]"; }
-article.mdui-typo .footnotes ol li::before, article.mdui-typo sup a::before { display: block; content: " "; height: 80px; margin-top: -80px; visibility: hidden; }
+article.mdui-typo .footnotes ol li::before, article.mdui-typo .footnote ol::before, article.mdui-typo sup a::before { display: block; content: " "; height: 80px; margin-top: -80px; visibility: hidden; }
 article.mdui-typo table { max-width: 90%; word-break: break-all; overflow-x: auto; overflow-y: hidden; }
 article.mdui-typo table th, article.mdui-typo table tr td { font-size: 0.9em; }
 article.mdui-typo .MJXc-display { max-width: 90%; overflow-x: auto; overflow-y: hidden; }

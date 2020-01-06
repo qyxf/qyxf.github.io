@@ -133,6 +133,7 @@ article.mdui-typo {
     }
   }
   .footnotes ol li::before,
+  .footnote ol::before,
   sup a::before {
     display: block;
     content: " ";
