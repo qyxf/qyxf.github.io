@@ -1,6 +1,3 @@
-var $$ = mdui.JQ;  // 创建 MDUI JS 库
-
-
 // 中文目录链接修正
 // source: https://eriri.ink/archives/build-a-toc-for-an-article.html
 var headerEl = 'h2, h3, h4',  //headers
@@ -45,21 +42,22 @@ $('#drawer-toc-btn').click(function(){
 })
 
 
-// 排版样式修正
-$$('article.mdui-typo p > img').addClass("mdui-center mdui-shadow-4 mdui-m-a-1");
-$$('article h1').addClass("mdui-ripple");
-$$('article table').addClass("mdui-table mdui-center");
-$$('.footnotes').addClass("mdui-card mdui-p-a-2 mdui-m-a-1");
-$$('.footnotes').prepend('<div class="mdui-card-primary"> \
-                         <div class="mdui-card-title mdui-typo-title"> \
-                         注释 </div> </div>');
-$$('fig-cap').addClass("mdui-center mdui-text-center mdui-typo-body-2 mdui-m-t-0 mdui-m-b-4");
-$$('tb-cap').addClass("mdui-center mdui-text-center mdui-typo-body-2 mdui-m-b-1 mdui-m-t-2");
-
-// 空目录修正
-$('.js-toc:empty').append('<span class="mdui-center mdui-p-l-2"> 没有条目哦... </span>');
-// 确保页面填满
-$('main').css('min-height', $(window).height() - 114);
+$(window).on('load', function () {
+  // 排版样式修正
+  $('article.mdui-typo p > img').addClass("mdui-center mdui-shadow-4 mdui-m-a-1");
+  $('article h1').addClass("mdui-ripple");
+  $('article table').addClass("mdui-table mdui-center");
+  $('.footnotes').addClass("mdui-card mdui-p-a-2 mdui-m-a-1");
+  $('.footnotes').prepend('<div class="mdui-card-primary"> \
+                           <div class="mdui-card-title mdui-typo-title"> \
+                           注释 </div> </div>');
+  $('fig-cap').addClass("mdui-center mdui-text-center mdui-typo-body-2 mdui-m-t-0 mdui-m-b-4");
+  $('tb-cap').addClass("mdui-center mdui-text-center mdui-typo-body-2 mdui-m-b-1 mdui-m-t-2");
+  // 空目录修正
+  $('.js-toc:empty').append('<span class="mdui-center mdui-p-l-2"> 没有条目哦... </span>');
+  // 确保页面填满
+  $('main').css('min-height', $(window).height() - 114);
+})
 
 // 实现并修复脚注互跳转问题
 // source: https://www.ihewro.com/archives/523/
@@ -107,4 +105,4 @@ $("p > code, li > code, span > code").each(function() {
   }
 })
 // 为所有名牌附加涟漪效果（并没有什么用）
-$$('span.badge').addClass("mdui-ripple");
+$('span.badge').addClass("mdui-ripple");
