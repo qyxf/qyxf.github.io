@@ -1,4 +1,5 @@
 ---
+permalink: /technique/
 date: 2019-9-21
 author: '`能动少C71尤佳睿`'
 ---
