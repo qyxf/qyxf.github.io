@@ -156,6 +156,13 @@ article.mdui-typo {
     overflow-x: auto;
     overflow-y: hidden;
   }
+  img.emoji.mdui-center {  // 修正 jemoji 样式
+    text-align: unset;
+    margin: unset !important;
+    box-shadow: unset;
+    display: inline-block !important;
+    vertical-align: text-bottom;
+  }
 }
 
 // footer 文字样式修正
