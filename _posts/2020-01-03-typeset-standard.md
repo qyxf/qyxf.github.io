@@ -76,12 +76,12 @@ author: '`能动少C71尤佳睿`'
 
 原则内容|示例
 ---|---
-请使用直角引号。|✔ 「这样」，「这样地『这样』」。<br>✘ “这样”，“这样地‘这样’”。
-中文字符与西文、数字之间必须留有空格。|✔ 我们学校的名称是 Xi'an Jiaotong University 或西安交通大学，创建于 1896 年。<br>✘ 我们学校的名称是Xi'an Jiaotong University或西安交通大学，创建于1896年。
-中文半角符号与西文之间不留空格。|✔ 西安交通大学，英文名为 Xi'an Jiaotong University，是一所坐落在西安市（Xi'an）的综合性大学。<br>✘ 西安交通大学，英文名为 Xi'an Jiaotong University ，是一所坐落在西安市（ Xi'an ）的综合性大学。
-除非是纯西文的短语、句子、段落、文档，均采用中文的标点符号（Markdown 所需的标记符号当然除外）。|✔ Notes：普通话（Mandarin）是一种非常棒的语言，真的！<br>✘ Notes: 普通话 (Mandarin) 是一种非常棒的语言, 真的!<br>✔ 你可以参见《Legendary: Guides to Mandarin & Cantonese》。<br>✘ 你可以参见《Legendary：Guides to Mandarin＆Cantonese》。
+请使用直角引号。|✔ `「这样」，「这样地『这样』」。`<br>✘` “这样”，“这样地‘这样’”。`
+中文字符与西文、数字之间必须留有空格。|✔ `我们学校的名称是 Xi'an Jiaotong University 或西安交通大学，创建于 1896 年。`<br>✘ `我们学校的名称是Xi'an Jiaotong University或西安交通大学，创建于1896年。`
+中文半角符号与西文之间不留空格。|✔ `西安交通大学，英文名为 Xi'an Jiaotong University，是一所坐落在西安市（Xi'an）的综合性大学。`<br>✘ `西安交通大学，英文名为 Xi'an Jiaotong University ，是一所坐落在西安市（ Xi'an ）的综合性大学。`
+除非是纯西文的短语、句子、段落、文档，均采用中文的标点符号（Markdown 所需的标记符号当然除外）。|✔ `Notes：普通话（Mandarin）是一种非常棒的语言，真的！`<br>✘ `Notes: 普通话 (Mandarin) 是一种非常棒的语言, 真的!`<br>✔ `你可以参见《Legendary: Guides to Mandarin & Cantonese》。`<br>✘ `你可以参见《Legendary：Guides to Mandarin＆Cantonese》。`
 在遵守以上原则的前提下，链接文本与其他文本之间不留空格。|✔ 你可以参考[开源中国](https://www.oschina.net/)或 [GitHub 首页](https://github.com/)给出的说明。<br>✘ 你可以参考 [开源中国](https://www.oschina.net/) 或[GitHub 首页](https://github.com/)给出的说明。
-在遵守以上原则的前提下，对于带字母单位的数字，值与单位之间不留空格。|✔ 今天的天气为「中雨」，最高气温为 26℃，城区降水量可达 15mm 以上。<br>✘ 今天的天气为「中雨」，最高气温为 26 ℃，城区降水量可达 15 mm 以上。
+在遵守以上原则的前提下，对于带字母单位的数字，值与单位之间不留空格。|✔ `今天的天气为「中雨」，最高气温为 26℃，城区降水量可达 15mm 以上。`<br>✘ `今天的天气为「中雨」，最高气温为 26 ℃，城区降水量可达 15 mm 以上。`
 
 > **对以上内容的补充说明**：
 >
@@ -89,3 +89,14 @@ author: '`能动少C71尤佳睿`'
 > - 关于空格，需要注意的是：在 LaTeX、Word 等排版系统中，中文与英文、半角数字之间的间距往往能够自动生成。编写者应根据资料的**最终形式**决定是否需要手动加空格。
 
 在没有出现新的问题之前，这份规范将维持现状。
+
+<!-- 代码块样式修正 -->
+<style>
+  .mdui-typo code {
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+      background-color: unset;
+  }
+
+</style>
