@@ -1,6 +1,7 @@
 # 钱院学辅信息站项目
 [![Maintained by qyxf](https://img.shields.io/badge/maintainer-qyxf-orange.svg)](https://github.com/qyxf)
-[![release](https://img.shields.io/github/release/qyxf/qyxf.github.io?color=blue)](https://github.com/qyxf/qyxf.github.io/releases/)
+[![Gitter](https://badges.gitter.im/qyxf/community.svg)](https://gitter.im/qyxf/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 - 网址：[qyxf.site](https://qyxf.site)
-- 主题：[Leap Month](https://github.com/qyxf/leap-month)（V2.1，自制）
+- 构建：Jekyll & MDUI
+- 托管：Gitee Pages
