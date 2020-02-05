@@ -3,7 +3,7 @@
 <div id="bottom-nav-lg" class="mdui-toolbar mdui-m-a-1 mdui-hidden-xs-down">
   <div style="width: 5%;"></div>
   {% if page.previous.url %}
-  <a class="mdui-ripple mdui-btn mdui-btn-block" href="{{ site.baseurl }}{{ page.previous.url }}">
+  <a class="mdui-ripple mdui-btn mdui-btn-block" href="{{ site.baseurl }}{{ page.previous.url | remove: '.html' }}">
     <span class="mdui-typo-title mdui-text-truncate">
     <i class="fa fa-chevron-left"></i>
      {{ page.previous.title }}
@@ -19,7 +19,7 @@
   {% endif %}
   <div class="mdui-toolbar-spacer"></div>
   {% if page.next.url %}
-  <a class="mdui-ripple mdui-btn mdui-btn-block" href="{{ site.baseurl }}{{ page.next.url }}">
+  <a class="mdui-ripple mdui-btn mdui-btn-block" href="{{ site.baseurl }}{{ page.next.url | remove: '.html' }}">
     <span class="mdui-typo-title mdui-text-truncate">
       {{ page.next.title }}
       <i class="fa fa-chevron-right"></i>
