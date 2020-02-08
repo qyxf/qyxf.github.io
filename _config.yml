@@ -8,6 +8,7 @@ plugins:
   - jekyll-seo-tag
   - jemoji
 include: ['_pages']  # 页面目录
+url: 'https://qyxf.site'
 
 markdown: kramdown
 future: true
