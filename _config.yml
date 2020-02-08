@@ -9,7 +9,7 @@ plugins:
   - jemoji
 include: ['_pages']  # 页面目录
 url: 'https://qyxf.site'
-permalink: pretty
+permalink: /:categories/:year/:month/:day/:title
 
 markdown: kramdown
 future: true
