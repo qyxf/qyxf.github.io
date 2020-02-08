@@ -23,7 +23,7 @@ valine:
   appkey: SwTXHceYxOjiKMCIouFcB2ky
   notify: true
   verify: true
-  placeholder: Write your comments
-  avatar:
+  placeholder: 说点什么吧 ...
+  avatar: retro
   guest_info: nickname, mail_address, website
   pageSize: 10
