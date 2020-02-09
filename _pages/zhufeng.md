@@ -16,7 +16,7 @@ date: 2019-11-26
 
 ## 往期发行本下载
 
-- 2019 秋季刊：[书库下载](http://47.99.113.150/008.journal-of-zhufeng/zhufeng-2019-autumn.pdf) 或 [百度网盘](https://pan.baidu.com/s/1MU5KZX4mK2eIJftDaGCOxg)（提取码 nvn4）
+- 2019 秋季刊：[书库下载]({{ site.bookhub }}/008.journal-of-zhufeng/zhufeng-2019-autumn.pdf) 或 [百度网盘](https://pan.baidu.com/s/1MU5KZX4mK2eIJftDaGCOxg)（提取码 nvn4）
 
 ## 征稿信息
 
