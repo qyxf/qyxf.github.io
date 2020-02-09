@@ -109,6 +109,7 @@ $accent-color: lightcyan;
 article.mdui-typo {
   p > img {
     max-width: 90%;
+    max-height: 95vh;
   }
   h1 {
     text-align: center;
@@ -162,6 +163,9 @@ article.mdui-typo {
     box-shadow: unset;
     display: inline-block !important;
     vertical-align: text-bottom;
+  }
+  h2.js-toc-ignore {  // 修正评论样式
+    background: rgba(255, 255, 255, 0);  // 避免遮挡
   }
 }
 
