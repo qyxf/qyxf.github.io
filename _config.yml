@@ -30,3 +30,4 @@ valine:
   pageSize: 10
 
 bookhub: 'http://47.99.113.150'
+cdn: 'https://lib.baomitu.com'
