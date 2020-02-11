@@ -5,6 +5,7 @@ version: 青云·雪峰 (V2.1)
 plugins:
   - jekyll-mentions
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-seo-tag
   - jemoji
 include: ['_pages']  # 页面目录
