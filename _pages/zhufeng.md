@@ -22,9 +22,9 @@ date: 2019-11-26
 
 > 因「2019 秋季刊」拖延时间较长，取消本年度冬季刊的筹备工作。之前已提交的稿件，将在「2020」春季刊中发布。
 
-「2020 春季刊」正在征稿中，欢迎您的参与！投稿前，请认真阅读《征稿启事》。
+「2020 春季刊」正在征稿中，欢迎您的参与！投稿前，请认真阅读以下的《征稿启事》。投稿门槛低，稿费丰厚，感谢您的支持！
 
-- **截稿日期**：2019 -- 2020 春季学期开学前（2020 年 2 月 17 日）
+- **截稿日期**：2019 -- 2020 春季学期开学前（受疫情影响，时间待定）
 - [《珠峰学报》征稿启事（第二版）](/2019/10/18/journal-of-zhufeng-call-of-papers)
 - 征稿邮箱：**qianyuanxuefu@163.com**
 - 撰稿模版：[Markdown](https://qyxf.site/template-of-zhufeng/template-of-zhufeng.md) \| [$$\mathrm{\LaTeX}$$](https://qyxf.site/template-of-zhufeng/template-of-zhufeng.tex) \| [Word](https://qyxf.site/template-of-zhufeng/template-of-zhufeng.docx) \| [TXT 纯文本](https://qyxf.site/template-of-zhufeng/template-of-zhufeng.txt)
