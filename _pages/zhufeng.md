@@ -27,4 +27,3 @@ date: 2019-11-26
 - **截稿日期**：2019 -- 2020 春季学期开学前（受疫情影响，时间待定）
 - [《珠峰学报》征稿启事（第二版）](/2019/10/18/journal-of-zhufeng-call-of-papers)
 - 征稿邮箱：**qianyuanxuefu@163.com**
-- 撰稿模版：[Markdown](https://qyxf.site/template-of-zhufeng/template-of-zhufeng.md) \| [$$\mathrm{\LaTeX}$$](https://qyxf.site/template-of-zhufeng/template-of-zhufeng.tex) \| [Word](https://qyxf.site/template-of-zhufeng/template-of-zhufeng.docx) \| [TXT 纯文本](https://qyxf.site/template-of-zhufeng/template-of-zhufeng.txt)
