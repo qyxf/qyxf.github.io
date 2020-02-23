@@ -1,7 +1,5 @@
 # 钱院学辅信息站项目
-[![Maintained by qyxf](https://img.shields.io/badge/maintainer-qyxf-orange.svg)](https://github.com/qyxf)
-[![Gitter](https://badges.gitter.im/qyxf/community.svg)](https://gitter.im/qyxf/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-- 网址：[qyxf.site](https://qyxf.site)
-- 构建：Jekyll & MDUI
-- 托管：Gitee Pages
+因 GitHub 常年访问不畅，且 2019 年末以来部分子域名被封，即日起本项目停止在 GitHub 上更新，完全迁移至 Gitee 平台上维护。
+
+本仓库进入 archived 状态，需要检查往期版本、参考代码者仍可使用。
